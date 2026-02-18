@@ -1,17 +1,28 @@
 {
-  "appId": "fanoos_ramadan",
-  "latestVersion": "1.0.0",
-  "buildNumber": 1,
-  "forceUpdate": false,
-  "releaseDate": "2026-02-18",
-  "changelog": [
-    "Initial premium atmosphere release",
-    "Realistic lantern flickering and swaying",
-    "Serene night sky with crescent moon",
-    "Mosque silhouettes background",
-    "Advanced music system with side drawer"
+  "//": "Fanoos Ramadan - Version Management Configuration",
+  "//": "This file is part of a standardized multi-app update system.",
+  "//": "Structure Guidelines: Each app has a unique app_id. platforms map contains per-platform binaries.",
+  
+  "app_id": "com.example.fanoos_ramadan",
+  "version_name": "1.1.0",
+  "version_code": 5,
+  "force_update": false,
+  "release_notes": [
+    "Atmospheric UI overhaul with Ramadan theme",
+    "Secure implementation of SHA256 integrity verification",
+    "Intelligent background update checking (24h throttle)",
+    "Force update enforcement for critical releases",
+    "Clean architecture refactor of the update system"
   ],
-  "downloads": {
-    "android": "https://github.com/AhmedKaram222/ahmed-app-updates/tree/main/Fanoos%20Ramadan/downloads/app-release.apk"
+
+  "//": "Top-level apk_url for simple Android-only parsing (legacy support)",
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.1.0/fanoos-v1.1.0.apk",
+
+  "platforms": {
+    "android": {
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.1.0/fanoos-v1.1.0.apk",
+      "sha256": "8f3b7c...REPLACE_WITH_SHA256_HASH",
+      "file_size": 15728640
+    }
   }
 }
