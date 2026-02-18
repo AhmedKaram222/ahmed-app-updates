@@ -4,25 +4,22 @@
   "//": "Structure Guidelines: Each app has a unique app_id. platforms map contains per-platform binaries.",
   
   "app_id": "com.example.fanoos_ramadan",
-  "version_name": "1.1.0",
-  "version_code": 5,
+  "version_name": "1.1.1",
+  "version_code": 6,
   "force_update": false,
   "release_notes": [
-    "Atmospheric UI overhaul with Ramadan theme",
-    "Secure implementation of SHA256 integrity verification",
-    "Intelligent background update checking (24h throttle)",
-    "Force update enforcement for critical releases",
-    "Clean architecture refactor of the update system"
+    "تحديث أسماء الفنانين في قائمة الأناشيد",
+    "تحسينات عامة في الأداء"
   ],
 
   "//": "Top-level apk_url for simple Android-only parsing (legacy support)",
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/fanoos-v1.1.0/fanoos-v1.1.0.apk",
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/fanoos-v1.1.1/fanoos-v1.1.1.apk",
 
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/fanoos-v1.1.0/fanoos-v1.1.0.apk",
-      "sha256": "17839f88c199a1e473ab9e5c894a6d38510ef5993e7d354ffba55bbc8d0c2682",
-      "file_size": 101607014
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/fanoos-v1.1.1/fanoos-v1.1.1.apk",
+      "sha256": "c1125cc7d6d459beaa37a94780fbde87879bbbc47549706fd3814f9de7c021e6",
+      "file_size": 101711872
     }
   }
 }
