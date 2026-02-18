@@ -16,13 +16,13 @@
   ],
 
   "//": "Top-level apk_url for simple Android-only parsing (legacy support)",
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.1.0/fanoos-v1.1.0.apk",
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/fanoos-v1.1.0/fanoos-v1.1.0.apk",
 
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.1.0/fanoos-v1.1.0.apk",
-      "sha256": "8f3b7c...REPLACE_WITH_SHA256_HASH",
-      "file_size": 15728640
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/fanoos-v1.1.0/fanoos-v1.1.0.apk",
+      "sha256": "17839f88c199a1e473ab9e5c894a6d38510ef5993e7d354ffba55bbc8d0c2682",
+      "file_size": 101607014
     }
   }
 }
