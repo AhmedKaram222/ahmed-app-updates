@@ -1,3 +1,17 @@
-[InternetShortcut]
-URL=https://github.com/AhmedKaram222/ahmed-app-updates/blob/main/Talkmate_ai/version.json
-
+{
+  "appId": "fanoos_ramadan",
+  "latestVersion": "1.0.0",
+  "buildNumber": 1,
+  "forceUpdate": false,
+  "releaseDate": "2026-02-18",
+  "changelog": [
+    "Initial premium atmosphere release",
+    "Realistic lantern flickering and swaying",
+    "Serene night sky with crescent moon",
+    "Mosque silhouettes background",
+    "Advanced music system with side drawer"
+  ],
+  "downloads": {
+    "android": "https://github.com/AhmedKaram222/ahmed-app-updates/tree/main/Fanoos%20Ramadan/downloads/app-release.apk"
+  }
+}
