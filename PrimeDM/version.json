@@ -8,14 +8,15 @@
     "android": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/primedm-v1.0.3.apk",
       "sha256": "e051e1a36fc35fd98dc679506a3cc599dc94748faa8bf50c1fdc8165509ddc34",
-      "file_size": 55375299
+      "file_size": 55364813
     },
     "windows": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/PrimeDM-v1.0.3.exe",
       "sha256": "7d5cca5a563537c7f78395ba37c546b78ba60f905e179c68f3fdc6cf2fec0339",
-      "file_size": 11838423
+      "file_size": 11848909
     }
   },
   "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/primedm-v1.0.3.apk",
   "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/PrimeDM-v1.0.3.exe"
 }
+
