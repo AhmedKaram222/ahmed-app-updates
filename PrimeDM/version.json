@@ -1,9 +1,9 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.1.0",
-  "version_code": 21,
+  "version_name": "2.2.0",
+  "version_code": 22,
   "force_update": false,
-  "release_notes": "• عزل كامل لمحرك التنزيلات في الخلفية (Background Engine Isolation).\n• القضاء على بطء الواجهة (UI Rebuild Storms) عبر تقنية التحديد الذكي (Task-Level Throttling).\n• تقليل ضخم في استهلاك المعالج (CPU Load) عند التحميل المتعدد بسرعات عالية.\n• تحسين استجابة الواجهة الرئيسية وضمان سلاسة الحركة (Smoothness).\n• إعادة هيكلة شاملة للمحرك لضمان القابلية للتوسع واستيعاب تدفقات البيانات الضخمة.",
+  "release_notes": "• جدولة النطاق الترددي العالمي (Global Bandwidth Scheduler).\n• محرك ذكي لإدارة الطوابير وترتيب الأولويات (Smart Queue Prioritization).\n• توزيع ديناميكي للسرعة على التحميلات النشطة (Adaptive Speed Allocation).\n• نظام توزيع الموارد العادل لمنع استحواذ تحميل واحد على السرعة.\n• استمرارية التحميل واسترداد البيانات بعد الأعطال (Persistent Resume & Crash Recovery).",
   "platforms": {
     "android": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/primedm-v2.1.0.apk",
@@ -19,6 +19,7 @@
   "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/primedm-v2.1.0.apk",
   "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/PrimeDM-v2.1.0.exe"
 }
+
 
 
 
