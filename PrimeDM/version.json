@@ -1,22 +1,23 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "1.0.3",
-  "version_code": 4,
+  "version_name": "1.0.4",
+  "version_code": 5,
   "force_update": false,
-  "release_notes": "• تحسين أداء محرك التحميل ودقة تسجيل العمليات لكل مسار.\n• دعم كامل لإشعارات أندرويد مع عرض التقدم اللحظي.\n• تحسين استجابة الواجهة على الشاشات الصغيرة وأجهزة التابلت.\n• تنظيف الملفات المؤقتة غير المكتملة عند بدء التشغيل لضمان استقرار النظام.",
+  "release_notes": "• تحسين أداء محرك التحميل ودقة تسجيل العمليات لكل مسار.\n• دعم كامل لإشعارات أندرويد مع عرض التقدم اللحظي.\n• تحسين استجابة الواجهة على الشاشات الصغيرة وأجهزة التابلت.\n• تنظيف الملفات المؤقتة غير المكتملة عند بدء التشغيل لضمان استقرار النظام.\n• إصلاح مشكلة حالة أحرف أسماء الملفات (Case Sensitivity) على نظام ويندوز.\n• إصلاح خطأ `CancelToken` والتفريعات المرتبطة بـ Isolate أثناء دمج الملفات.\n• إصلاح خطأ توقف AudioPlayer المفاجئ بسبب ملفات الصوت غير المدعومة.",
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/primedm-v1.0.3.apk",
-      "sha256": "e051e1a36fc35fd98dc679506a3cc599dc94748faa8bf50c1fdc8165509ddc34",
-      "file_size": 55364813
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.4/primedm-v1.0.4.apk",
+      "sha256": "9f684640bdca6196cf4b2a921db29af475173eab6c9472ec3951a238bf15c8f2",
+      "file_size": 55752786
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/PrimeDM-v1.0.3.exe",
-      "sha256": "7d5cca5a563537c7f78395ba37c546b78ba60f905e179c68f3fdc6cf2fec0339",
-      "file_size": 11848909
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.4/PrimeDM-v1.0.4.exe",
+      "sha256": "ac80793784ca81ab8608151ff44d6145b3ebc29ae814cb1864203b85343a7181",
+      "file_size": 11974738
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/primedm-v1.0.3.apk",
-  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.3/PrimeDM-v1.0.3.exe"
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.4/primedm-v1.0.4.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v1.0.4/PrimeDM-v1.0.4.exe"
 }
+
 
