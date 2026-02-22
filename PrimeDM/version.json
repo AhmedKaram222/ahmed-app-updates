@@ -1,22 +1,23 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.0.0",
-  "version_code": 20,
+  "version_name": "2.1.0",
+  "version_code": 21,
   "force_update": false,
   "release_notes": "• عزل كامل لمحرك التنزيلات في الخلفية (Background Engine Isolation).\n• القضاء على بطء الواجهة (UI Rebuild Storms) عبر تقنية التحديد الذكي (Task-Level Throttling).\n• تقليل ضخم في استهلاك المعالج (CPU Load) عند التحميل المتعدد بسرعات عالية.\n• تحسين استجابة الواجهة الرئيسية وضمان سلاسة الحركة (Smoothness).\n• إعادة هيكلة شاملة للمحرك لضمان القابلية للتوسع واستيعاب تدفقات البيانات الضخمة.",
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.0.0/primedm-v2.0.0.apk",
-      "sha256": "65a3709d7447359cd66596f7cf35ae83935f27d14a700376e268fbb8b938bdd2",
-      "file_size": 55752786
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/primedm-v2.1.0.apk",
+      "sha256": "76ed59582246d9a76b66350e3bdd1983230a6c5f670b655e05685f38af38e5cb",
+      "file_size": 56266588
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.0.0/PrimeDM-v2.0.0.exe",
-      "sha256": "f4890580af0f9ac372cc6a176ca0fb1827f288914e8de0301da14380f84cad62",
-      "file_size": 55752786
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/PrimeDM-v2.1.0.exe",
+      "sha256": "75a59769fd99d8ac17d21d7c1f18e1192fc84147d87721aa1c1bd2d8c2c880a7",
+      "file_size": 12016681
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.0.0/primedm-v2.0.0.apk",
-  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.0.0/PrimeDM-v2.0.0.exe"
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/primedm-v2.1.0.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/PrimeDM-v2.1.0.exe"
 }
+
 
