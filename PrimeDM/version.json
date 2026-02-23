@@ -1,27 +1,30 @@
 {
-  "app_id": "com.example.primedm",
-  "version_name": "2.2.0",
-  "version_code": 22,
+  "app_id": "com.kremeto.primedm",
+  "version_name": "2.3.0",
+  "version_code": 23,
   "force_update": false,
-  "release_notes": "• جدولة النطاق الترددي العالمي (Global Bandwidth Scheduler).\n• محرك ذكي لإدارة الطوابير وترتيب الأولويات (Smart Queue Prioritization).\n• توزيع ديناميكي للسرعة على التحميلات النشطة (Adaptive Speed Allocation).\n• نظام توزيع الموارد العادل لمنع استحواذ تحميل واحد على السرعة.\n• استمرارية التحميل واسترداد البيانات بعد الأعطال (Persistent Resume & Crash Recovery).",
+  "release_notes": [
+    "الإصدار المستقر الرسمي - الإصدار 2.3.0",
+    "- جدولة النطاق الترددي الذكية مع تخصيص قائم على الأولوية.",
+    "- محرك طوابير ذكي مع اختيار تلقائي للمهام حسب الأولوية.",
+    "- محرك تصنيف أخطاء الشبكة الذكي.",
+    "- نظام إعادة المحاولة المتطور مع التعافي الذاتي (Exponential Backoff).",
+    "- المعالجة الذكية لأخطاء HTTP 429 / 503 مع دعم Retry-After.",
+    "- التوسيع التلقائي التكيفي للقطع بناءً على استقرار الشبكة.",
+    "- دورة حياة كاملة لإعادة المحاولة في الخلفية لضمان سلاسة الواجهة."
+  ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/primedm-v2.2.0.apk",
-      "sha256": "3399ae05c092d10f3c3cb2b20f1fda42a6593e5607571de60f8699eeaa5b5da1",
-      "file_size": 56381931
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.3.0/primedm-v2.3.0.apkk",
+      "sha256": "febeb6a1e2135c3346c0ab6f9625a3e5ba3c7cd8c1479163569952d927f69eb6",
+      "file_size": 56465818
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/PrimeDM-v2.2.0.exe",
-      "sha256": "7b934b4dd29e3d893483307abe1ac33ba14c0e5bc614b2c988d4e692aaa8ddd2",
-      "file_size": 12027167
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.3.0/PrimeDM-v2.3.0.exe",
+      "sha256": "e31bb7e6a0e4bfcb97fca57fd290ffa7fcb4f81bbabc51261f502f9395408de3",
+      "file_size": 12037652
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/primedm-v2.2.0.apk",
-  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/PrimeDM-v2.2.0.exe"
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.3.0/primedm-v2.3.0.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.3.0/PrimeDM-v2.3.0.exe"
 }
-
-
-
-
-
-
