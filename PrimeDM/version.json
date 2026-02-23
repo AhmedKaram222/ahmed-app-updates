@@ -1,27 +1,27 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.5.1",
-  "version_code": 26,
-  "force_update": true,
+  "version_name": "2.6.3",
+  "version_code": 27,
+  "force_update": false,
   "release_notes": [
-    "الإصدار 2.5.1 - تعزيز الأمان وتدقيق البيانات",
-    "- إضافة فحص ETag وحجم الملف أثناء التعافي لمنع الفساد الصامت.",
-    "- حماية عملية دمج الملفات (Merge) عبر نظام Journaling لمنع فقدان البيانات.",
-    "- تأمين عملية حذف الملفات المؤقتة بحيث لا تتم إلا بعد التأكد من سلامة الملف النهائي.",
-    "- تصحيح حسابات التقدم (Progress Drift) تلقائياً عند استعادة الحالة من القرص.",
-    "- تحسين استقرار المحرك عند التعامل مع السيرفرات التي تغير الروابط بشكل ديناميكي."
+    "الإصدار 2.6.3 - Enterprise Hardening & Stability",
+    "- إضافة نظام التتبع (Telemetry) لمراقبة استقرار التحديثات وأدائها.",
+    "- تنفيذ تقنية Triple-Guard Rollback لويندوز (Backup -> Atomic Swap -> Recovery).",
+    "- تعزيز أمان البيانات الوصفية (Metadata Signature) لمنع التلاعب.",
+    "- تحسين واجهة التشخيص (Diagnostics) لعرض مؤشرات موثوقية التحديثات.",
+    "- إصلاح شامل لمشكلة انهيار التطبيق عند التشغيل (Hive Deserialization Crash).",
+    "- إصلاحات شاملة لضمان استمرارية التشغيل حتى في حالات فشل النظام الحرجة."
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.5.1/primedm-v2.5.1.apk",
-      "sha256": "84dfa94e13c70f36665fc4c6446e05c3876cc65014b3278fb209a1d3c55ae5ec",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.6.3/primedm-v2.6.3.apk",
+      "sha256": "175b412a3b46e096ae9bc31370b706ae1cbadc2ab799a6de8c31b563c098cf17",
       "file_size": 56885248
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.5.1/PrimeDM-v2.5.1.exe",
-      "sha256": "6a1c128bf376414a8d5d779d2397dbef429da58f3e0bc2383c859f3ca0bd7abb",
-      "file_size": 12079595
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.6.3/PrimeDM-v2.6.3.exe",
+      "sha256": "1636461f233dd2b324db97414b90e0beaffc27c312eee25fb6cc3a6dd93b1e47",
+      "file_size": 12090081
     }
   }
 }
-
