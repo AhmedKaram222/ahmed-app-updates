@@ -2,7 +2,7 @@
   "app_id": "com.example.primedm",
   "version_name": "2.5.1",
   "version_code": 26,
-  "force_update": false,
+  "force_update": true,
   "release_notes": [
     "الإصدار 2.5.1 - تعزيز الأمان وتدقيق البيانات",
     "- إضافة فحص ETag وحجم الملف أثناء التعافي لمنع الفساد الصامت.",
@@ -24,3 +24,4 @@
     }
   }
 }
+
