@@ -6,19 +6,20 @@
   "release_notes": "• جدولة النطاق الترددي العالمي (Global Bandwidth Scheduler).\n• محرك ذكي لإدارة الطوابير وترتيب الأولويات (Smart Queue Prioritization).\n• توزيع ديناميكي للسرعة على التحميلات النشطة (Adaptive Speed Allocation).\n• نظام توزيع الموارد العادل لمنع استحواذ تحميل واحد على السرعة.\n• استمرارية التحميل واسترداد البيانات بعد الأعطال (Persistent Resume & Crash Recovery).",
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/primedm-v2.1.0.apk",
-      "sha256": "76ed59582246d9a76b66350e3bdd1983230a6c5f670b655e05685f38af38e5cb",
-      "file_size": 56266588
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/primedm-v2.2.0.apk",
+      "sha256": "3399ae05c092d10f3c3cb2b20f1fda42a6593e5607571de60f8699eeaa5b5da1",
+      "file_size": 56381931
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/PrimeDM-v2.1.0.exe",
-      "sha256": "75a59769fd99d8ac17d21d7c1f18e1192fc84147d87721aa1c1bd2d8c2c880a7",
-      "file_size": 12016681
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/PrimeDM-v2.2.0.exe",
+      "sha256": "7b934b4dd29e3d893483307abe1ac33ba14c0e5bc614b2c988d4e692aaa8ddd2",
+      "file_size": 12027167
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/primedm-v2.1.0.apk",
-  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.1.0/PrimeDM-v2.1.0.exe"
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/primedm-v2.2.0.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.2.0/PrimeDM-v2.2.0.exe"
 }
+
 
 
 
