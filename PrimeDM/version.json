@@ -4,22 +4,23 @@
   "version_code": 28,
   "force_update": false,
   "release_notes": [
-    "الإصدار 2.6.4 - تحسينات الاستقرار والأداء العالي",
+    "الإصدار 2.6.4 - تحسينات الاستقرار والأمان الفائق",
+    "- إصلاح شامل لمشكلة انهيار التطبيق عند التشغيل (Hive Deserialization Crash) عبر نظام التحقق الوقائي.",
+    "- تصحيح توافق الاسم الرمزي للعملية (Process Image Name) لضمان نجاح التحديث التلقائي في ويندوز.",
     "- تحديث كلي لنظام فحص التحديثات لضمان الدقة وتجاوز التخزين المؤقت (GitHub Cache-Busting).",
     "- فرض قيود برمجية صارمة على معرف التطبيق (Strict App ID Validation) لتعزيز الأمان.",
     "- تقليل استهلاك الموارد عبر تحسين استرجاع معلومات النظام (PackageInfo Optimizing).",
-    "- إضافة سجلات تشخيصية عميقة (Production Logging) لتتبع عمليات التحديث لحظياً.",
-    "- إصلاح منطق مقارنة الإصدارات لضمان استجابة النظام الفورية عند توفر تحديث جديد."
+    "- إضافة سجلات تشخيصية عميقة (Production Logging) لتتبع عمليات التحديث لحظياً."
   ],
   "platforms": {
     "android": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.6.4/primedm-v2.6.4.apk",
-      "sha256": "f36a45578c8236a147da61bf16725e4044466ea7b69b47e93cb252964fbf4f98",
+      "sha256": "7c9fd454d3e2e27070bd402de502ffb60253a2e4d922d1d247a8fe130405135d",
       "file_size": 56906219
     },
     "windows": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.6.4/PrimeDM-v2.6.4.exe",
-      "sha256": "cd43ed2551993558b9ce4e084c0f8c199eef5fd7b3e66775df12b6273da9c029",
+      "sha256": "21fbb040d95f180b45a73d57b01a8dede742d2c076fbfe2f09d78cf157c4c00e",
       "file_size": 12090081
     }
   }
