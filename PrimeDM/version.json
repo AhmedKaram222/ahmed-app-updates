@@ -1,26 +1,25 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.7.0",
-  "version_code": 29,
+  "version_name": "2.7.1",
+  "version_code": 30,
   "force_update": true,
   "release_notes": [
-    "الإصدار 2.7.0 - تحسينات الاستقرار والأمان الفائق",
-    "- نظام تحديث جديد وآمن يعتمد على تشغيل برنامج التثبيت الرسمي (Standard Installer Flow) لضمان التوافق التام.",
-    "- إصلاح شامل لمشكلة انهيار التطبيق عند التشغيل (Hive Deserialization Crash) عبر نظام التحقق الوقائي.",
-    "- تحديث بروتوكول فحص التحديثات لضمان الدقة وتجاوز التخزين المؤقت (GitHub Cache-Busting).",
-    "- فرض قيود برمجية صارمة على معرف التطبيق (Strict App ID Validation) لتعزيز الأمان.",
-    "- تحسين استهلاك الموارد عبر ذاكرة تخزين مؤقت لمعلومات التطبيق (PackageInfo Caching).",
-    "- سجلات تشخيصية متقدمة (Production Logging) لمراقبة استقرار عمليات التحديث لحظياً."
+    "الإصدار 2.7.1 - تحسينات الواجهة واستقرار الإعدادات",
+    "- تحسين تجربة المستخدم في شاشة الإعدادات ومعالجة منطق التحديد الكلي للمتصفحات.",
+    "- تعزيز أمان وموثوقية إدارة مفاتيح المواقع (Site Credentials) عبر واجهة برمجة محسنة.",
+    "- صيانة شاملة لواجهة المستخدم لضمان التوافق مع أصدارات Flutter الحديثة.",
+    "- الإصدار 2.7.0 السابق: نظام تحديث جديد وآمن يعتمد على تشغيل برنامج التثبيت الرسمي لضمان التوافق التام.",
+    "- الإصدار 2.7.0 السابق: فحص التحديثات الذكي وتجاوز التخزين المؤقت (GitHub Cache-Busting)."
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.0/primedm-v2.7.0.apk",
-      "sha256": "bdd231929540c1ada14add97c28ccea91df7e313b15285943b6e314a5b4e071a",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.1/primedm-v2.7.1.apk",
+      "sha256": "5af757c98456bfca560555055ff7975617b8c96cc342b41212a9476445ba6566",
       "file_size": 56906219
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.0/PrimeDM-v2.7.0.exe",
-      "sha256": "6d0f9ef47b1b4a07f597c85f8445a73357b9e3999691480ef980e4f3a5ce8e0e",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.1/PrimeDM-v2.7.1.exe",
+      "sha256": "5486226301efead1746815122b1606b780acc1c5e747de15eb9a6f6c2dee57f2",
       "file_size": 12090081
     }
   }
