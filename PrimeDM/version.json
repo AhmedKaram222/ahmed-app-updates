@@ -1,10 +1,10 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.7.1",
-  "version_code": 30,
+  "version_name": "2.7.2",
+  "version_code": 31,
   "force_update": true,
   "release_notes": [
-    "الإصدار 2.7.1 - تحسينات الواجهة واستقرار الإعدادات",
+    "الإصدار 2.7.2 - تحسينات الواجهة واستقرار الإعدادات",
     "- تحسين تجربة المستخدم في شاشة الإعدادات ومعالجة منطق التحديد الكلي للمتصفحات.",
     "- تعزيز أمان وموثوقية إدارة مفاتيح المواقع (Site Credentials) عبر واجهة برمجة محسنة.",
     "- صيانة شاملة لواجهة المستخدم لضمان التوافق مع أصدارات Flutter الحديثة.",
@@ -12,20 +12,19 @@
     "- الإصدار 2.7.0 السابق: فحص التحديثات الذكي وتجاوز التخزين المؤقت (GitHub Cache-Busting).",
     "- معالجة مشكلة التحقق من معرف التطبيق (App ID) لضمان توافق التحديثات مع نظام ويندوز.",
     "- تحسين دقة نظام فحص التحديثات عبر المنصات المختلفة.",
-    "الإصدار 2.7.0 السابق: تحسينات الواجهة واستقرار الإعدادات ومعالجة التحديد الكلي للمتصفحات.",
+    "الإصدار 2.7.1 السابق: تحسينات الواجهة واستقرار الإعدادات ومعالجة التحديد الكلي للمتصفحات.",
     "الإصدار 2.7.0 السابق: نظام تحديث جديد وآمن يعتمد على برنامج التثبيت الرسمي لضمان التوافق التام."
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.1/primedm-v2.7.1.apk",
-      "sha256": "6169b4b9c2028b67a9987fbe919063519f196fe7398451090b1829edde848307",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.2/primedm-v2.7.2.apk",
+      "sha256": "f3db1dc8d8ce1073b90881b90e0bfa0776c6225f398185c7eb096c1307f198f8",
       "file_size": 56906219
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.1/PrimeDM-v2.7.1.exe",
-      "sha256": "356fcbb99457d5f4f55e320e967426e1d3b3a15bd01265eede2b02790db8d356",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.2/PrimeDM-v2.7.2.exe",
+      "sha256": "b5f8a211e43815e4c89b823b601cf3d651b30d8c5cb596a5b393b491d596c0b6",
       "file_size": 12090081
     }
   }
 }
-
