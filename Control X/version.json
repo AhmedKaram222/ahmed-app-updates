@@ -6,16 +6,16 @@
     "release_notes": "Control X v1.0.0 - Official Release\n\nFeatures:\n- Virtual Xbox 360 Emulation: Fully simulate a real hardware controller on Windows using ViGEmBus.\n- Zero-Latency Architecture: Rebuilt with Dart FFI for high-speed native state updates.\n- Ultra-Low Lag: Enabled TCP_NODELAY and optimized 12-byte binary protocol for 120Hz responsiveness.\n- Cross-Platform Updates: Integrated automated update system for both Android (APK) and Windows (Setup).\n- Robust Networking: Simplified Android-as-Server / Windows-as-Client architecture with ADB USB support.\n- Proactive Diagnostics: Built-in troubleshooting for ViGEm drivers and connection status.\n- Modern UI: Fully responsive multi-touch Gamepad on Android and clear Receiver Status on Windows.",
     "platforms": {
         "android": {
-            "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.0.0/app-release.apk",
-            "sha256": "PLACEHOLDER_SHA256_ANDROID",
-            "file_size": 0
+            "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.0.0/Control_X-v1.0.0.apk",
+            "sha256": "f8163338098370dcd9eaf6b4d9825b914ae2d6910abf506238005fd81250e67f",
+            "file_size": 45717914
         },
         "windows": {
-            "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.0.0/ControlX-Setup.exe",
-            "sha256": "PLACEHOLDER_SHA256_WINDOWS",
-            "file_size": 0
+            "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.0.0/ControlX-v1.0.0.exe",
+            "sha256": "5ac1908201f2bb80109b96a9f03000ee03dde3c42b53ef88e7e19d639818d8cd",
+            "file_size": 10485760
         }
     },
-    "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.0.0/app-release.apk",
-    "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/v1.0.0/ControlX-Setup.exe"
+    "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.0.0/Control_X-v1.0.0.apk",
+    "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.0.0/ControlX-v1.0.0.exe"
 }
