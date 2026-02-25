@@ -1,7 +1,7 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.7.3",
-  "version_code": 32,
+  "version_name": "2.7.4",
+  "version_code": 33,
   "force_update": true,
   "release_notes": [
     "الإصدار 2.7.3 - تعزيز استقرار التحميل (CDN Resilience) وتحسينات ويندوز",
@@ -17,13 +17,13 @@
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.3/primedm-v2.7.3.apk",
-      "sha256": "76285d3945756343bad22ac781c8ef7fadb4661f6e4db0d8d6b14e71ee3bb0bb",
-      "file_size": 56906219
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.4/primedm-v2.7.4.apk",
+      "sha256": "a4557f9ae9dda47015a6bd9e62c38b36ff4ab79d1b4b6520e50cb6a61abc25a5",
+      "file_size": 56990106
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.3/PrimeDM-v2.7.3.exe",
-      "sha256": "77972d9bdd1e0a2b33a940500971013821963a79f824b676eb3f44d0000ffae3",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.4/PrimeDM-v2.7.4.exe",
+      "sha256": "106a95854d4df600489590ac00462dcf310adcd04c3216f2cbbe48fff959a056",
       "file_size": 12090081
     }
   }
