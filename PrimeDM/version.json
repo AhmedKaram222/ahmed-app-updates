@@ -1,30 +1,27 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.7.4",
-  "version_code": 33,
+  "version_name": "2.8.3",
+  "version_code": 38,
   "force_update": true,
   "release_notes": [
-    "الإصدار 2.7.3 - تعزيز استقرار التحميل (CDN Resilience) وتحسينات ويندوز",
-    "- تطبيق تقنية Adaptive Segment Scaling لتقليل عدد العمال تلقائيًا عند اكتشاف بطء السيرفر أو تكرار الأخطاء.",
-    "- دعم الحفاظ على الاتصال (Connection: keep-alive) وإلغاء خوارزمية Nagle (TCP_NODELAY) لتقليل زمن الاستجابة.",
-    "- عزل اتصالات التحميل لكل جزء لضمان عدم استنفاد قنوات الاتصال مع مخدمات التوزيع (CDNs).",
-    "- ضبط متقدم لخصائص الشبكة (autoUncompress / maxConnections) لزيادة التوافق مع أنظمة الحماية (WAF).",
-    "- إصلاح شامل لمشكلة التثبيت على نظام ويندوز (Error 740) عبر استدعاء المثبت بصلاحيات المسؤول تلقائيًا.",
-    "- تحسين تجربة التحديث بإغلاق التطبيق فور بدء التثبيت لمنع تعارض الملفات (File Locks).",
-    "- حماية أمر تشغيل المثبت بعلامات تنصيص لتجنب أخطاء المسارات التي تحتوي على مسافات.",
-    "- معالجة مشكلة التحقق من معرف التطبيق (App ID) لضمان توافق التحديثات مع نظام ويندوز.",
-    "- الإصدار 2.7.1 السابق: استقرار الإعدادات ومعالجة التحديد الكلي للمتصفحات والمزيد من الأمان لكلمات المرور."
+    "الإصدار 2.8.3 - تعزيز الأمان المؤسسي وإصلاحات الاستقرار الشاملة:",
+    "- تطبيق نظام 'Probe GET' التكيفي للتحقق من دعم السيرفر لاستكمال التحميل في حال فشل طلبات HEAD.",
+    "- تفعيل خاصية 'تحقق العامل الأول' للتأكد من استلام كود الاستجابة 206 قبل بدء التحميل المتعدد.",
+    "- إدارة صارمة لموارد النظام عبر إغلاق كافة قنوات الاتصال (Sockets) بالكامل قبل إعادة المحاولة أو التبديل.",
+    "- إدخال نظام 'DownloadStrategyResolver' لضمان اتخاذ قرارات تقنية دقيقة وتلقائية لنوع التحميل.",
+    "- إصلاح قائمة أيقونة الساعة: خيار 'إستعادة كافة النوافذ' يقوم الآن بإظهار البرنامج ونوافذ التحميل الجاري معاً.",
+    "- الإصدار 2.7.3 السابق: تعزيز استقرار التحميل (CDN Resilience) وتحسينات التثبيت على ويندوز."
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.4/primedm-v2.7.4.apk",
-      "sha256": "a4557f9ae9dda47015a6bd9e62c38b36ff4ab79d1b4b6520e50cb6a61abc25a5",
-      "file_size": 56990106
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.3/primedm-v2.8.3.apk",
+      "sha256": "1e20f4db90ed1ac891d6c336e5d6b26a2c9c42f97e0512a91de8c94cb9ad7255",
+      "file_size": 57073992
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.4/PrimeDM-v2.7.4.exe",
-      "sha256": "106a95854d4df600489590ac00462dcf310adcd04c3216f2cbbe48fff959a056",
-      "file_size": 12090081
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.3/PrimeDM-v2.8.3.exe",
+      "sha256": "ef266e2f9747ace5a101be4f83303d9f330b43cf4ff85333185b50dac7f25195",
+      "file_size": 12100567
     }
   }
 }
