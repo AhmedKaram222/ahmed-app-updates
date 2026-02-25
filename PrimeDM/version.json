@@ -15,6 +15,8 @@
     "- معالجة مشكلة التحقق من معرف التطبيق (App ID) لضمان توافق التحديثات مع نظام ويندوز.",
     "- الإصدار 2.7.1 السابق: استقرار الإعدادات ومعالجة التحديد الكلي للمتصفحات والمزيد من الأمان لكلمات المرور."
   ],
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.3/primedm-v2.7.3.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.3/PrimeDM-v2.7.3.exe",
   "platforms": {
     "android": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.7.3/primedm-v2.7.3.apk",
