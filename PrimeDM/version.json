@@ -2,7 +2,7 @@
   "app_id": "com.example.primedm",
   "version_name": "2.9.4",
   "version_code": 45,
-  "force_update": false,
+  "force_update": true,
   "release_notes": [
     "الإصدار 2.9.4 - ثبات الاستعادة عند بدء التشغيل (Recovery & Startup Hardening):",
     "- حصانة نظام الاستعادة: تم تحديث الـ RecoveryManager ليدعم الترويسات المتقدمة (Hardened Headers)، مما يحل مشكلة الـ 403 Forbidden أثناء فحص الملفات عند فتح البرنامج.",
