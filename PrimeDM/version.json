@@ -1,27 +1,25 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.8.3",
-  "version_code": 38,
+  "version_name": "2.8.4",
+  "version_code": 39,
   "force_update": true,
   "release_notes": [
-    "الإصدار 2.8.3 - تعزيز الأمان المؤسسي وإصلاحات الاستقرار الشاملة:",
-    "- تطبيق نظام 'Probe GET' التكيفي للتحقق من دعم السيرفر لاستكمال التحميل في حال فشل طلبات HEAD.",
-    "- تفعيل خاصية 'تحقق العامل الأول' للتأكد من استلام كود الاستجابة 206 قبل بدء التحميل المتعدد.",
-    "- إدارة صارمة لموارد النظام عبر إغلاق كافة قنوات الاتصال (Sockets) بالكامل قبل إعادة المحاولة أو التبديل.",
-    "- إدخال نظام 'DownloadStrategyResolver' لضمان اتخاذ قرارات تقنية دقيقة وتلقائية لنوع التحميل.",
-    "- إصلاح قائمة أيقونة الساعة: خيار 'إستعادة كافة النوافذ' يقوم الآن بإظهار البرنامج ونوافذ التحميل الجاري معاً.",
-    "- الإصدار 2.7.3 السابق: تعزيز استقرار التحميل (CDN Resilience) وتحسينات التثبيت على ويندوز."
+    "الإصدار 2.8.4 - إصلاحات الاستقرار والتشغيل الشاملة:",
+    "- معالجة مشكلة فشل تشغيل مثبت التحديثات على ويندوز (Windows Cannot Find File).",
+    "- تعزيز توافق المسارات عبر استخدام مكتبة 'path' لمعالجة فواصل المجلدات التكيفية.",
+    "- تفعيل وضع الإنتاج (Production Mode) لخدمة التحديثات لضمان أعلى مستويات الأمان.",
+    "- الإصدار 2.8.3 السابق: تعزيز الأمان المؤسسي وإصلاح قائمة أيقونة الساعة."
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.3/primedm-v2.8.3.apk",
-      "sha256": "1e20f4db90ed1ac891d6c336e5d6b26a2c9c42f97e0512a91de8c94cb9ad7255",
-      "file_size": 57068931
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.4/primedm-v2.8.4.apk",
+      "sha256": "a1c2ed39be6054fac0d4a67b425af8d4d0a6e8643e51170f6503f549e781590a",
+      "file_size": 57052547
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.3/PrimeDM-v2.8.3.exe",
-      "sha256": "ef266e2f9747ace5a101be4f83303d9f330b43cf4ff85333185b50dac7f25195",
-      "file_size": 12100682
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.4/PrimeDM-v2.8.4.exe",
+      "sha256": "759c61d8516648df8b0a01590d6a30616d26c97aebe6bed7313250efc1ee02f2",
+      "file_size": 12101646
     }
   }
 }
