@@ -15,7 +15,7 @@
   ],
   "platforms": {
     "android": {
-      "url": "",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.9.0/primedm-v2.9.0.apk",
       "sha256": "1402d7fa9310bcdf201fe082ad67bfe900e7e07794fa04b3ee1137003595d4fc",
       "file_size": 57052576
     },
@@ -26,3 +26,4 @@
     }
   }
 }
+
