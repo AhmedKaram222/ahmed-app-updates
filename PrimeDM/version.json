@@ -1,25 +1,27 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.8.4",
-  "version_code": 39,
+  "version_name": "2.8.5",
+  "version_code": 40,
   "force_update": true,
   "release_notes": [
-    "الإصدار 2.8.4 - إصلاحات الاستقرار والتشغيل الشاملة:",
+    "الإصدار 2.8.5 - إصلاحات الاستقرار والتشغيل الشاملة:",
     "- معالجة مشكلة فشل تشغيل مثبت التحديثات على ويندوز (Windows Cannot Find File).",
-    "- تعزيز توافق المسارات عبر استخدام مكتبة 'path' لمعالجة فواصل المجلدات التكيفية.",
-    "- تفعيل وضع الإنتاج (Production Mode) لخدمة التحديثات لضمان أعلى مستويات الأمان.",
-    "- الإصدار 2.8.3 السابق: تعزيز الأمان المؤسسي وإصلاح قائمة أيقونة الساعة."
+    "- تطبيق نظام 'التشغيل المباشر' (Direct Execution) للمثبت لضمان الحتمية (Deterministic) وتجنب أخطاء Shell.",
+    "- تعزيز موثوقية المسارات عبر معالجة الفواصل التكيفية وتطبيع المسارات (Path Normalization).",
+    "- تعزيز الأمان المؤسسي: نظام 'Strategy Resolver' ونظام 'Probe GET' لضمان استقرار التحميل 100%.",
+    "- إصلاح قائمة الساعة: خيار 'إستعادة كافة النوافذ' يظهر البرنامج ونوافذ التحميل الجاري معاً.",
+    "- تفعيل وضع الإنتاج (Production Mode) لخدمة التحديثات لضمان أعلى مستويات الأمان."  
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.4/primedm-v2.8.4.apk",
-      "sha256": "a1c2ed39be6054fac0d4a67b425af8d4d0a6e8643e51170f6503f549e781590a",
-      "file_size": 57052547
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.5/primedm-v2.8.5.apk",
+      "sha256": "9bba19c5a09b34d99a2ab46dfe7531ef6571072da7bac6d7f1b3dd7ec6350a74",
+      "file_size": 57052576
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.4/PrimeDM-v2.8.4.exe",
-      "sha256": "759c61d8516648df8b0a01590d6a30616d26c97aebe6bed7313250efc1ee02f2",
-      "file_size": 12101646
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.8.5/PrimeDM-v2.8.5.exe",
+      "sha256": "4d4a2d23fd95338e9649427480788210aa294c318a10258f7586d654c6e61801",
+      "file_size": 12100410
     }
   }
 }
