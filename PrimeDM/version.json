@@ -1,29 +1,26 @@
 {
   "app_id": "com.example.primedm",
-  "version_name": "2.9.0",
-  "version_code": 41,
+  "version_name": "2.9.4",
+  "version_code": 45,
   "force_update": false,
   "release_notes": [
-    "الإصدار 2.9.0 - تكامل متقدم مع نظام ويندوز واستقرارية شاملة (IDM-Style):",
-    "- نظام Tray ديناميكي متطور: عرض حي لقائمة التحميلات الجارية والمتوقفة مع نسب التقدم مباشرة من أيقونة النظام.",
-    "- ميزة 'إستعادة كافة النوافذ': إظهار واجهة البرنامج الرئيسية وكافة نوافذ التحميل المخفية بضغطة واحدة من الـ Tray.",
-    "- حماية 'النسخة الواحدة' (Single Instance): منع تضارب العمليات عبر اكتشاف قفل قاعدة البيانات وتوجيه التركيز للنسخة النشطة.",
-    "- استقرار قاعدة البيانات: حل جذري لمشكلة (PathAccessException) ونظام معالجة أخطاء متقدم لتأمين البيانات.",
-    "- استدامة التشغيل التلقائي: تحديث آلي لمسارات السجل (Registry) لضمان عمل البرنامج مع بداية التشغيل حتى بعد التحديثات.",
-    "- استعادة مرنة للمهام: دعم استعادة نافذة تحميل محددة بضغطة واحدة من قائمة Tray لتعزيز سرعة الوصول والإنتاجية.",
-    "- تحسينات عامة: معالجة أخطاء Hive Lock وتحديث نظام الاستجابة للأوامر الخلفية لضمان أعلى مستويات الاستقرار."
+    "الإصدار 2.9.4 - ثبات الاستعادة عند بدء التشغيل (Recovery & Startup Hardening):",
+    "- حصانة نظام الاستعادة: تم تحديث الـ RecoveryManager ليدعم الترويسات المتقدمة (Hardened Headers)، مما يحل مشكلة الـ 403 Forbidden أثناء فحص الملفات عند فتح البرنامج.",
+    "- فحص هوية الملفات: ذكاء معزز في التحقق من سلامة الملفات عبر السيرفرات الدفاعية لضمان استئناف التحميل بدقة 100%.",
+    "- استقرارية البدء: معالجة حالات الفشل الصامتة أثناء استعادة قائمة المهام القديمة.",
+    "- تحسين السجلات: سجلات تقنية أوضح لعملية الاستعادة (Recovery Logs) لتسهيل تتبع حالة الملفات.",
+    "- توافق CDN: تحسين التواصل مع خوادم التوزيع لضمان عدم حظر طلبات التحقق من الحجم."
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.9.0/primedm-v2.9.0.apk",
-      "sha256": "1402d7fa9310bcdf201fe082ad67bfe900e7e07794fa04b3ee1137003595d4fc",
-      "file_size": 57052576
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.9.4/primedm-v2.9.4.apk",
+      "sha256": "4c952768115a2f1a3847b2b0c53c4bf03d8b2f2aad6f87ee370265b63f29072a",
+      "file_size": 57068960
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.9.0/PrimeDM-v2.9.0.exe",
-      "sha256": "2642bffaed885982547940d2d370d3f163b46ed12b9d5f15693c631d3aca212f",
-      "file_size": 12100084
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/PrimeDM-v2.9.4/PrimeDM-v2.9.4.exe",
+      "sha256": "3aa10b12255cd7c6afccf85b7d2c07ec69a1765907d9aa38b8080b46847938b7",
+      "file_size": 12101431
     }
   }
 }
-
