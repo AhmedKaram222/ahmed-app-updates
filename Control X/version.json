@@ -1,59 +1,40 @@
 {
-    "app_id": "com.example.control_x",
-    "version_name": "1.5.0",
-    "version_code": 7,
-    "force_update": false,
-    "release_notes": [
-        "🚀 MAJOR VERSION HISTORY",
-        "----------------------",
-        "",
-        "[v1.5.0] Performance & Stability",
-        "- Zero-Allocation Input Loops",
-        "- Native Mutex Thread-Safety",
-        "- Adaptive Connection Resilience",
-        "- UI/UX Polish & Transitions",
-        "- Real-time Telemetry Overlay",
-        "",
-        "----------------------",
-        "",
-        "[v1.4.0] Custom Mapping System",
-        "- Advanced Profile Manager",
-        "- Dynamic Mapping Engine",
-        "- Multi-Controller Support",
-        "",
-        "----------------------",
-        "",
-        "[v1.3.0] Racing Simulator",
-        "- specialized Steering UI",
-        "- FFB Resistance Engine",
-        "- Advanced Steering Curves",
-        "- Packet Pacing Optimization",
-        "",
-        "----------------------",
-        "",
-        "[v1.2.0] Hybrid Connectivity",
-        "- USB / ADB Mode Auto-Setup",
-        "- Multi-Device Sessions",
-        "- Windows Receiver Hardening",
-        "",
-        "----------------------",
-        "",
-        "[v1.1.0] Core Foundation",
-        "- High-Speed TCP Protocol",
-        "- ViGEm Controller Emulation"
-    ],
-    "platforms": {
-        "android": {
-            "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.5.0/Control_X-v1.5.0.apk",
-            "sha256": "ebee67f8004d0e336f920631d0fb589e8ad7814b42debc264f4a0ed9dee8681e",
-            "file_size": 48055710
-        },
-        "windows": {
-            "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.5.0/ControlX-v1.5.0.exe",
-            "sha256": "c665b28d056a789332442c52020453fb5c54fcc315aef4b68bd2f3e64d3d1670",
-            "file_size": 10583611
-        }
+  "app_id": "com.example.control_x",
+  "version_name": "2.0.0",
+  "version_code": 9,
+  "force_update": false,
+  "release_notes": [
+    "🚀 CONTROL X v2.0.0 - PRODUCTION RELEASE",
+    "------------------------------------",
+    "[SYSTEM HARDENING]",
+    "- Unified Orchestration Pipeline",
+    "- Zero-Allocation Input Processing",
+    "- Thread-Safe Native Connection Layer",
+    "- Optimized Monotonic Packet Pacing",
+    "",
+    "[NEW FEATURES]",
+    "- Universal Controller Support (Switch, PS, Xbox, Generic)",
+    "- Modular Driver Architecture (Plug-and-Play)",
+    "- Real-time Performance Telemetry Overlay",
+    "",
+    "[FIXES]",
+    "- Resolved USB connection stability issues",
+    "- Fixed Bluetooth RFCOMM handshake failures",
+    "- Fixed UI layout overflows on smaller screens",
+    "------------------------------------"
+  ],
+  "platforms": {
+    "android": {
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/Control_X-v2.0.0.apk",
+      "sha256": "3b337d71e539dfd7d8bd85eef5e4ea93e415375cc41559f7f56ca935a4b2e233",
+      "file_size": 50624262
     },
-    "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.5.0/Control_X-v1.5.0.apk",
-    "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.5.0/ControlX-v1.5.0.exe"
+    "windows": {
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/ControlX-v2.0.0.exe",
+      "sha256": "d73428624f5262fc2a188c92a6f6212da04e0569edac9ad74b39911be5f4e710",
+      "file_size": 10581725
+    }
+  },
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.2.1/Control_X-v1.2.0.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v1.2.1/ControlX_Setup.exe"
 }
