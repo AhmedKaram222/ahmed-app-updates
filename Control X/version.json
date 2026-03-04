@@ -25,7 +25,7 @@
   "platforms": {
     "android": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/Control_X-v2.5.0.apk",
-      "sha256": "3b337d71e539dfd7d8bd85eef5e4ea93e415375cc41559f7f56ca935a4b2e233",
+      "sha256": "31ca36abca1bdfba853571cfd53a7fc844651f1e856d6913c0bbb34845b1c4bd",
       "file_size": 50624262
     },
     "windows": {
