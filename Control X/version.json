@@ -1,10 +1,10 @@
 {
   "app_id": "com.example.control_x",
-  "version_name": "2.5.2",
-  "version_code": 22,
+  "version_name": "2.5.3",
+  "version_code": 23,
   "force_update": false,
   "release_notes": [
-    "🚀 CONTROL X v2.5.2 - NATIVE POWER & REBRANDING",
+    "🚀 CONTROL X v2.5.3 - NATIVE POWER & REBRANDING",
     "------------------------------------",
     "[NATIVE WIN32 UPDATE]",
     "- Refactored Auto-Update to use Native Win32 API (ShellExecuteW)",
@@ -20,6 +20,7 @@
     "[MULTILINGUAL & RTL]",
     "- Stabilized RTL Arabic Layouts with Auto-Directionality",
     "- Persistent English/Arabic Toggle with LanguageProvider",
+    "- Added live Language Switcher to Windows Receiver UI",
     "",
     "[STABILITY & CORE]",
     "- Optimized for Dart SDK 3.10.1 Compatibility",
@@ -29,16 +30,16 @@
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/Control_X-v2.5.2.apk",
-      "sha256": "915344419ae2af98b10bc868748497ce1f190b1b87ca14e9ebc2682075a234b1",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v2.5.3/Control_X-v2.5.3.apk",
+      "sha256": "141c8c33d9da6881218540301e7215727e859fe69e8e146eb7303026702a49f2",
       "file_size": 51624042
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/ControlX-v2.5.2.exe",
-      "sha256": "1e6916120af150eb46a7a637468e6d58e2aeab0894914d077c0c78962a076def",
-      "file_size": 10670663
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v2.5.3/ControlX-v2.5.3.exe",
+      "sha256": "297b15443f1803c328d7ca26734ea9a7a93632dd6e58a3e701eaa424f7c82bdd",
+      "file_size": 10674051
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/Control_X-v2.5.2.apk",
-  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/ControlX-v2.5.2.exe"
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v2.5.3/Control_X-v2.5.3.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X-v2.5.3/ControlX-v2.5.3.exe"
 }
