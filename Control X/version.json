@@ -24,7 +24,7 @@
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/Control_X-v2.0.0.apk",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/Control_X-v2.5.0.apk",
       "sha256": "3b337d71e539dfd7d8bd85eef5e4ea93e415375cc41559f7f56ca935a4b2e233",
       "file_size": 50624262
     },
@@ -34,6 +34,6 @@
       "file_size": 10587465
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/Control_X-v2.0.0.apk",
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/Control_X-v2.5.0.apk",
   "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/ControlX-v2.5.0.exe"
 }
