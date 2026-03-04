@@ -1,39 +1,44 @@
 {
   "app_id": "com.example.control_x",
-  "version_name": "2.5.1",
-  "version_code": 21,
+  "version_name": "2.5.2",
+  "version_code": 22,
   "force_update": false,
   "release_notes": [
-    "🚀 CONTROL X v2.5.1 - THE RACING UPDATE",
+    "🚀 CONTROL X v2.5.2 - NATIVE POWER & REBRANDING",
     "------------------------------------",
-    "[RACING ENHANCEMENTS]",
-    "- Full Analog Trigger Support (LT/RT) for Racing Games",
-    "- Specialized RacingMode Input Engine with EMA Steering",
-    "- Zero-Latency Analog Scaling for NFS & Simulation Games",
+    "[NATIVE WIN32 UPDATE]",
+    "- Refactored Auto-Update to use Native Win32 API (ShellExecuteW)",
+    "- Guaranteed UAC Elevation via Native 'runas' Verb Mapping",
+    "- Removed PowerShell & Shell-Command Dependencies",
+    "- Industrial-Grade Process Lifecycle & Installer Independence",
     "",
-    "[TRANSPORT HARDENING]",
-    "- Native C++ TCP Client implementation (WiFi/USB)",
-    "- Deterministic Packet Framing (0xAA55 Sync Protocol)",
-    "- Enhanced Auto-Reconnection & Heartbeat Logic",
+    "[BINARY REBRANDING]",
+    "- Renamed Windows Executable to: ControlX.exe",
+    "- Standardized System Metadata & Window Class Titles",
+    "- Zero-Space Pathing for Maximum Compatibility",
     "",
-    "[KERNEL & DRIVER]",
-    "- Standardized 14-byte XUSB_REPORT Alignment",
-    "- Fixed LNK2019/C2084 Native Build Artifacts",
-    "- Improved Virtual Controller Lifecycle Persistence",
+    "[MULTILINGUAL & RTL]",
+    "- Stabilized RTL Arabic Layouts with Auto-Directionality",
+    "- Persistent English/Arabic Toggle with LanguageProvider",
+    "",
+    "[STABILITY & CORE]",
+    "- Optimized for Dart SDK 3.10.1 Compatibility",
+    "- Hardened Win32 FFI Memory Allocation & Cleanup",
+    "- High-Frequency Controller Engine Stability Fixes",
     "------------------------------------"
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.1/Control_X-v2.5.1.apk",
-      "sha256": "1c7fa9a1393598fd621dde5b91c410c3abeecc005c0a693ad28641c7bf52a9ee",
-      "file_size": 50624262
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/Control_X-v2.5.2.apk",
+      "sha256": "915344419ae2af98b10bc868748497ce1f190b1b87ca14e9ebc2682075a234b1",
+      "file_size": 51624042
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.1/ControlX-v2.5.1.exe",
-      "sha256": "c8dd8cb137a711319a9915b4b9dcaaf8af0c74f975794d95ef9ad074f41f62bc",
-      "file_size": 10586682
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/ControlX-v2.5.2.exe",
+      "sha256": "1e6916120af150eb46a7a637468e6d58e2aeab0894914d077c0c78962a076def",
+      "file_size": 10670663
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.1/Control_X-v2.5.1.apk",
-  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.1/ControlX-v2.5.1.exe"
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/Control_X-v2.5.2.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.2/ControlX-v2.5.2.exe"
 }
