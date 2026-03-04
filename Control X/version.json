@@ -1,10 +1,10 @@
 {
   "app_id": "com.example.control_x",
-  "version_name": "2.5.0",
-  "version_code": 20,
+  "version_name": "2.5.1",
+  "version_code": 21,
   "force_update": false,
   "release_notes": [
-    "🚀 CONTROL X v2.5.0 - THE RACING UPDATE",
+    "🚀 CONTROL X v2.5.1 - THE RACING UPDATE",
     "------------------------------------",
     "[RACING ENHANCEMENTS]",
     "- Full Analog Trigger Support (LT/RT) for Racing Games",
@@ -24,16 +24,16 @@
   ],
   "platforms": {
     "android": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/Control_X-v2.5.0.apk",
-      "sha256": "31ca36abca1bdfba853571cfd53a7fc844651f1e856d6913c0bbb34845b1c4bd",
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/Control_X-v2.0.0.apk",
+      "sha256": "3b337d71e539dfd7d8bd85eef5e4ea93e415375cc41559f7f56ca935a4b2e233",
       "file_size": 50624262
     },
     "windows": {
-      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/ControlX-v2.5.0.exe",
-      "sha256": "20018c6131b3c232fb8040275b3b1f6edc68edcfcedd70b3bccad65ff7ecaacf",
-      "file_size": 10587465
+      "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/ControlX-v2.0.0.exe",
+      "sha256": "d73428624f5262fc2a188c92a6f6212da04e0569edac9ad74b39911be5f4e710",
+      "file_size": 10581725
     }
   },
-  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/Control_X-v2.5.0.apk",
-  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.5.0/ControlX-v2.5.0.exe"
+  "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/Control_X-v2.0.0.apk",
+  "exe_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/ControlX-v2.0.0.exe"
 }
