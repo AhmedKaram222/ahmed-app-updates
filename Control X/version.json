@@ -1,26 +1,25 @@
 {
   "app_id": "com.example.control_x",
-  "version_name": "2.0.0",
-  "version_code": 9,
+  "version_name": "2.5.0",
+  "version_code": 20,
   "force_update": false,
   "release_notes": [
-    "🚀 CONTROL X v2.0.0 - PRODUCTION RELEASE",
+    "🚀 CONTROL X v2.5.0 - THE RACING UPDATE",
     "------------------------------------",
-    "[SYSTEM HARDENING]",
-    "- Unified Orchestration Pipeline",
-    "- Zero-Allocation Input Processing",
-    "- Thread-Safe Native Connection Layer",
-    "- Optimized Monotonic Packet Pacing",
+    "[RACING ENHANCEMENTS]",
+    "- Full Analog Trigger Support (LT/RT) for Racing Games",
+    "- Specialized RacingMode Input Engine with EMA Steering",
+    "- Zero-Latency Analog Scaling for NFS & Simulation Games",
     "",
-    "[NEW FEATURES]",
-    "- Universal Controller Support (Switch, PS, Xbox, Generic)",
-    "- Modular Driver Architecture (Plug-and-Play)",
-    "- Real-time Performance Telemetry Overlay",
+    "[TRANSPORT HARDENING]",
+    "- Native C++ TCP Client implementation (WiFi/USB)",
+    "- Deterministic Packet Framing (0xAA55 Sync Protocol)",
+    "- Enhanced Auto-Reconnection & Heartbeat Logic",
     "",
-    "[FIXES]",
-    "- Resolved USB connection stability issues",
-    "- Fixed Bluetooth RFCOMM handshake failures",
-    "- Fixed UI layout overflows on smaller screens",
+    "[KERNEL & DRIVER]",
+    "- Standardized 14-byte XUSB_REPORT Alignment",
+    "- Fixed LNK2019/C2084 Native Build Artifacts",
+    "- Improved Virtual Controller Lifecycle Persistence",
     "------------------------------------"
   ],
   "platforms": {
@@ -32,7 +31,7 @@
     "windows": {
       "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/ControlX-v2.0.0.exe",
       "sha256": "d73428624f5262fc2a188c92a6f6212da04e0569edac9ad74b39911be5f4e710",
-      "file_size": 10581725
+      "file_size": 10587465
     }
   },
   "apk_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/Control_X_v2.0.0/Control_X-v2.0.0.apk",
