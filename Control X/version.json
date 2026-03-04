@@ -20,7 +20,7 @@
     "[MULTILINGUAL & RTL]",
     "- Stabilized RTL Arabic Layouts with Auto-Directionality",
     "- Persistent English/Arabic Toggle with LanguageProvider",
-    "- Added live Language Switcher to Windows Receiver UI",
+    "- Added live Language Switcher to Windows Receiver UI [NEW]",
     "",
     "[STABILITY & CORE]",
     "- Optimized for Dart SDK 3.10.1 Compatibility",
