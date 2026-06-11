@@ -20,19 +20,15 @@
 
       "platforms": {
         "android": {
-          "url": "https://your-server.com/kmp/android.apk",
-          "sha256": "PLACEHOLDER_SHA256",
+          "url": "https://github.com/YOUR_USERNAME/ahmed-app-updates/releases/download/KMP-v1.0.1/kmp-v1.0.1.apk",
+          "sha256": "REPLACE_WITH_ACTUAL_APK_SHA256",
           "size": 0
         },
         "windows": {
-          "url": "https://your-server.com/kmp/windows.exe",
-          "sha256": "PLACEHOLDER_SHA256",
+          "url": "https://github.com/YOUR_USERNAME/ahmed-app-updates/releases/download/KMP-v1.0.1/kmp-v1.0.1.exe",
+          "sha256": "REPLACE_WITH_ACTUAL_EXE_SHA256",
           "size": 0
         }
-      },
-
-      "security": {
-        "allow_downgrade": false
       }
     }
   }
