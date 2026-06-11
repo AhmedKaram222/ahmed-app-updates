@@ -1,0 +1,39 @@
+{
+  "apps": {
+    "kmp": {
+      "app_name": "KremetoMediaPlayer",
+      "app_id": "kmp",
+
+      "version_name": "1.0.0",
+      "version_code": 1,
+
+      "min_supported_version": "1.0.0",
+      "force_update": false,
+
+      "release_notes": [
+        "Initial stable release of KMP",
+        "Android + Windows support",
+        "PiP system",
+        "Streaming support",
+        "Advanced playlist system"
+      ],
+
+      "platforms": {
+        "android": {
+          "url": "https://your-server.com/kmp/android.apk",
+          "sha256": "PLACEHOLDER_SHA256",
+          "size": 0
+        },
+        "windows": {
+          "url": "https://your-server.com/kmp/windows.exe",
+          "sha256": "PLACEHOLDER_SHA256",
+          "size": 0
+        }
+      },
+
+      "security": {
+        "allow_downgrade": false
+      }
+    }
+  }
+}
