@@ -10,30 +10,30 @@
       "force_update": false,
       "min_supported_version": "1.0.1",
 
-"release_notes": [
-  "🔊 Volume System (Android & Windows): Upgraded to 5% step increments (0% to 200%) for precise control",
-  "🎚️ Volume Controls (Android & Windows): Added support for mouse wheel, keyboard arrows, and UI slider improvements",
-  "📊 Volume OSD (Android & Windows): Improved accuracy and visual feedback during volume changes",
-
-  "🎬 Playlist (Android & Windows): Enhanced current item highlighting with play icon and visual emphasis",
-  "💾 Playlist (Android & Windows): Added auto-save and restore of last played playlist on startup",
-  "📁 Recent Media (Android & Windows): Introduced tracking of last 10 played media files",
-
-  "ℹ️ Media Info (Android & Windows): Added properties dialog with file name, duration, size, and resolution",
-
-  "✨ UI Improvements (Android & Windows): Added smooth PiP fade animation (150ms) and improved empty states",
-
-  "⌨️ Shortcuts (Windows & Android): Added global keyboard shortcuts for playback, volume, fullscreen, and file operations",
-
-  "⚙️ Settings (Android & Windows): Added Updates section with version info and manual update checking",
-
-  "🚨 Error Handling (Android & Windows): Improved user-friendly error messages for better clarity",
-
-  "🧾 About (Android & Windows): Added application information dialog with version and platform details",
-
-  "🧠 Stability (Android & Windows): Improved startup flow and update engine reliability",
-  "⚡ Performance (Android & Windows): General optimizations and bug fixes"
-],
+      "release_notes": [
+        "🔊 Volume System (Android & Windows): Upgraded to 5% step increments (0% to 200%) for precise control",
+        "🎚️ Volume Controls (Android & Windows): Added support for mouse wheel, keyboard arrows, and UI slider improvements",
+        "📊 Volume OSD (Android & Windows): Improved accuracy and visual feedback during volume changes",
+      
+        "🎬 Playlist (Android & Windows): Enhanced current item highlighting with play icon and visual emphasis",
+        "💾 Playlist (Android & Windows): Added auto-save and restore of last played playlist on startup",
+        "📁 Recent Media (Android & Windows): Introduced tracking of last 10 played media files",
+      
+        "ℹ️ Media Info (Android & Windows): Added properties dialog with file name, duration, size, and resolution",
+      
+        "✨ UI Improvements (Android & Windows): Added smooth PiP fade animation (150ms) and improved empty states",
+      
+        "⌨️ Shortcuts (Windows & Android): Added global keyboard shortcuts for playback, volume, fullscreen, and file operations",
+      
+        "⚙️ Settings (Android & Windows): Added Updates section with version info and manual update checking",
+      
+        "🚨 Error Handling (Android & Windows): Improved user-friendly error messages for better clarity",
+      
+        "🧾 About (Android & Windows): Added application information dialog with version and platform details",
+      
+        "🧠 Stability (Android & Windows): Improved startup flow and update engine reliability",
+        "⚡ Performance (Android & Windows): General optimizations and bug fixes"
+      ],
       "platforms": {
         "android": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.6/KremetoMediaPlayer-v1.0.6.apk",
