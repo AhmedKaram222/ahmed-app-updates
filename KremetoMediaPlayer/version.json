@@ -37,13 +37,13 @@
       "platforms": {
         "android": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.6/KremetoMediaPlayer-v1.0.6.apk",
-          "sha256": "57c8b036d5f75ed6dc12896c4d288b39fe8776a674fb370b01998ba4d12160a8",
-          "size": 96592144
+          "sha256": "899d2943e61447d1e3ebd24b38cb2e3f652a5675082cc9e6a9b220129eb029a8",
+          "size": 99656296
         },
         "windows": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.6/KremetoMediaPlayer-v1.0.6.exe",
-          "sha256": "c14b679fedc7eb904ce7b984d03213ddedd57cd5a32867d240d6ceabfb31b88a",
-          "size": 26096294
+          "sha256": "75f9ef0df371959a3e588b609f5737ee111e1a08e745047deadce4c0397f9775",
+          "size": 26389865
         }
       }
     }
