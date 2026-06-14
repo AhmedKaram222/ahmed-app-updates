@@ -4,29 +4,44 @@
       "app_name": "KremetoMediaPlayer",
       "app_id": "kmp",
 
-      "version_name": "1.0.5",
-      "version_code": 6,
+      "version_name": "1.0.6",
+      "version_code": 7,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
 
-        "release_notes": [
-  "Improved auto-update system reliability and startup stability",
-  "Enhanced GitHub version fetching with better error handling and retries",
-  "Fixed edge-case issues in update decision engine logic",
-  "Improved AppGate startup flow and reduced initialization delays",
-  "Better logging for update lifecycle debugging and diagnostics",
-  "Performance optimizations in boot and update evaluation process",
-  "General stability improvements and bug fixes"
+"release_notes": [
+  "🔊 Volume System (Android & Windows): Upgraded to 5% step increments (0% to 200%) for precise control",
+  "🎚️ Volume Controls (Android & Windows): Added support for mouse wheel, keyboard arrows, and UI slider improvements",
+  "📊 Volume OSD (Android & Windows): Improved accuracy and visual feedback during volume changes",
+
+  "🎬 Playlist (Android & Windows): Enhanced current item highlighting with play icon and visual emphasis",
+  "💾 Playlist (Android & Windows): Added auto-save and restore of last played playlist on startup",
+  "📁 Recent Media (Android & Windows): Introduced tracking of last 10 played media files",
+
+  "ℹ️ Media Info (Android & Windows): Added properties dialog with file name, duration, size, and resolution",
+
+  "✨ UI Improvements (Android & Windows): Added smooth PiP fade animation (150ms) and improved empty states",
+
+  "⌨️ Shortcuts (Windows & Android): Added global keyboard shortcuts for playback, volume, fullscreen, and file operations",
+
+  "⚙️ Settings (Android & Windows): Added Updates section with version info and manual update checking",
+
+  "🚨 Error Handling (Android & Windows): Improved user-friendly error messages for better clarity",
+
+  "🧾 About (Android & Windows): Added application information dialog with version and platform details",
+
+  "🧠 Stability (Android & Windows): Improved startup flow and update engine reliability",
+  "⚡ Performance (Android & Windows): General optimizations and bug fixes"
 ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.5/KremetoMediaPlayer-v1.0.5.apk",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.6/KremetoMediaPlayer-v1.0.6.apk",
           "sha256": "57c8b036d5f75ed6dc12896c4d288b39fe8776a674fb370b01998ba4d12160a8",
           "size": 96592144
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.5/KremetoMediaPlayer-v1.0.5.exe",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.6/KremetoMediaPlayer-v1.0.6.exe",
           "sha256": "c14b679fedc7eb904ce7b984d03213ddedd57cd5a32867d240d6ceabfb31b88a",
           "size": 26096294
         }
