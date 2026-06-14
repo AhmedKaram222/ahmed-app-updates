@@ -11,23 +11,22 @@
       "min_supported_version": "1.0.1",
 
         "release_notes": [
-          "New 0%–200% volume system with precise 10% increments",
-          "Mouse wheel support for volume control",
-          "Arrow Up/Down keyboard volume shortcuts",
-          "Improved volume OSD accuracy",
-          "Enhanced responsive UI behavior",
-          "Updated application branding to KremetoMediaPlayer",
-          "Improved auto-update system reliability",
-          "Performance improvements and bug fixes"
+  "Improved auto-update system reliability and startup stability",
+  "Enhanced GitHub version fetching with better error handling and retries",
+  "Fixed edge-case issues in update decision engine logic",
+  "Improved AppGate startup flow and reduced initialization delays",
+  "Better logging for update lifecycle debugging and diagnostics",
+  "Performance optimizations in boot and update evaluation process",
+  "General stability improvements and bug fixes"
 ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.4/KremetoMediaPlayer-v1.0.4.apk",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.5/KremetoMediaPlayer-v1.0.5.apk",
           "sha256": "094639c59361d9b9e842b313783c8991695d912a77c4dd234752d8b2b4b11c65",
           "size": 96592144
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.4/KremetoMediaPlayer-v1.0.4.exe",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.5/KremetoMediaPlayer-v1.0.5.exe",
           "sha256": "7c0b97539bec8821056f8817a48ab4caafaf38e71f379961c40117ad942f2996",
           "size": 26094800
         }
