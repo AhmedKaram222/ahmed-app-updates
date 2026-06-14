@@ -4,8 +4,8 @@
       "app_name": "KremetoMediaPlayer",
       "app_id": "kmp",
 
-      "version_name": "1.0.6",
-      "version_code": 7,
+      "version_name": "1.0.7",
+      "version_code": 8,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
@@ -36,12 +36,12 @@
       ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.6/KremetoMediaPlayer-v1.0.6.apk",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.7/KremetoMediaPlayer-v1.0.7.apk",
           "sha256": "899d2943e61447d1e3ebd24b38cb2e3f652a5675082cc9e6a9b220129eb029a8",
           "size": 99656296
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.6/KremetoMediaPlayer-v1.0.6.exe",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.0.7/KremetoMediaPlayer-v1.0.7.exe",
           "sha256": "75f9ef0df371959a3e588b609f5737ee111e1a08e745047deadce4c0397f9775",
           "size": 26389865
         }
