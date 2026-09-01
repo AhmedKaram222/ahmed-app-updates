@@ -1,1 +1,95 @@
-{}
+{
+  "schema_version": 1,
+  "apps": {
+    "listen_to_quran_full": {
+      "app_name": "Listen to the Quran Full Edition",
+      "app_id": "listen_to_quran_full",
+
+      "version_name": "1.5.0",
+      "version_code": 9,
+
+      "force_update": false,
+      "min_supported_version": "1.0.1",
+
+"release_notes": {
+  "ar": [
+    "الإصدار الأول من تطبيق Listen to the Quran Full Edition.",
+    "الاستماع إلى القرآن الكريم كاملًا بمجموعة متنوعة من القراء.",
+    "تصفح قائمة القراء واختيار القارئ المفضل بسهولة.",
+    "تحميل الملفات الصوتية للقراء للاستماع إليها محليًا دون الحاجة إلى إعادة تنزيلها.",
+    "دعم تنزيل ملفات القارئ بالكامل في عملية واحدة.",
+    "فك ضغط ملفات القراء تلقائيًا بعد اكتمال التنزيل.",
+    "تنظيم الملفات الصوتية تلقائيًا داخل مجلد خاص بكل قارئ.",
+    "اكتشاف ملفات الصوت الموجودة على الجهاز تلقائيًا.",
+    "عرض قائمة السور والملفات الصوتية الخاصة بكل قارئ.",
+    "تشغيل السور والملفات الصوتية مباشرة من داخل التطبيق.",
+    "التحكم الكامل في تشغيل الصوت وإيقافه واستكمال التشغيل.",
+    "التنقل بين الملفات الصوتية بسهولة.",
+    "إظهار حالة التحميل وفك الضغط مع شريط تقدم لمتابعة العملية.",
+    "إمكانية إعادة تنزيل ملفات القارئ عند الحاجة.",
+    "الحفاظ على الملفات الصوتية التي تم تنزيلها وعدم حذفها أثناء تحديث التطبيق.",
+    "واجهة استخدام حديثة وسهلة الاستخدام.",
+    "دعم اللغة العربية وواجهة RTL.",
+    "دعم الوضع الفاتح والوضع الداكن.",
+    "تصميم متجاوب مع مختلف أحجام الشاشات.",
+    "دعم تشغيل التطبيق على Android وWindows.",
+    "تحسين إدارة الملفات والتخزين المحلي.",
+    "تحسين اكتشاف الملفات الموجودة مسبقًا لمنع طلب تنزيلها مرة أخرى دون حاجة.",
+    "تحسين استقرار تشغيل الملفات الصوتية وإدارة قوائم التشغيل.",
+    "إضافة نظام تحديث تلقائي للتطبيق.",
+    "إمكانية التحقق من توفر إصدار جديد من التطبيق.",
+    "دعم تنزيل تحديثات التطبيق والتحقق من سلامة ملفات التحديث قبل تثبيتها.",
+    "دعم التحديثات الخاصة بكل منصة بشكل مستقل.",
+    "تحسين الأداء والاستقرار العام للتطبيق."
+  ],
+  "en": [
+    "First official release of Listen to the Quran Full Edition.",
+    "Listen to the complete Quran with a variety of Quran reciters.",
+    "Browse the available reciters and easily select your preferred reciter.",
+    "Download reciter audio files for local playback without downloading them again.",
+    "Download a complete reciter package in a single operation.",
+    "Automatically extract reciter archives after the download is completed.",
+    "Automatically organize audio files inside a dedicated folder for each reciter.",
+    "Automatically detect audio files already stored on the device.",
+    "View the complete list of Surahs and audio files for each reciter.",
+    "Play Surahs and audio files directly within the application.",
+    "Full audio playback controls, including play, pause, and resume.",
+    "Easily navigate between audio files.",
+    "Display download and extraction status with progress indicators.",
+    "Redownload reciter files whenever necessary.",
+    "Preserve downloaded Quran audio files when updating the application.",
+    "Modern and easy-to-use user interface.",
+    "Arabic language and RTL interface support.",
+    "Light and dark mode support.",
+    "Responsive design for different screen sizes.",
+    "Support for Android and Windows.",
+    "Improved local file and storage management.",
+    "Improved detection of existing downloaded files to avoid unnecessary downloads.",
+    "Improved audio playback stability and playlist management.",
+    "Added an automatic application update system.",
+    "Automatically check for new application versions.",
+    "Download application updates and verify update integrity before installation.",
+    "Platform-specific update support.",
+    "Improved overall application performance and stability."
+  ]
+},
+      "platforms": {
+        "android": {
+          "enabled": true,
+          "file_type": "apk",
+          "url": "https://github.com/islamic-apps/listen-to-the-quran-full-edition/releases/download/v1.5.0/app-release.apk",
+          "sha256": "0",
+          "size": 0,
+          "min_android_sdk": 24
+        },
+        "windows": {
+          "enabled": true,
+          "file_type": "exe",
+          "url": "https://github.com/islamic-apps/listen-to-the-quran-full-edition/releases/download/v1.5.0/ListenToTheQuranSetup.exe",
+          "sha256": "0",
+          "size": 0
+        }
+      }
+    }
+  }
+}
