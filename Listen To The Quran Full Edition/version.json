@@ -5,8 +5,8 @@
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
 
-      "version_name": "1.0.8",
-      "version_code": 9,
+      "version_name": "1.1.0",
+      "version_code": 12,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
@@ -14,46 +14,54 @@
 "release_notes": [
   {
     "locale": "en",
-    "title": "Code Quality, Memory & Arabic Support Improvements",
+    "title": "Critical Stability, Security & User Experience Improvements",
     "items": [
-      "Improved overall code quality by removing obsolete code, unused services, and unnecessary project components.",
-      "Unified audio playback by relying exclusively on a single audio engine for more consistent playback behavior.",
-      "Removed online font dependencies and improved the use of locally bundled fonts for a more reliable offline experience.",
-      "Improved file management by simplifying archive handling and removing unnecessary archive state operations.",
-      "Unified file management across the application to ensure consistent access to stored Quran and reciter data.",
-      "Improved settings consistency so theme and custom storage settings are correctly preserved across application restarts.",
-      "Improved Arabic and Unicode filename handling to correctly preserve Arabic letters and numbers when processing reciter and folder names.",
-      "Improved reciter identification and validation to prevent issues caused by inconsistent or malformed identifiers.",
-      "Improved folder-opening behavior on Android with better handling and clearer user notifications.",
-      "Fixed memory and stream resource leaks by properly managing subscriptions and releasing resources when screens are closed.",
-      "Improved application stability by preventing asynchronous operations from updating screens after they have been closed.",
-      "Improved resource management by properly releasing periodic controllers and other temporary resources.",
-      "Improved overall application stability and reliability through additional cleanup and resource-management fixes.",
-      "Added automated testing for Arabic text processing and Unicode handling.",
-      "Verified code quality with zero analysis errors or warnings.",
-      "All automated tests passed successfully (37/37)."
+      "Improved Windows startup stability and resolved critical issues that could cause the application to crash during launch.",
+      "Disabled automatic audio loading and playback during startup, keeping the player completely idle until the user explicitly selects a reciter or Surah.",
+      "Improved audio engine stability by using a single unified playback engine and removing the redundant audio playback system.",
+      "Added strict file existence checks before passing audio files to the player, preventing invalid or missing paths from being opened.",
+      "Improved player reliability with defensive error handling across playback, pause, stop, seek, and volume operations.",
+      "Resolved Windows audio engine errors that could cause operation failures or loss of connection with the playback engine.",
+      "Improved reciter download status handling to prevent unnecessary player resets or stop operations when local audio files are not available.",
+      "Added an interactive seek bar for smoother navigation through Surahs, including elapsed time, remaining time, and total duration indicators.",
+      "Improved the startup screen by reducing the enforced delay to a maximum of 3 seconds and allowing users to skip it immediately.",
+      "Strengthened application update security with Ed25519 digital signature verification to reject unsigned or modified update metadata before installation.",
+      "Added a secondary update metadata source to improve update availability when the primary source is temporarily unavailable.",
+      "Improved update and reciter archive integrity verification using SHA-256 and exact file-size validation before processing or extraction.",
+      "Added protection against Zip-Slip vulnerabilities by validating archive extraction paths before writing files to disk.",
+      "Improved application logging by automatically limiting log files to 2 MB and archiving older logs.",
+      "Improved privacy by sanitizing sensitive information from logs, including absolute file paths and potentially sensitive URL parameters.",
+      "Expanded Arabic and English localization by moving application messages and extraction-related dialogs to the official translation resources.",
+      "Improved dialog responsiveness on smaller screens by replacing fixed dimensions with adaptive layouts and reducing RenderFlex overflow issues.",
+      "Improved settings persistence by ensuring theme and application settings are correctly saved and restored across restarts.",
+      "Improved Arabic and Unicode filename handling to preserve Arabic characters correctly when processing reciter names and folder paths.",
+      "Improved overall application reliability through additional defensive error handling, resource validation, and stability improvements."
     ]
   },
   {
     "locale": "ar",
-    "title": "تحسين جودة الكود والذاكرة ودعم اللغة العربية",
+    "title": "إصلاحات حرجة وتحسينات الأمان وتجربة الاستخدام",
     "items": [
-      "تحسين جودة الكود بشكل عام من خلال إزالة الأكواد القديمة والخدمات غير المستخدمة والمكونات غير الضرورية.",
-      "توحيد نظام تشغيل الصوت بالاعتماد على محرك صوتي واحد لضمان تشغيل أكثر استقرارًا واتساقًا.",
-      "إزالة الاعتماد على الخطوط التي يتم تحميلها من الإنترنت وتحسين استخدام الخطوط المدمجة محليًا لدعم العمل دون اتصال.",
-      "تحسين إدارة الملفات من خلال تبسيط التعامل مع الأرشيفات وإزالة عمليات إدارة الحالة غير الضرورية.",
-      "توحيد إدارة الملفات داخل التطبيق لضمان التعامل بشكل متسق مع ملفات القرآن والقراء.",
-      "تحسين حفظ الإعدادات لضمان الاحتفاظ بالثيم ومسار التخزين المخصص بشكل صحيح بعد إعادة تشغيل التطبيق.",
-      "تحسين معالجة أسماء الملفات والمجلدات العربية لضمان الحفاظ على الحروف والأرقام العربية أثناء معالجة أسماء القراء والمجلدات.",
-      "تحسين التحقق من معرفات القراء لمنع المشكلات الناتجة عن المعرفات غير الصحيحة أو غير المتسقة.",
-      "تحسين فتح المجلدات على أندرويد مع معالجة أفضل للمشكلات وإظهار تنبيهات أوضح للمستخدم.",
-      "إصلاح تسريبات الذاكرة وموارد البث من خلال إدارة الاشتراكات وتحرير الموارد بشكل صحيح عند إغلاق الشاشات.",
-      "تحسين استقرار التطبيق ومنع العمليات غير المتزامنة من محاولة تحديث الواجهات بعد إغلاق الشاشات.",
-      "تحسين إدارة الموارد من خلال التخلص الصحيح من وحدات التحكم والموارد المؤقتة.",
-      "تحسين استقرار وموثوقية التطبيق بشكل عام من خلال المزيد من عمليات التنظيف وإصلاحات إدارة الموارد.",
-      "إضافة اختبارات آلية لمعالجة النصوص العربية ودعم Unicode.",
-      "الوصول إلى كود نظيف بدون أخطاء أو تحذيرات في فحص المشروع.",
-      "نجاح جميع الاختبارات الآلية بنسبة 100% (37/37)."
+      "تحسين استقرار التطبيق عند بدء التشغيل على نظام ويندوز وإصلاح مشكلات حرجة كانت قد تؤدي إلى انهياره أثناء الإقلاع.",
+      "إلغاء التحميل والتشغيل التلقائي للصوت أثناء شاشة البدء، ليبقى المشغل في حالة خمول تامة حتى يختار المستخدم قارئًا أو سورة بشكل صريح.",
+      "تحسين استقرار محرك الصوت من خلال توحيد نظام التشغيل الصوتي وإزالة نظام التشغيل الصوتي المكرر.",
+      "إضافة فحص صارم للتأكد من وجود ملفات الصوت على القرص قبل تمريرها إلى المشغل، لمنع محاولة فتح مسارات غير موجودة.",
+      "تحسين موثوقية المشغل من خلال إضافة معالجة دفاعية للأخطاء أثناء عمليات التشغيل والإيقاف المؤقت والإيقاف والتنقل داخل السورة والتحكم في مستوى الصوت.",
+      "إصلاح أخطاء محرك الصوت على ويندوز التي كانت قد تؤدي إلى فشل العمليات أو فقدان الاتصال بمحرك التشغيل.",
+      "تحسين فحص حالة تحميل القراء لمنع إعادة تهيئة المشغل أو إرسال أوامر إيقاف غير ضرورية عند عدم توفر ملفات الصوت محليًا.",
+      "إضافة شريط تقديم وتأخير تفاعلي يتيح التنقل بسهولة داخل السورة، مع عرض الوقت المنقضي والوقت المتبقي والمدة الإجمالية.",
+      "تحسين شاشة الافتتاح من خلال تقليل مدة الانتظار الإلزامية إلى 3 ثوانٍ كحد أقصى، مع إمكانية تخطيها فورًا بنقرة واحدة.",
+      "تعزيز أمان نظام التحديثات باستخدام التحقق من التوقيع الرقمي بتقنية Ed25519 لرفض بيانات التحديث غير الموقعة أو المعدلة قبل التثبيت.",
+      "إضافة مصدر احتياطي لبيانات التحديثات لتحسين توفر التحديثات عند تعذر الوصول إلى المصدر الرئيسي مؤقتًا.",
+      "تحسين التحقق من سلامة ملفات التحديث وأرشيفات القراء باستخدام SHA-256 والمطابقة الدقيقة لحجم الملفات قبل المعالجة أو فك الضغط.",
+      "إضافة حماية ضد ثغرة Zip-Slip من خلال التحقق من مسارات الملفات داخل الأرشيف قبل استخراجها إلى القرص.",
+      "تحسين نظام السجلات من خلال تحديد حجم ملف السجل بـ 2 ميجابايت وأرشفة السجل القديم تلقائيًا.",
+      "تحسين الخصوصية من خلال تنقية المعلومات الحساسة من السجلات، بما في ذلك المسارات الكاملة للملفات وبعض معاملات الروابط الحساسة.",
+      "توسيع دعم اللغتين العربية والإنجليزية من خلال نقل النصوص والرسائل والحوارات المتعلقة بعمليات الاستخراج إلى ملفات الترجمة الرسمية.",
+      "تحسين استجابة الحوارات على الشاشات الصغيرة باستخدام تصميمات متجاوبة بدلًا من الأبعاد الثابتة، وتقليل مشكلات فيض عناصر الواجهة.",
+      "تحسين حفظ الإعدادات لضمان الاحتفاظ بالمظهر والإعدادات المختلفة واستعادتها بشكل صحيح بعد إعادة تشغيل التطبيق.",
+      "تحسين معالجة أسماء الملفات والمجلدات العربية وUnicode للحفاظ على الحروف العربية بشكل صحيح أثناء معالجة أسماء القراء ومسارات المجلدات.",
+      "تحسين موثوقية واستقرار التطبيق بشكل عام من خلال المزيد من معالجة الأخطاء والتحقق من الموارد وتحسينات الاستقرار."
     ]
   }
 ],
@@ -61,17 +69,17 @@
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.8/Listen.To.Quran.Full.Edition-v1.0.8.apk",
-          "sha256": "e791596e5f1be7c2a60be09a15e06a2eacea337ff7f46abdd98c06d32574ee81",
-          "size": 64168745,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1/Listen.To.Quran.Full.Edition-v1.1.0.apk",
+          "sha256": "8f7480faebf14ce6ad75203e11eb5d9e0fa9ee468661c564c5eacfe33b85a43d",
+          "size": 63824677,
           "min_android_sdk": 24
         },
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.8/Listen-To-Quran-Full-Edition-v1.0.8.exe",
-          "sha256": "9d90a491091ea708ae27284ba05cb6f745164e144defcaf7488067abcbeab4fa",
-          "size": 12475240
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1/Listen-To-Quran-Full-Edition-v1.1.0.exe",
+          "sha256": "98f51fa359208a9a70e9e7bf08b18fa1caf607f86b75d29943186cde3c169f1e",
+          "size": 12417249
         }
       }
     }
