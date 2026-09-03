@@ -5,8 +5,8 @@
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
 
-      "version_name": "1.0.4",
-      "version_code": 5,
+      "version_name": "1.0.5",
+      "version_code": 6,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
@@ -16,30 +16,32 @@
     "locale": "en",
     "title": "What's New",
     "items": [
-      "Improved overall interface responsiveness and performance during file operations.",
-      "Improved audio file scanning to make reciter and Surah detection faster and more consistent.",
-      "Improved Surah file sorting so numbered Surahs always appear in the correct natural order.",
-      "Improved ZIP extraction performance by moving intensive file processing away from the main interface.",
-      "Reduced interface freezing and frame drops while scanning files or extracting downloaded reciters.",
-      "Added intelligent caching to avoid repeatedly scanning large reciter folders, improving performance during background checks.",
-      "Improved download verification to accurately compare local and remote file sizes instead of relying on approximate file checks.",
-      "Removed obsolete code and simplified internal file-processing logic for better stability and maintainability.",
-      "All automated tests continue to pass successfully."
+      "Improved Android privacy and security by removing unnecessary storage and media permissions.",
+      "Limited media access to audio files only, reducing unnecessary permission requests.",
+      "Prevented external libraries from automatically adding unwanted image and video permissions to the application.",
+      "Cleaned up obsolete Android services and unused code to improve application maintainability.",
+      "Cleaned development builds by removing unnecessary storage permissions and reducing build-time warnings.",
+      "Improved release build signing by supporting secure external production key configuration.",
+      "Added a clear key configuration template to simplify setup for development and CI/CD environments.",
+      "Improved project security by preventing signing keys and sensitive keystore files from being accidentally committed to source control.",
+      "Performed additional release-quality checks to verify the final Android package and its permissions.",
+      "Verified the application through static analysis and automated tests with all checks passing successfully."
     ]
   },
   {
     "locale": "ar",
     "title": "ما الجديد",
     "items": [
-      "تحسين استجابة واجهة التطبيق وأدائها أثناء تنفيذ عمليات الملفات.",
-      "تحسين فحص الملفات الصوتية لجعل اكتشاف القرّاء والسور أسرع وأكثر اتساقًا.",
-      "تحسين ترتيب ملفات السور لضمان ظهور السور المرقمة بالترتيب الصحيح.",
-      "تحسين أداء فك ضغط الملفات من خلال تنفيذ عمليات معالجة الملفات المكثفة بعيدًا عن واجهة التطبيق.",
-      "تقليل احتمالية تجمد الواجهة أو انخفاض سلاسة الحركة أثناء فحص الملفات أو فك ضغط القرّاء الذين تم تنزيلهم.",
-      "إضافة نظام تخزين مؤقت ذكي لتجنب إعادة فحص مجلدات القرّاء الكبيرة بشكل متكرر، مما يحسن الأداء أثناء عمليات الفحص الدوري.",
-      "تحسين التحقق من التنزيلات من خلال المقارنة الدقيقة بين حجم الملف المحلي والملف البعيد بدلًا من الاعتماد على فحوصات تقريبية.",
-      "إزالة الأكواد القديمة غير المستخدمة وتبسيط معالجة الملفات لتحسين الاستقرار وسهولة الصيانة.",
-      "اجتياز جميع الاختبارات التلقائية بنجاح."
+      "تحسين الخصوصية والأمان على أندرويد من خلال إزالة أذونات التخزين والوسائط غير الضرورية.",
+      "حصر الوصول إلى الوسائط في الملفات الصوتية فقط، مما يقلل من طلب الأذونات غير الضرورية.",
+      "منع المكتبات الخارجية من إضافة أذونات الصور والفيديو غير المطلوبة إلى التطبيق تلقائيًا.",
+      "تنظيف خدمات أندرويد القديمة والأكواد غير المستخدمة لتحسين استقرار المشروع وسهولة صيانته.",
+      "تنظيف إعدادات إصدارات التطوير من أذونات التخزين غير الضرورية وتقليل التحذيرات أثناء عملية البناء.",
+      "تحسين توقيع إصدارات التطبيق النهائية من خلال دعم إعداد مفاتيح التوقيع الإنتاجية بشكل آمن.",
+      "إضافة قالب واضح لإعداد مفاتيح التوقيع لتسهيل إعداد بيئات التطوير وأنظمة CI/CD.",
+      "تحسين أمان المشروع من خلال منع رفع مفاتيح التوقيع وملفات التخزين السرية إلى مستودع الأكواد.",
+      "إجراء عمليات تحقق إضافية للتأكد من صلاحية حزمة أندرويد النهائية والأذونات المضمنة بها.",
+      "التحقق من جودة الإصدار من خلال التحليل الساكن والاختبارات الآلية، مع اجتياز جميع الفحوصات بنجاح."
     ]
   }
 ],
@@ -47,17 +49,17 @@
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.4/Listen.To.Quran.Full.Edition-v1.0.4.apk",
-          "sha256": "7c4d3acd6518d94ebc756485dad3c7c91273b44dc271780910721bc3c0727325",
-          "size": 58900105,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.5/Listen.To.Quran.Full.Edition-v1.0.5.apk",
+          "sha256": "8ffe88a83ef0374ab7128a70f98e49bb70752d2b2021fdc84d141abc688bdab0",
+          "size": 63923133,
           "min_android_sdk": 24
         },
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.4/Listen-To-Quran-Full-Edition-v1.0.4.exe",
-          "sha256": "95d7d2e05f090ef008a1b97b1efe05b54900c65380b979886ee62b79f492449b",
-          "size": 12456802
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.5/Listen-To-Quran-Full-Edition-v1.0.5.exe",
+          "sha256": "5961d13803f4a471ffa509d2f50ccb0856e91c309193700cfbd9a1116def5bc2",
+          "size": 12456339
         }
       }
     }
