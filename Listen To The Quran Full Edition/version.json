@@ -5,8 +5,8 @@
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
 
-      "version_name": "1.0.3",
-      "version_code": 4,
+      "version_name": "1.0.4",
+      "version_code": 5,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
@@ -16,34 +16,30 @@
     "locale": "en",
     "title": "What's New",
     "items": [
-      "Improved audio playback to ensure the selected Surah starts playing directly and reliably.",
-      "Fixed an issue that could cause playback to start from the first Surah instead of the selected Surah.",
-      "Improved download status checking and error handling to prevent the interface from becoming stuck.",
-      "Improved reciter download detection to accurately verify the presence of downloaded audio files.",
-      "Improved storage settings so custom storage locations are restored and applied correctly when the app starts.",
-      "Improved settings persistence to ensure theme and storage preferences remain consistent between sessions.",
-      "Improved performance when scanning reciter files and processing ZIP archives, reducing UI freezes during file operations.",
-      "Improved file management by using a unified and more efficient audio file scanning process.",
-      "Improved responsive layouts by standardizing the compact-screen breakpoint across the application.",
-      "Fixed a minor spacing issue in the reciter list.",
-      "Removed obsolete code and unused extraction components to improve application stability and maintainability."
+      "Improved overall interface responsiveness and performance during file operations.",
+      "Improved audio file scanning to make reciter and Surah detection faster and more consistent.",
+      "Improved Surah file sorting so numbered Surahs always appear in the correct natural order.",
+      "Improved ZIP extraction performance by moving intensive file processing away from the main interface.",
+      "Reduced interface freezing and frame drops while scanning files or extracting downloaded reciters.",
+      "Added intelligent caching to avoid repeatedly scanning large reciter folders, improving performance during background checks.",
+      "Improved download verification to accurately compare local and remote file sizes instead of relying on approximate file checks.",
+      "Removed obsolete code and simplified internal file-processing logic for better stability and maintainability.",
+      "All automated tests continue to pass successfully."
     ]
   },
   {
     "locale": "ar",
     "title": "ما الجديد",
     "items": [
-      "تحسين تشغيل الصوت لضمان بدء تشغيل السورة المختارة مباشرة وبشكل موثوق.",
-      "إصلاح مشكلة قد تتسبب في بدء التشغيل من السورة الأولى بدلًا من السورة التي اختارها المستخدم.",
-      "تحسين فحص حالة التنزيل ومعالجة الأخطاء لمنع توقف واجهة التطبيق أو بقائها في حالة انتظار.",
-      "تحسين التحقق من تنزيل القارئ للتأكد بشكل دقيق من وجود الملفات الصوتية التي تم تنزيلها.",
-      "تحسين إعدادات التخزين لضمان استعادة مسار التخزين المخصص وتطبيقه بشكل صحيح عند تشغيل التطبيق.",
-      "تحسين حفظ الإعدادات لضمان استمرار تفضيلات المظهر ومسار التخزين بين جلسات استخدام التطبيق.",
-      "تحسين الأداء أثناء فحص ملفات القرّاء ومعالجة ملفات ZIP، مما يقلل من احتمالية تجمد الواجهة أثناء عمليات الملفات.",
-      "تحسين إدارة الملفات من خلال توحيد وتسريع عملية البحث عن الملفات الصوتية.",
-      "تحسين توافق الواجهات مع أحجام الشاشات المختلفة من خلال توحيد معيار الشاشات صغيرة الحجم.",
-      "إصلاح مشكلة بسيطة في المسافات داخل قائمة القرّاء.",
-      "إزالة الأكواد والمكونات القديمة غير المستخدمة لتحسين استقرار التطبيق وسهولة صيانته."
+      "تحسين استجابة واجهة التطبيق وأدائها أثناء تنفيذ عمليات الملفات.",
+      "تحسين فحص الملفات الصوتية لجعل اكتشاف القرّاء والسور أسرع وأكثر اتساقًا.",
+      "تحسين ترتيب ملفات السور لضمان ظهور السور المرقمة بالترتيب الصحيح.",
+      "تحسين أداء فك ضغط الملفات من خلال تنفيذ عمليات معالجة الملفات المكثفة بعيدًا عن واجهة التطبيق.",
+      "تقليل احتمالية تجمد الواجهة أو انخفاض سلاسة الحركة أثناء فحص الملفات أو فك ضغط القرّاء الذين تم تنزيلهم.",
+      "إضافة نظام تخزين مؤقت ذكي لتجنب إعادة فحص مجلدات القرّاء الكبيرة بشكل متكرر، مما يحسن الأداء أثناء عمليات الفحص الدوري.",
+      "تحسين التحقق من التنزيلات من خلال المقارنة الدقيقة بين حجم الملف المحلي والملف البعيد بدلًا من الاعتماد على فحوصات تقريبية.",
+      "إزالة الأكواد القديمة غير المستخدمة وتبسيط معالجة الملفات لتحسين الاستقرار وسهولة الصيانة.",
+      "اجتياز جميع الاختبارات التلقائية بنجاح."
     ]
   }
 ],
@@ -51,17 +47,17 @@
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.3/Listen.To.Quran.Full.Edition-v1.0.3.apk",
-          "sha256": "8324b27d0e5063b5fbad7a54b2914b8310bcd498016c8923fd6ad9bab2492949",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.4/Listen.To.Quran.Full.Edition-v1.0.4.apk",
+          "sha256": "7c4d3acd6518d94ebc756485dad3c7c91273b44dc271780910721bc3c0727325",
           "size": 58900105,
           "min_android_sdk": 24
         },
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.3/Listen-To-Quran-Full-Edition-v1.0.3.exe",
-          "sha256": "70b035e21171e8d3b05beab75878bfb1fafb8e8385f74b84fccc8d27e89723c8",
-          "size": 12454870
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.4/Listen-To-Quran-Full-Edition-v1.0.4.exe",
+          "sha256": "95d7d2e05f090ef008a1b97b1efe05b54900c65380b979886ee62b79f492449b",
+          "size": 12456802
         }
       }
     }
