@@ -16,36 +16,36 @@
     "locale": "en",
     "title": "What's New",
     "items": [
-      "Introduced cryptographic verification for application updates to help ensure that update information comes from a trusted publisher.",
-      "Improved update security by rejecting modified, invalid, or unsigned update metadata before it can be processed.",
-      "Added protection against unauthorized mandatory updates, allowing users to safely continue using the application when update authenticity cannot be verified.",
-      "Improved the security of downloaded application updates by verifying their integrity before installation or execution.",
-      "Added additional integrity checks for Windows update files before they are launched.",
-      "Improved Android update security by verifying downloaded APK files before installation.",
-      "Added integrity verification for downloaded reciter ZIP archives before extraction.",
-      "Corrupted or modified reciter archives are now rejected and removed instead of being extracted.",
-      "Improved protection against corrupted, incomplete, or replaced files during downloads and updates.",
-      "Enhanced the application's security and permission configuration by removing unnecessary Android permissions.",
-      "Expanded automated security testing to cover valid signatures, invalid signatures, and corrupted update data.",
-      "All automated tests passed successfully, with 30 out of 30 tests passing."
+      "Significantly improved interface responsiveness during file scanning and archive extraction.",
+      "Moved intensive file-system operations to background processing to reduce interface freezing and improve overall smoothness.",
+      "Improved MP3 file scanning with a unified and optimized scanning service.",
+      "Added intelligent caching to reduce unnecessary repeated scans of reciter folders and improve performance.",
+      "Improved Surah sorting to ensure numbered audio files always appear in the correct natural order.",
+      "Improved ZIP extraction by moving intensive archive processing to background operations.",
+      "Improved extraction progress updates to keep download and extraction indicators responsive while files are being processed.",
+      "Improved handling of corrupted archives to prevent problematic files from causing the application to become unresponsive.",
+      "Improved asynchronous error handling to ensure background operations properly report and recover from unexpected errors.",
+      "Fixed issues that could cause download status checks or playlist loading to become stuck.",
+      "Added additional automated tests for file scanning and ZIP extraction services.",
+      "All automated tests passed successfully, with 36 out of 36 tests passing."
     ]
   },
   {
     "locale": "ar",
     "title": "ما الجديد",
     "items": [
-      "إضافة التحقق التشفيري من تحديثات التطبيق للمساعدة في التأكد من أن بيانات التحديثات صادرة من جهة موثوقة.",
-      "تحسين أمان نظام التحديث من خلال رفض بيانات التحديث المعدلة أو غير الصالحة أو غير الموثوقة قبل معالجتها.",
-      "إضافة حماية من التحديثات الإجبارية غير المصرح بها، مما يتيح للمستخدم مواصلة استخدام التطبيق بأمان عند تعذر التحقق من صحة التحديث.",
-      "تحسين حماية ملفات تحديث التطبيق التي يتم تنزيلها من خلال التحقق من سلامتها قبل تثبيتها أو تشغيلها.",
-      "إضافة فحوصات إضافية لسلامة ملفات تحديث Windows قبل تشغيلها.",
-      "تحسين أمان تحديثات Android من خلال التحقق من سلامة ملفات APK التي تم تنزيلها قبل تثبيتها.",
-      "إضافة التحقق من سلامة أرشيفات القرّاء التي يتم تنزيلها قبل البدء في فك ضغطها.",
-      "رفض وحذف أرشيفات القرّاء التالفة أو المعدلة بدلًا من فك ضغطها واستخدامها.",
-      "تحسين الحماية من الملفات التالفة أو غير المكتملة أو المستبدلة أثناء عمليات التنزيل والتحديث.",
-      "تعزيز أمان التطبيق وإعدادات الأذونات من خلال إزالة أذونات Android غير الضرورية.",
-      "توسيع الاختبارات الأمنية الآلية لتشمل التوقيعات الصحيحة والتوقيعات المزورة وبيانات التحديثات التالفة.",
-      "اجتياز جميع الاختبارات الآلية بنجاح، بمعدل 30 اختبارًا ناجحًا من أصل 30."
+      "تحسين كبير في استجابة واجهة التطبيق أثناء فحص الملفات وفك ضغط الأرشيفات.",
+      "نقل عمليات معالجة الملفات الثقيلة إلى عمليات خلفية لتقليل تجمد الواجهة وتحسين سلاسة التطبيق.",
+      "تحسين فحص ملفات MP3 من خلال خدمة موحدة وأكثر كفاءة.",
+      "إضافة نظام تخزين مؤقت ذكي لتقليل عمليات الفحص المتكررة لمجلدات القرّاء وتحسين الأداء.",
+      "تحسين ترتيب السور لضمان ظهور الملفات الصوتية المرقمة بالترتيب الطبيعي الصحيح.",
+      "تحسين عملية فك ضغط ملفات ZIP من خلال نقل عمليات المعالجة الثقيلة إلى الخلفية.",
+      "تحسين تحديث مؤشرات تقدم التنزيل وفك الضغط للحفاظ على استجابة الواجهة أثناء معالجة الملفات.",
+      "تحسين التعامل مع الأرشيفات التالفة لمنع الملفات التي تحتوي على أخطاء من التسبب في توقف استجابة التطبيق.",
+      "تحسين معالجة الأخطاء في العمليات غير المتزامنة لضمان الإبلاغ عن الأخطاء واستعادة حالة التطبيق بشكل صحيح.",
+      "إصلاح مشكلات قد تتسبب في توقف فحص حالة التنزيل أو تحميل قائمة التشغيل.",
+      "إضافة اختبارات آلية إضافية لخدمات فحص الملفات وفك ضغط ملفات ZIP.",
+      "اجتياز جميع الاختبارات الآلية بنجاح، بمعدل 36 اختبارًا ناجحًا من أصل 36."
     ]
   }
 ],
@@ -53,17 +53,17 @@
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.6/Listen.To.Quran.Full.Edition-v1.0.6.apk",
-          "sha256": "681056cea8dfff2372f8495f511c110c9b67bc7a10338325812a694c760d80d3",
-          "size": 64234365,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.7/Listen.To.Quran.Full.Edition-v1.0.7.apk",
+          "sha256": "44526de570e450d370eb6a3110e2188b8b524a9b0e8912836ea1d1defc55f0b9",
+          "size": 64234369,
           "min_android_sdk": 24
         },
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.6/Listen-To-Quran-Full-Edition-v1.0.6.exe",
-          "sha256": "d1dad220637552a2ab9e409020ddd136f004678eef172a1d0a7e73e1b734e2dd",
-          "size": 12490122
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.7/Listen-To-Quran-Full-Edition-v1.0.7.exe",
+          "sha256": "263549cb53daef5d71a5e37a1cb695fa47d45e703568fd355b26a01754b7e860",
+          "size": 12491817
         }
       }
     }
