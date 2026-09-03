@@ -5,8 +5,8 @@
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
 
-      "version_name": "1.0.5",
-      "version_code": 6,
+      "version_name": "1.0.6",
+      "version_code": 7,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
@@ -16,32 +16,36 @@
     "locale": "en",
     "title": "What's New",
     "items": [
-      "Improved Android privacy and security by removing unnecessary storage and media permissions.",
-      "Limited media access to audio files only, reducing unnecessary permission requests.",
-      "Prevented external libraries from automatically adding unwanted image and video permissions to the application.",
-      "Cleaned up obsolete Android services and unused code to improve application maintainability.",
-      "Cleaned development builds by removing unnecessary storage permissions and reducing build-time warnings.",
-      "Improved release build signing by supporting secure external production key configuration.",
-      "Added a clear key configuration template to simplify setup for development and CI/CD environments.",
-      "Improved project security by preventing signing keys and sensitive keystore files from being accidentally committed to source control.",
-      "Performed additional release-quality checks to verify the final Android package and its permissions.",
-      "Verified the application through static analysis and automated tests with all checks passing successfully."
+      "Introduced cryptographic verification for application updates to help ensure that update information comes from a trusted publisher.",
+      "Improved update security by rejecting modified, invalid, or unsigned update metadata before it can be processed.",
+      "Added protection against unauthorized mandatory updates, allowing users to safely continue using the application when update authenticity cannot be verified.",
+      "Improved the security of downloaded application updates by verifying their integrity before installation or execution.",
+      "Added additional integrity checks for Windows update files before they are launched.",
+      "Improved Android update security by verifying downloaded APK files before installation.",
+      "Added integrity verification for downloaded reciter ZIP archives before extraction.",
+      "Corrupted or modified reciter archives are now rejected and removed instead of being extracted.",
+      "Improved protection against corrupted, incomplete, or replaced files during downloads and updates.",
+      "Enhanced the application's security and permission configuration by removing unnecessary Android permissions.",
+      "Expanded automated security testing to cover valid signatures, invalid signatures, and corrupted update data.",
+      "All automated tests passed successfully, with 30 out of 30 tests passing."
     ]
   },
   {
     "locale": "ar",
     "title": "ما الجديد",
     "items": [
-      "تحسين الخصوصية والأمان على أندرويد من خلال إزالة أذونات التخزين والوسائط غير الضرورية.",
-      "حصر الوصول إلى الوسائط في الملفات الصوتية فقط، مما يقلل من طلب الأذونات غير الضرورية.",
-      "منع المكتبات الخارجية من إضافة أذونات الصور والفيديو غير المطلوبة إلى التطبيق تلقائيًا.",
-      "تنظيف خدمات أندرويد القديمة والأكواد غير المستخدمة لتحسين استقرار المشروع وسهولة صيانته.",
-      "تنظيف إعدادات إصدارات التطوير من أذونات التخزين غير الضرورية وتقليل التحذيرات أثناء عملية البناء.",
-      "تحسين توقيع إصدارات التطبيق النهائية من خلال دعم إعداد مفاتيح التوقيع الإنتاجية بشكل آمن.",
-      "إضافة قالب واضح لإعداد مفاتيح التوقيع لتسهيل إعداد بيئات التطوير وأنظمة CI/CD.",
-      "تحسين أمان المشروع من خلال منع رفع مفاتيح التوقيع وملفات التخزين السرية إلى مستودع الأكواد.",
-      "إجراء عمليات تحقق إضافية للتأكد من صلاحية حزمة أندرويد النهائية والأذونات المضمنة بها.",
-      "التحقق من جودة الإصدار من خلال التحليل الساكن والاختبارات الآلية، مع اجتياز جميع الفحوصات بنجاح."
+      "إضافة التحقق التشفيري من تحديثات التطبيق للمساعدة في التأكد من أن بيانات التحديثات صادرة من جهة موثوقة.",
+      "تحسين أمان نظام التحديث من خلال رفض بيانات التحديث المعدلة أو غير الصالحة أو غير الموثوقة قبل معالجتها.",
+      "إضافة حماية من التحديثات الإجبارية غير المصرح بها، مما يتيح للمستخدم مواصلة استخدام التطبيق بأمان عند تعذر التحقق من صحة التحديث.",
+      "تحسين حماية ملفات تحديث التطبيق التي يتم تنزيلها من خلال التحقق من سلامتها قبل تثبيتها أو تشغيلها.",
+      "إضافة فحوصات إضافية لسلامة ملفات تحديث Windows قبل تشغيلها.",
+      "تحسين أمان تحديثات Android من خلال التحقق من سلامة ملفات APK التي تم تنزيلها قبل تثبيتها.",
+      "إضافة التحقق من سلامة أرشيفات القرّاء التي يتم تنزيلها قبل البدء في فك ضغطها.",
+      "رفض وحذف أرشيفات القرّاء التالفة أو المعدلة بدلًا من فك ضغطها واستخدامها.",
+      "تحسين الحماية من الملفات التالفة أو غير المكتملة أو المستبدلة أثناء عمليات التنزيل والتحديث.",
+      "تعزيز أمان التطبيق وإعدادات الأذونات من خلال إزالة أذونات Android غير الضرورية.",
+      "توسيع الاختبارات الأمنية الآلية لتشمل التوقيعات الصحيحة والتوقيعات المزورة وبيانات التحديثات التالفة.",
+      "اجتياز جميع الاختبارات الآلية بنجاح، بمعدل 30 اختبارًا ناجحًا من أصل 30."
     ]
   }
 ],
@@ -49,17 +53,17 @@
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.5/Listen.To.Quran.Full.Edition-v1.0.5.apk",
-          "sha256": "8ffe88a83ef0374ab7128a70f98e49bb70752d2b2021fdc84d141abc688bdab0",
-          "size": 63923133,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.6/Listen.To.Quran.Full.Edition-v1.0.6.apk",
+          "sha256": "d1dad220637552a2ab9e409020ddd136f004678eef172a1d0a7e73e1b734e2dd",
+          "size": 64234365,
           "min_android_sdk": 24
         },
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.5/Listen-To-Quran-Full-Edition-v1.0.5.exe",
-          "sha256": "5961d13803f4a471ffa509d2f50ccb0856e91c309193700cfbd9a1116def5bc2",
-          "size": 12456339
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.0.6/Listen-To-Quran-Full-Edition-v1.0.6.exe",
+          "sha256": "681056cea8dfff2372f8495f511c110c9b67bc7a10338325812a694c760d80d3",
+          "size": 12490122
         }
       }
     }
