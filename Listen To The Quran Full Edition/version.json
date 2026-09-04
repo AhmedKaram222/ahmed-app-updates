@@ -70,16 +70,16 @@
           "enabled": true,
           "file_type": "apk",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1/Listen.To.Quran.Full.Edition-v1.1.0.apk",
-          "sha256": "8f7480faebf14ce6ad75203e11eb5d9e0fa9ee468661c564c5eacfe33b85a43d",
-          "size": 63824677,
+          "sha256": "25713970ed68cecadb26a69333ef39fd6416486b436d8b7f9ce0c1e429389156",
+          "size": 64168813,
           "min_android_sdk": 24
         },
         "windows": {
           "enabled": true,
           "file_type": "exe",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1/Listen-To-Quran-Full-Edition-v1.1.0.exe",
-          "sha256": "98f51fa359208a9a70e9e7bf08b18fa1caf607f86b75d29943186cde3c169f1e",
-          "size": 12417249
+          "sha256": "c4e84f5cc6e74817d5c96bb7813a9cf20c10b4eb006b6e0aa1e01f2adac2d6ae",
+          "size": 12476449
         }
       }
     }
