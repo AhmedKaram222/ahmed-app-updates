@@ -78,7 +78,7 @@
           "enabled": true,
           "file_type": "exe",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.2/Listen-To-Quran-Full-Edition-v1.1.2.exe",
-          "sha256": "3842b4aa920567b30f9d85d45fb222b761b947562d00d3a3440920ba649ebd2d",
+          "sha256": "3afde4215c332c9867780fedcffa27d3769e3c0256dd594563e1550c6944a460",
           "size": 12481645,
           "signature": "e6a0dcdd8e9a8c7f969f57aa2be5e4b033643b897307a6a4c8dbb76a44337fb1dfb329a10ef8ec6a40007f7a210fef5adbf71da9022f42b61eb90c3cf5c80b04"
         }
