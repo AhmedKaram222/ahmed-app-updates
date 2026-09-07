@@ -8,6 +8,7 @@
       "version_code": 14,
       "force_update": false,
       "min_supported_version": "1.0.1",
+      "signature": "e1b4f66a87756fbc8c199580b06b9dc563e46c76db36453fa8cc2ea978b40db2",
       "reciters_checksums": {
         "abdul_basit_abdul_samad_mujawad": "db19cadefb438e454f565713efec6848fc8d1830308cff005b5a0bb61c0cb97a",
         "ahmed_khader_al-tarabulsi": "4e34969008a9e00300bf411ce4ed0065bc99543f06ac173a5a7acd0f31f571cf",
