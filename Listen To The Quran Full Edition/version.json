@@ -5,8 +5,8 @@
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
 
-      "version_name": "1.1.0",
-      "version_code": 12,
+      "version_name": "1.1.1",
+      "version_code": 13,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
@@ -14,54 +14,38 @@
 "release_notes": [
   {
     "locale": "en",
-    "title": "Critical Stability, Security & User Experience Improvements",
+    "title": "Security Hardening, Windows Stability & Startup Improvements",
     "items": [
-      "Improved Windows startup stability and resolved critical issues that could cause the application to crash during launch.",
-      "Disabled automatic audio loading and playback during startup, keeping the player completely idle until the user explicitly selects a reciter or Surah.",
-      "Improved audio engine stability by using a single unified playback engine and removing the redundant audio playback system.",
-      "Added strict file existence checks before passing audio files to the player, preventing invalid or missing paths from being opened.",
-      "Improved player reliability with defensive error handling across playback, pause, stop, seek, and volume operations.",
-      "Resolved Windows audio engine errors that could cause operation failures or loss of connection with the playback engine.",
-      "Improved reciter download status handling to prevent unnecessary player resets or stop operations when local audio files are not available.",
-      "Added an interactive seek bar for smoother navigation through Surahs, including elapsed time, remaining time, and total duration indicators.",
-      "Improved the startup screen by reducing the enforced delay to a maximum of 3 seconds and allowing users to skip it immediately.",
-      "Strengthened application update security with Ed25519 digital signature verification to reject unsigned or modified update metadata before installation.",
-      "Added a secondary update metadata source to improve update availability when the primary source is temporarily unavailable.",
-      "Improved update and reciter archive integrity verification using SHA-256 and exact file-size validation before processing or extraction.",
-      "Added protection against Zip-Slip vulnerabilities by validating archive extraction paths before writing files to disk.",
-      "Improved application logging by automatically limiting log files to 2 MB and archiving older logs.",
-      "Improved privacy by sanitizing sensitive information from logs, including absolute file paths and potentially sensitive URL parameters.",
-      "Expanded Arabic and English localization by moving application messages and extraction-related dialogs to the official translation resources.",
-      "Improved dialog responsiveness on smaller screens by replacing fixed dimensions with adaptive layouts and reducing RenderFlex overflow issues.",
-      "Improved settings persistence by ensuring theme and application settings are correctly saved and restored across restarts.",
-      "Improved Arabic and Unicode filename handling to preserve Arabic characters correctly when processing reciter names and folder paths.",
-      "Improved overall application reliability through additional defensive error handling, resource validation, and stability improvements."
+      "Strengthened update security by enforcing digital signature verification for both automatic and manual update checks.",
+      "Improved protection against unsigned or tampered update metadata by rejecting update information when its digital signature is missing or invalid.",
+      "Improved update verification status reporting so the application interface accurately reflects the actual cryptographic verification result.",
+      "Strengthened reciter content integrity by including deterministic, ordered file checksums in the signed update metadata.",
+      "Improved the startup experience by allowing the introductory audio to play for its full natural duration without being interrupted.",
+      "Improved the startup progress indicator so it remains unobtrusive during the initial part of the introduction and appears smoothly near the end of the startup sequence.",
+      "Improved Windows reliability by preventing multiple instances of the application from running simultaneously.",
+      "Improved Windows window management by automatically restoring and bringing the existing application window to the foreground when the application is launched again.",
+      "Added additional automated security tests covering missing signatures, forged signatures, and canonical signed-payload validation.",
+      "Improved overall release quality and security validation through an expanded automated test suite.",
+      "All automated tests passed successfully (40/40).",
+      "Verified code quality with zero Flutter analysis errors."
     ]
   },
   {
     "locale": "ar",
-    "title": "إصلاحات حرجة وتحسينات الأمان وتجربة الاستخدام",
+    "title": "تعزيز الأمان واستقرار ويندوز وتحسينات شاشة البدء",
     "items": [
-      "تحسين استقرار التطبيق عند بدء التشغيل على نظام ويندوز وإصلاح مشكلات حرجة كانت قد تؤدي إلى انهياره أثناء الإقلاع.",
-      "إلغاء التحميل والتشغيل التلقائي للصوت أثناء شاشة البدء، ليبقى المشغل في حالة خمول تامة حتى يختار المستخدم قارئًا أو سورة بشكل صريح.",
-      "تحسين استقرار محرك الصوت من خلال توحيد نظام التشغيل الصوتي وإزالة نظام التشغيل الصوتي المكرر.",
-      "إضافة فحص صارم للتأكد من وجود ملفات الصوت على القرص قبل تمريرها إلى المشغل، لمنع محاولة فتح مسارات غير موجودة.",
-      "تحسين موثوقية المشغل من خلال إضافة معالجة دفاعية للأخطاء أثناء عمليات التشغيل والإيقاف المؤقت والإيقاف والتنقل داخل السورة والتحكم في مستوى الصوت.",
-      "إصلاح أخطاء محرك الصوت على ويندوز التي كانت قد تؤدي إلى فشل العمليات أو فقدان الاتصال بمحرك التشغيل.",
-      "تحسين فحص حالة تحميل القراء لمنع إعادة تهيئة المشغل أو إرسال أوامر إيقاف غير ضرورية عند عدم توفر ملفات الصوت محليًا.",
-      "إضافة شريط تقديم وتأخير تفاعلي يتيح التنقل بسهولة داخل السورة، مع عرض الوقت المنقضي والوقت المتبقي والمدة الإجمالية.",
-      "تحسين شاشة الافتتاح من خلال تقليل مدة الانتظار الإلزامية إلى 3 ثوانٍ كحد أقصى، مع إمكانية تخطيها فورًا بنقرة واحدة.",
-      "تعزيز أمان نظام التحديثات باستخدام التحقق من التوقيع الرقمي بتقنية Ed25519 لرفض بيانات التحديث غير الموقعة أو المعدلة قبل التثبيت.",
-      "إضافة مصدر احتياطي لبيانات التحديثات لتحسين توفر التحديثات عند تعذر الوصول إلى المصدر الرئيسي مؤقتًا.",
-      "تحسين التحقق من سلامة ملفات التحديث وأرشيفات القراء باستخدام SHA-256 والمطابقة الدقيقة لحجم الملفات قبل المعالجة أو فك الضغط.",
-      "إضافة حماية ضد ثغرة Zip-Slip من خلال التحقق من مسارات الملفات داخل الأرشيف قبل استخراجها إلى القرص.",
-      "تحسين نظام السجلات من خلال تحديد حجم ملف السجل بـ 2 ميجابايت وأرشفة السجل القديم تلقائيًا.",
-      "تحسين الخصوصية من خلال تنقية المعلومات الحساسة من السجلات، بما في ذلك المسارات الكاملة للملفات وبعض معاملات الروابط الحساسة.",
-      "توسيع دعم اللغتين العربية والإنجليزية من خلال نقل النصوص والرسائل والحوارات المتعلقة بعمليات الاستخراج إلى ملفات الترجمة الرسمية.",
-      "تحسين استجابة الحوارات على الشاشات الصغيرة باستخدام تصميمات متجاوبة بدلًا من الأبعاد الثابتة، وتقليل مشكلات فيض عناصر الواجهة.",
-      "تحسين حفظ الإعدادات لضمان الاحتفاظ بالمظهر والإعدادات المختلفة واستعادتها بشكل صحيح بعد إعادة تشغيل التطبيق.",
-      "تحسين معالجة أسماء الملفات والمجلدات العربية وUnicode للحفاظ على الحروف العربية بشكل صحيح أثناء معالجة أسماء القراء ومسارات المجلدات.",
-      "تحسين موثوقية واستقرار التطبيق بشكل عام من خلال المزيد من معالجة الأخطاء والتحقق من الموارد وتحسينات الاستقرار."
+      "تعزيز أمان نظام التحديثات من خلال فرض التحقق من التوقيع الرقمي في كل من الفحص التلقائي واليدوي للتحديثات.",
+      "تحسين الحماية من بيانات التحديثات غير الموقعة أو التي تم العبث بها من خلال رفض بيانات التحديث عند فقدان التوقيع الرقمي أو عدم صلاحيته.",
+      "تحسين عرض حالة التحقق من التحديثات لضمان أن واجهة التطبيق تعكس نتيجة التحقق التشفيري الفعلية بدقة.",
+      "تعزيز سلامة ملفات التلاوات من خلال تضمين بصمات ملفات القراء بترتيب حتمي داخل بيانات التحديثات الموقعة.",
+      "تحسين تجربة شاشة البدء من خلال تشغيل المقطع الصوتي التمهيدي كاملًا بمدته الطبيعية دون انقطاع مبكر.",
+      "تحسين ظهور شريط التقدم في شاشة البدء بحيث يظل غير ظاهر خلال الجزء الأول من المقدمة ويظهر بسلاسة قرب نهاية فترة البدء.",
+      "تحسين استقرار التطبيق على ويندوز من خلال منع تشغيل أكثر من نسخة من التطبيق في الوقت نفسه.",
+      "تحسين إدارة نافذة التطبيق على ويندوز بحيث يتم استعادة النافذة الحالية وإحضارها إلى الواجهة تلقائيًا عند محاولة تشغيل التطبيق مرة أخرى.",
+      "إضافة اختبارات أمنية آلية تغطي حالات حذف التوقيع والتوقيع المزوّر والتحقق من صحة الحمولة الموقعة.",
+      "تحسين جودة الإصدار والتحقق الأمني من خلال توسيع مجموعة الاختبارات الآلية.",
+      "نجاح جميع الاختبارات الآلية بنسبة 100% (40/40).",
+      "اجتياز فحص Flutter للكود بدون أي أخطاء."
     ]
   }
 ],
@@ -69,17 +53,17 @@
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1/Listen.To.Quran.Full.Edition-v1.1.0.apk",
-          "sha256": "25713970ed68cecadb26a69333ef39fd6416486b436d8b7f9ce0c1e429389156",
-          "size": 64168813,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.1/Listen.To.Quran.Full.Edition-v1.1.1.apk",
+          "sha256": "6ab2be53adc3e6c3927a592815beb13bf513d0d369c28e092e92306af25e2352",
+          "size": 64185197,
           "min_android_sdk": 24
         },
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1/Listen-To-Quran-Full-Edition-v1.1.0.exe",
-          "sha256": "c4e84f5cc6e74817d5c96bb7813a9cf20c10b4eb006b6e0aa1e01f2adac2d6ae",
-          "size": 12476449
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.1/Listen-To-Quran-Full-Edition-v1.1.1.exe",
+          "sha256": "db5228b87248da17a59685b049795003a3a2e406ce25e6d830d88c70e144e15a",
+          "size": 12477727
         }
       }
     }
