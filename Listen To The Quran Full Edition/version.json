@@ -7,21 +7,7 @@
       "version_name": "1.1.2",
       "version_code": 14,
       "force_update": false,
-      "min_supported_version": "1.0.1",
-      "signature": "75e56482cd0efd94a719383a0ab7d8bc622ffbd635beab82eff34fce861a1a92973f7b51643e6fdb4e91f5132cae45020520d0eec0ba6cc6dc68cc8e63c63f07",
-      "reciters_checksums": {
-        "abdul_basit_abdul_samad_mujawad": "db19cadefb438e454f565713efec6848fc8d1830308cff005b5a0bb61c0cb97a",
-        "ahmed_khader_al-tarabulsi": "4e34969008a9e00300bf411ce4ed0065bc99543f06ac173a5a7acd0f31f571cf",
-        "ahmed_mohammed_amer": "df18c4166e8c9f463bd92b3cb0dfc35f8ac5b0bebfd98a63aaab6eb817c85cdb",
-        "ahmed_nainaa": "f3a7775093fb89bff1914e9a36510fda8d9c56d2c935b2987ddd9691dc22478d",
-        "maher_al-muaiqly": "23a1970f4c40f2e5795706a15b97633c01cc792aefcb10f3ea8eb72abf8adf62",
-        "mahmoud_khalil_al-hosary": "1fd954058adc75cc9988ada8ef5f5b0eb123fd0f1c176e6a60e2b7eaa839dcdf",
-        "mishary_rashid_alafasy": "861c6bf2080ed8122ffb37eaa0c9bee44be8f2726cf822bd431d0d0db319aebd",
-        "mohammed_ayoub": "7ed4b5c15c3df36a3a636bcde8941f79cd8c67b1a4eb1bb09c9aad0d453845c5",
-        "mohammed_jibril": "9ab69d7f0d32a3c411f8b5e9c7e362a85a93bab4c27276d708d11e5bd741c263",
-        "muhammad_siddiq_al-minshawi": "011863aff5b868eaa9a7bd7a320703c16b73734e31b9d2c42bcbe01a1cd03bf6",
-        "saad_al-ghamdi": "bf1a63affd546d9eb93f3eb380f138395a74c4f659dc276529e0d19f0f2b1497"
-      },
+      "min_supported_version": "1.1.2",
       "release_notes": [
         {
           "locale": "en",
@@ -29,58 +15,40 @@
           "items": [
             "Improved download reliability by accepting only valid successful HTTP responses and immediately rejecting server and client error responses.",
             "Improved download safety by preventing HTML or JSON error pages from being incorrectly saved as ZIP archives.",
-            "Automatically removes corrupted, incomplete, or temporary download files when a download operation fails.",
-            "Improved download resumption by correctly handling partial-content responses and continuing from the existing downloaded data.",
-            "Improved protection against archive corruption when a server does not support range requests by automatically restarting the download instead of appending duplicate data.",
-            "Improved data integrity by ensuring download streams are fully flushed and closed before file validation or archive extraction begins.",
-            "Introduced unified download state management to provide more reliable control over downloading, pausing, resuming, errors, and completion.",
-            "Improved download synchronization to prevent competing resume operations and ensure previous download resources are fully released before starting a new transfer.",
-            "Strengthened ZIP extraction security with canonical path validation to prevent malicious archive entries from writing files outside the intended destination.",
-            "Added protection against excessive extraction size by limiting the total size of extracted files to 2 GB.",
-            "Added protection against highly compressed archive payloads by rejecting suspicious compression ratios that could cause excessive resource consumption.",
-            "Expanded automated security and reliability testing with additional coverage for archive extraction, download resumption, and file-management scenarios.",
-            "All automated tests passed successfully (49/49).",
-            "Verified code quality with zero Flutter analysis errors."
+            "Automatically purges and cleans corrupt or incomplete download files on any connection failure.",
+            "Hardened ZIP archive extraction against path traversal attacks (Zip Slip) to protect system directories.",
+            "Optimized update verification speed and memory utilization across Windows and Android.",
+            "Enhanced single-instance window handling on Windows Desktop."
           ]
         },
         {
           "locale": "ar",
-          "title": "تحسين موثوقية التنزيل وسلامة البيانات وأمان الأرشيفات",
+          "title": "موثوقية التنزيل، سلامة البيانات وحماية الأرشيفات",
           "items": [
-            "تحسين موثوقية التنزيل من خلال قبول استجابات HTTP الناجحة فقط ورفض استجابات أخطاء الخادم أو العميل مباشرة.",
-            "تحسين أمان التنزيل ومنع حفظ صفحات أخطاء HTML أو JSON بالخطأ على أنها أرشيفات ZIP.",
-            "حذف ملفات التنزيل التالفة أو غير المكتملة أو المؤقتة تلقائيًا عند فشل عملية التنزيل.",
-            "تحسين استئناف التنزيل من خلال التعامل الصحيح مع الاستجابات الجزئية واستكمال البيانات من الموضع الذي توقف عنده التنزيل.",
-            "تحسين الحماية من تلف الأرشيفات عند عدم دعم الخادم لاستئناف التنزيل، من خلال إعادة التنزيل من البداية بدلًا من دمج بيانات مكررة مع الملف الجزئي.",
-            "تحسين سلامة البيانات من خلال ضمان تفريغ وإغلاق تدفق التنزيل بالكامل قبل التحقق من الملف أو بدء فك الضغط.",
-            "توحيد إدارة حالات التنزيل لضمان التحكم بشكل أكثر موثوقية في حالات التنزيل والإيقاف المؤقت والاستئناف والأخطاء واكتمال العملية.",
-            "تحسين مزامنة عمليات التنزيل لمنع تنفيذ عمليات استئناف متنافسة، والتأكد من إغلاق موارد عملية التنزيل السابقة بالكامل قبل بدء عملية جديدة.",
-            "تعزيز أمان فك ضغط ملفات ZIP من خلال التحقق من المسارات الفعلية لمنع الأرشيفات الخبيثة من إنشاء ملفات خارج المجلد المخصص.",
-            "إضافة حماية من الاستهلاك المفرط لمساحة التخزين من خلال تحديد إجمالي حجم الملفات التي يمكن استخراجها بحد أقصى يبلغ 2 جيجابايت.",
-            "إضافة حماية من الأرشيفات شديدة الضغط التي قد تتسبب في استهلاك مفرط للموارد من خلال رفض نسب الضغط غير الطبيعية والخطيرة.",
-            "توسيع اختبارات الأمان والموثوقية لتغطية المزيد من سيناريوهات فك ضغط الأرشيفات واستئناف التنزيل وإدارة الملفات.",
-            "نجاح جميع الاختبارات الآلية بنسبة 100% (49/49).",
-            "اجتياز فحص Flutter للكود بدون أي أخطاء."
+            "تحسين موثوقية التنزيل عبر قبول الاستجابات الناجحة فقط ورفض أي أخطاء من الخادم فوراً.",
+            "حماية التنزيلات من حفظ صفحات الأخطاء كملفات مضغوطة بصيغة ZIP.",
+            "الحذف التلقائي والفوري للملفات غير المكتملة أو التالفة عند حدوث أي خلل في الاتصال.",
+            "حماية استخراج الملفات المضغوطة ومنع ثغرات التخطي عبر المسارات (Zip Slip).",
+            "تحسين سرعة وكفاءة استهلاك الذاكرة أثناء التحقق من التحديثات لنظامي Windows و Android.",
+            "تحسين استجابة نافذة التطبيق لنظام Windows عند التشغيل المتعدد."
           ]
         }
       ],
       "platforms": {
+        "windows": {
+          "enabled": true,
+          "file_type": "exe",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.2/Listen-To-Quran-Full-Edition-v1.1.2.exe",
+          "sha256": "540ff60ae44a26537f9f1fb6c5262460decaf7a04b149d7c1f2ba664bf2eb3b3",
+          "size": 12449300
+        },
         "android": {
           "enabled": true,
           "file_type": "apk",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.2/Listen.To.Quran.Full.Edition-v1.1.2.apk",
           "sha256": "d1a4c74cad75f3c0ebe9bbb98c402329dbd253da6b3dc9010215735ec1ec796f",
           "size": 64185201,
-          "min_android_sdk": 24,
-          "signature": "51240d6ecc46d97e69dbb1abe5c96517fe0820d7e1255d5613d37320d03fb5b6086ecad2a85aed80b64ce8af8a67f5e5186dae5bce7fadcafc91f90e90e47404"
-        },
-        "windows": {
-          "enabled": true,
-          "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.2/Listen-To-Quran-Full-Edition-v1.1.2.exe",
-          "sha256": "3afde4215c332c9867780fedcffa27d3769e3c0256dd594563e1550c6944a460",
-          "size": 12481329,
-          "signature": "e2430f3cb695a684f740c4053e688ad451e5a82f7e6c406209ef207ffc23eda3740406ee69c9012079d941f4a913dff09f941c229df7d26fd03dd72385fa4604"
+          "min_android_sdk": 24
         }
       }
     }
