@@ -4,11 +4,11 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "1.1.3",
-      "version_code": 14,
+      "version_name": "1.2.1",
+      "version_code": 19,
       "force_update": false,
       "min_supported_version": "1.1.2",
-      "release_notes": [
+"release_notes": [
   {
     "locale": "en",
     "title": "Performance, Reliability & Security Improvements",
@@ -64,16 +64,16 @@
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.3/Listen-To-Quran-Full-Edition-v1.1.3.exe",
-          "sha256": "b7736a2f87ad876666a26829a6b3bae592ccbf6d9c6ab179711f43d1603bdd79",
-          "size": 12445937
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.2.1/Listen-To-Quran-Full-Edition-v1.2.1.exe",
+          "sha256": "4ea4432387575c7b72f276e34031b055a6f59cbbebd31af9e089d41dec6053e2",
+          "size": 12470874
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.3/Listen.To.Quran.Full.Edition-v1.1.3.apk",
-          "sha256": "534e11dab4baa01764a11934e6fa49c248554dd84e89cd1cbfaa7d1028a1b4ad",
-          "size": 63808205,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.2.1/Listen.To.Quran.Full.Edition-v1.2.1.apk",
+          "sha256": "99d59d06bb5880f49aec7a16e3993743d7fad9aa3b1377a9d2dae84e6e1aa458",
+          "size": 64635649,
           "min_android_sdk": 24
         }
       }
