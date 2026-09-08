@@ -4,50 +4,76 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "1.1.2",
+      "version_name": "1.1.3",
       "version_code": 14,
       "force_update": false,
       "min_supported_version": "1.1.2",
       "release_notes": [
-        {
-          "locale": "en",
-          "title": "Download Reliability, Data Integrity & Archive Security",
-          "items": [
-            "Improved download reliability by accepting only valid successful HTTP responses and immediately rejecting server and client error responses.",
-            "Improved download safety by preventing HTML or JSON error pages from being incorrectly saved as ZIP archives.",
-            "Automatically purges and cleans corrupt or incomplete download files on any connection failure.",
-            "Hardened ZIP archive extraction against path traversal attacks (Zip Slip) to protect system directories.",
-            "Optimized update verification speed and memory utilization across Windows and Android.",
-            "Enhanced single-instance window handling on Windows Desktop."
-          ]
-        },
-        {
-          "locale": "ar",
-          "title": "موثوقية التنزيل، سلامة البيانات وحماية الأرشيفات",
-          "items": [
-            "تحسين موثوقية التنزيل عبر قبول الاستجابات الناجحة فقط ورفض أي أخطاء من الخادم فوراً.",
-            "حماية التنزيلات من حفظ صفحات الأخطاء كملفات مضغوطة بصيغة ZIP.",
-            "الحذف التلقائي والفوري للملفات غير المكتملة أو التالفة عند حدوث أي خلل في الاتصال.",
-            "حماية استخراج الملفات المضغوطة ومنع ثغرات التخطي عبر المسارات (Zip Slip).",
-            "تحسين سرعة وكفاءة استهلاك الذاكرة أثناء التحقق من التحديثات لنظامي Windows و Android.",
-            "تحسين استجابة نافذة التطبيق لنظام Windows عند التشغيل المتعدد."
-          ]
-        }
-      ],
+  {
+    "locale": "en",
+    "title": "Performance, Reliability & Security Improvements",
+    "items": [
+      "Added Windows single-instance protection to prevent multiple copies of the application from running simultaneously and automatically bring the existing window to the foreground.",
+      "Improved Windows startup stability by moving splash-screen audio playback to a more reliable audio engine.",
+      "Improved application responsiveness by moving heavy archive extraction operations to background isolates.",
+      "Added an interactive playback seek bar with elapsed, total, and remaining time indicators.",
+      "Improved playback stability by preventing attempts to play audio files that are not yet available on the device.",
+      "Improved download reliability by accepting only valid HTTP 200 and 206 responses and immediately rejecting invalid server responses.",
+      "Improved download recovery and resume handling to prevent corrupted files when servers do not support partial-content requests.",
+      "Improved download synchronization to prevent conflicting pause and resume operations.",
+      "Added automatic cleanup of stale temporary archive files.",
+      "Strengthened ZIP archive security with robust path-containment validation to prevent files from being extracted outside the intended destination.",
+      "Added protection against oversized and highly compressed archives to reduce the risk of excessive storage and system-resource consumption.",
+      "Improved light and dark theme support across loading indicators and playback controls.",
+      "Completed Arabic and English localization across dialogs and update-related screens.",
+      "Removed obsolete storage permission requests and improved compatibility with Android scoped storage.",
+      "Simplified the update system by establishing v1.1.2+ as the new unsigned update baseline using HTTPS, exact file-size validation, and SHA-256 artifact integrity checks.",
+      "Improved error diagnostics by replacing silent exception handling with structured application logging.",
+      "Improved overall code quality and maintainability with stricter static analysis and cleanup of obsolete code and dependencies.",
+      "All automated tests passed successfully (44/44).",
+      "Verified code quality with zero Flutter analysis issues."
+    ]
+  },
+  {
+    "locale": "ar",
+    "title": "تحسينات الأداء والموثوقية والأمان",
+    "items": [
+      "إضافة حماية لمنع تشغيل أكثر من نسخة من التطبيق على ويندوز، مع إحضار النافذة المفتوحة إلى المقدمة تلقائيًا عند محاولة تشغيل نسخة أخرى.",
+      "تحسين استقرار تشغيل الشاشة الافتتاحية على ويندوز من خلال نقل تشغيل صوت المقدمة إلى محرك صوت أكثر موثوقية.",
+      "تحسين استجابة التطبيق وسلاسة الواجهة من خلال تنفيذ عمليات فك ضغط الأرشيفات الثقيلة في الخلفية.",
+      "إضافة شريط تمرير تفاعلي للتحكم في موضع التشغيل مع عرض الوقت المنقضي والإجمالي والمتبقي.",
+      "تحسين استقرار تشغيل التلاوات من خلال منع محاولة تشغيل الملفات الصوتية غير المتوفرة على الجهاز.",
+      "تحسين موثوقية التنزيل من خلال قبول استجابات HTTP الصحيحة 200 و206 فقط ورفض استجابات الخادم غير الصالحة مباشرة.",
+      "تحسين استئناف التنزيل والتعافي من الأخطاء لمنع تلف الملفات عند عدم دعم الخادم لطلبات المحتوى الجزئي.",
+      "تحسين مزامنة عمليات التنزيل لمنع تعارض عمليات الإيقاف المؤقت والاستئناف المتزامنة.",
+      "إضافة تنظيف تلقائي لملفات الأرشيف المؤقتة القديمة.",
+      "تعزيز أمان فك ضغط ملفات ZIP من خلال التحقق الصارم من احتواء مسارات الملفات داخل المجلد المخصص لمنع استخراج الملفات خارجه.",
+      "إضافة حماية من الأرشيفات ذات أحجام الاستخراج الكبيرة أو نسب الضغط المرتفعة بشكل غير طبيعي للحد من استهلاك مساحة التخزين وموارد النظام.",
+      "تحسين دعم الوضعين الفاتح والداكن عبر مؤشرات التحميل وعناصر التحكم في التشغيل.",
+      "استكمال دعم اللغتين العربية والإنجليزية في الحوارات وشاشات نظام التحديث.",
+      "إزالة طلبات صلاحيات التخزين القديمة وتحسين التوافق مع نظام التخزين المحمي Scoped Storage في أندرويد.",
+      "تبسيط نظام التحديثات من خلال اعتماد v1.1.2 وما بعده كخط أساس جديد للتحديثات غير الموقعة، مع الاعتماد على HTTPS والتحقق من حجم الملف ومطابقة SHA-256 لسلامة الملفات.",
+      "تحسين تشخيص الأخطاء من خلال استبدال معالجة الاستثناءات الصامتة بنظام تسجيل أخطاء منظم.",
+      "تحسين جودة الكود وقابليته للصيانة من خلال التحليل الاستاتيكي الصارم وتنظيف الأكواد والاعتمادات القديمة.",
+      "نجاح جميع الاختبارات الآلية بنسبة 100% (44/44).",
+      "اجتياز فحص Flutter للكود بدون أي أخطاء."
+    ]
+  }
+],
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.2/Listen-To-Quran-Full-Edition-v1.1.2.exe",
-          "sha256": "540ff60ae44a26537f9f1fb6c5262460decaf7a04b149d7c1f2ba664bf2eb3b3",
-          "size": 12449300
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.3/Listen-To-Quran-Full-Edition-v1.1.3.exe",
+          "sha256": "b7736a2f87ad876666a26829a6b3bae592ccbf6d9c6ab179711f43d1603bdd79",
+          "size": 12445937
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.2/Listen.To.Quran.Full.Edition-v1.1.2.apk",
-          "sha256": "6aaeccf7c11d9be18e89ed012e1f9caa3351623f76f698d0b58f0c4b91a59a70",
-          "size": 63808461,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.1.3/Listen.To.Quran.Full.Edition-v1.1.3.apk",
+          "sha256": "534e11dab4baa01764a11934e6fa49c248554dd84e89cd1cbfaa7d1028a1b4ad",
+          "size": 63808205,
           "min_android_sdk": 24
         }
       }
