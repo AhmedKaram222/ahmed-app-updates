@@ -19,7 +19,7 @@
       "platforms": {
         "android": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.1.0/Adhan.Prayer-v1.1.0.apk",
-          "sha256": "4954591c2fdf468bf013334fc86a918b10853aa9019ac2b695c0a63930c2d68e",
+          "sha256": "d6dac3e61b00d6f2c33e76780b63bc7174f5c77dd584cb0bdba64cad53d81996",
           "size": 67942360
         },
         "windows": {
