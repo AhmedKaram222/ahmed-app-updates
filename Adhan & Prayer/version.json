@@ -1,1 +1,33 @@
-
+{
+  "apps": {
+    "adhan_and_prayer": {
+      "version_name": "1.0.0",
+      "version_code": 1,
+      "force_update": false,
+      "release_notes": [
+        "Introduced accurate offline prayer time calculation",
+        "Added automatic calculation method selection based on location",
+        "Added Adhan playback with multiple reciter options",
+        "Added automatic background Adhan scheduling on Windows and Android",
+        "Added Windows system tray support with background operation",
+        "Added Android background Adhan support with system notifications",
+        "Added Arabic and English localization",
+        "Added first-launch onboarding and prayer settings management",
+        "Added support for regional prayer calculation methods",
+        "Introduced a professional cross-platform prayer experience for Windows and Android"
+      ],
+      "platforms": {
+        "android": {
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.0.0/Adhan.Prayer-v1.0.0.apk",
+          "sha256": "89296a924a25ffc2cc5d3bbe04e55c674831c7e0a715dc8096ad35d8fe4d5297",
+          "size": 67417920
+        },
+        "windows": {
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.0.0/Adhan-And-Prayer-v1.0.0.exe",
+          "sha256": "4eab62d0f603b9de110351d0ad61f6200ac8c1ebaab582d0c45d0a1f219d2d5c",
+          "size": 22798720
+        }
+      }
+    }
+  }
+}
