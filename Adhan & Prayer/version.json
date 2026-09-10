@@ -5,32 +5,34 @@
       "version_code": 3,
       "force_update": false,
       "release_notes": [
-        "Added persistent Adhan volume control with adjustable volume from 0% to 100%",
-        "Added synchronized Adhan volume handling across Windows and Android",
-        "Added persistent volume settings that survive application restart",
-        "Added Adhan notification Stop action to stop the currently playing Adhan without opening the application",
-        "Added Adhan notification interaction to open and restore the application when the notification body is tapped",
-        "Added Adhan Dialog with dedicated Stop Adhan and Close actions",
-        "Improved Adhan playback control with centralized stop handling across notifications and the application",
-        "Improved Android background Adhan playback using the system alarm audio channel",
-        "Improved Adhan notification sound isolation to prevent unwanted system notification sounds",
-        "Improved Adhan playback lifecycle to prevent preview audio from interfering with background Adhan playback",
-        "Improved reciter selection and preview handling with automatic preview cleanup",
-        "Improved background Adhan reliability across Windows and Android",
-        "Hardened Android Adhan volume persistence and native audio preference handling",
-        "Improved Windows System Tray integration for Adhan notification interactions",
-        "Improved overall Adhan playback management, stability, and cross-platform prayer experience"
+      "Added persistent Adhan volume control with adjustable volume from 0% to 100%",
+      "Added synchronized Adhan volume handling across Windows and Android",
+      "Added persistent volume settings that survive application restart",
+      "Added Adhan notification Stop action to stop the currently playing Adhan without opening the application",
+      "Added Adhan notification interaction to open and restore the application when the notification body is tapped",
+      "Added Adhan Dialog with dedicated Stop Adhan and Close actions",
+      "Improved Adhan playback control with centralized stop handling across notifications and the application",
+      "Improved Android background Adhan playback using the system alarm audio channel",
+      "Improved Adhan notification sound isolation to prevent unwanted system notification sounds",
+      "Improved Adhan playback lifecycle to prevent preview audio from interfering with background Adhan playback",
+      "Improved reciter selection and preview handling with automatic preview cleanup",
+      "Improved background Adhan reliability across Windows and Android",
+      "Hardened Android Adhan volume persistence and native audio preference handling",
+      "Improved Windows System Tray integration for Adhan notification interactions",
+      "Fixed Windows runtime path persistence to prevent scheduled tasks, startup entries, and notification shortcuts from referencing outdated development builds",
+      "Improved Windows installation and runtime state migration when upgrading from previous builds",
+      "Improved overall Adhan playback management, stability, Windows integration, and cross-platform prayer experience"
       ],
       "platforms": {
         "android": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.2.0/Adhan.Prayer-v1.2.0.apk",
-          "sha256": "10d8d02ed0eb73ac59ef15c497795e63ad7767f5a2dcfa0986d7c3a21d2609a3",
+          "sha256": "f95634731ded077b58325bb73a4871d26b96438445f9554709db0fece66eaedf",
           "size": 67975428
         },
         "windows": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.2.0/Adhan-And-Prayer-v1.2.0.exe",
-          "sha256": "2cbf4c27e3a07766fb872e45440ee99e25bd6229cb130769162e9fbb3e0fcc07",
-          "size": 22843001
+          "sha256": "687bed707e381ee3fa2dc244f6428623eb19664c8c348aa9c688a239f919c1ec",
+          "size": 22846207
         }
       }
     }
