@@ -1,38 +1,33 @@
 {
   "apps": {
     "adhan_and_prayer": {
-      "version_name": "1.2.0",
-      "version_code": 3,
+      "version_name": "1.3.0",
+      "version_code": 4,
       "force_update": false,
       "release_notes": [
-      "Added persistent Adhan volume control with adjustable volume from 0% to 100%",
-      "Added synchronized Adhan volume handling across Windows and Android",
-      "Added persistent volume settings that survive application restart",
-      "Added Adhan notification Stop action to stop the currently playing Adhan without opening the application",
-      "Added Adhan notification interaction to open and restore the application when the notification body is tapped",
-      "Added Adhan Dialog with dedicated Stop Adhan and Close actions",
-      "Improved Adhan playback control with centralized stop handling across notifications and the application",
-      "Improved Android background Adhan playback using the system alarm audio channel",
-      "Improved Adhan notification sound isolation to prevent unwanted system notification sounds",
-      "Improved Adhan playback lifecycle to prevent preview audio from interfering with background Adhan playback",
-      "Improved reciter selection and preview handling with automatic preview cleanup",
-      "Improved background Adhan reliability across Windows and Android",
-      "Hardened Android Adhan volume persistence and native audio preference handling",
-      "Improved Windows System Tray integration for Adhan notification interactions",
-      "Fixed Windows runtime path persistence to prevent scheduled tasks, startup entries, and notification shortcuts from referencing outdated development builds",
-      "Improved Windows installation and runtime state migration when upgrading from previous builds",
-      "Improved overall Adhan playback management, stability, Windows integration, and cross-platform prayer experience"
+      "Fixed Windows Task Scheduler synchronization when changing the selected Adhan reciter",
+      "Fixed scheduled prayer tasks retaining the previously selected reciter after a new reciter was selected",
+      "Added immediate Windows schedule reconciliation after changing the Adhan reciter",
+      "Improved reciter selection flow to detect actual reciter changes before refreshing prayer schedules",
+      "Improved synchronization between the selected Adhan reciter and scheduled prayer alarms",
+      "Improved Windows Task Scheduler task updates to apply the newly selected Adhan audio path immediately",
+      "Added support for updating all active prayer tasks with the new reciter without requiring an application restart",
+      "Improved reciter synchronization across upcoming prayer schedules and next-day scheduled tasks",
+      "Improved schedule management to avoid unnecessary Task Scheduler reconciliation when the selected reciter remains unchanged",
+      "Improved Home and Settings reciter selection flows to synchronize prayer schedules after a reciter change",
+      "Improved Windows background Adhan reliability by keeping scheduled task arguments synchronized with current application settings",
+      "Improved overall Adhan scheduling stability and reciter synchronization on Windows"
       ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.2.0/Adhan.Prayer-v1.2.0.apk",
-          "sha256": "f95634731ded077b58325bb73a4871d26b96438445f9554709db0fece66eaedf",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.3.0/Adhan.Prayer-v1.3.0.apk",
+          "sha256": "",
           "size": 67975428
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.2.0/Adhan-And-Prayer-v1.2.0.exe",
-          "sha256": "687bed707e381ee3fa2dc244f6428623eb19664c8c348aa9c688a239f919c1ec",
-          "size": 22846207
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.3.0/Adhan-And-Prayer-v1.3.0.exe",
+          "sha256": "b1e03ef12c8f5503deaeea9dfb35fd2b4aa267dd4186fb059354517f11d79dba",
+          "size": 22846426
         }
       }
     }
