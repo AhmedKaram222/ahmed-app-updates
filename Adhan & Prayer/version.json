@@ -1,48 +1,40 @@
 {
   "apps": {
     "adhan_and_prayer": {
-      "version_name": "1.4.0",
-      "version_code": 5,
+      "version_name": "1.5.0",
+      "version_code": 6,
       "force_update": false,
       "release_notes": [
-      "Added persistent Adhan volume control with adjustable volume from 0% to 100%.",
-      "Added synchronized Adhan volume handling across Windows and Android.",
-      "Added persistent volume settings that survive application restart.",
-      "Added Adhan notification Stop action to stop the currently playing Adhan without opening the application.",
-      "Added Adhan notification interaction to open and restore the application when the notification body is tapped.",
-      "Added Adhan Dialog with dedicated Stop Adhan and Close actions.",
-      "Improved Adhan playback control with centralized stop handling across notifications and the application.",
-      "Improved Android background Adhan playback using the system alarm audio channel.",
-      "Improved Adhan notification sound isolation to prevent unwanted system notification sounds.",
-      "Improved Adhan playback lifecycle to prevent preview audio from interfering with background Adhan playback.",
-      "Improved reciter selection and preview handling with automatic preview cleanup.",
-      "Improved background Adhan reliability across Windows and Android.",
-      "Hardened Android Adhan volume persistence and native audio preference handling.",
-      "Improved Windows System Tray integration for Adhan notification interactions.",
-      "Fixed Windows runtime path persistence to prevent scheduled tasks, startup entries, and notification shortcuts from referencing outdated development builds.",
-      "Improved Windows installation and runtime state migration when upgrading from previous builds.",
-      "Fixed Windows duplicate Adhan playback when the application is running alongside scheduled background Adhan tasks.",
-      "Improved Windows Adhan playback ownership between the active application and Task Scheduler to ensure a single Adhan playback per prayer event.",
-      "Improved Windows headless Adhan execution to safely yield when the main application instance is already active.",
-      "Improved Windows Task Scheduler and Adhan playback synchronization across foreground, tray, and closed-application states.",
-      "Fixed Android Release update checks by adding the required Internet permission.",
-      "Fixed an issue where network and HTTP errors were incorrectly reported as 'No Update Available'.",
-      "Improved update check error handling to clearly distinguish update failures from successful no-update results.",
-      "Improved Android update detection and reliability for production Release builds.",
-      "Added additional automated tests to verify update detection, failure handling, and version comparison.",
-      "Verified the Android Release APK manifest to ensure the required Internet permission is properly packaged.",
-      "Improved overall Adhan playback, scheduling, notification, update reliability, stability, and cross-platform prayer experience."
+        "Added Qibla direction support on Android using the device's current location.",
+        "Added a dedicated Qibla Compass screen with live Qibla direction and bearing information.",
+        "Added precise device location handling for accurate Qibla calculation.",
+        "Added Android location permission handling with localized guidance and recovery options.",
+        "Added support for opening Android Location Settings and App Settings when location services or permissions are unavailable.",
+        "Added offline Qibla calculation fallback using accurate spherical bearing mathematics when the online Qibla service is unavailable.",
+        "Added online Qibla direction retrieval with automatic fallback to local calculation when network access fails.",
+        "Added live compass support with heading normalization and smoothing for a more stable Qibla direction experience.",
+        "Added robust handling for location permission denial, permanent denial, location services being disabled, and permission recovery.",
+        "Improved Qibla location handling to keep device GPS completely independent from the city selected for prayer-time calculations.",
+        "Improved prayer-time stability by ensuring Qibla location data never modifies the selected prayer city, calculation method, or prayer schedule.",
+        "Added Arabic and English localization for the Qibla feature and location permission guidance.",
+        "Improved Qibla calculation accuracy across different geographic regions and coordinate edge cases.",
+        "Improved Android background and foreground location handling without requesting background location permission.",
+        "Fixed Windows Task Scheduler synchronization and improved regression protection for scheduled Adhan playback.",
+        "Improved Adhan notification and playback reliability across Android and Windows.",
+        "Improved application version management by making pubspec.yaml the single authoritative source for application version and build number.",
+        "Improved release build consistency across Android and Windows.",
+        "Improved overall application stability, reliability, and cross-platform prayer experience."
       ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.4.0/Adhan.Prayer-v1.4.0.apk",
-          "sha256": "91afe059503c54600ca6d3dcd4b620424c7996fdb74a4b0950d90f847d122155",
-          "size": 73440195
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.5.0/Adhan.Prayer-v1.5.0.apk",
+          "sha256": "83cf103830147685bee0351b0abce88b20aeca8f262cf84e6452db099ef6180d",
+          "size": 74276881
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.4.0/Adhan-And-Prayer-v1.4.0.exe",
-          "sha256": "302c650f33ed44e309880a9ec8ae910abc82fef61874cc8b8619933572adbb0a",
-          "size": 28526710
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.5.0/Adhan-And-Prayer-v1.5.0.exe",
+          "sha256": "a86bf43bba9d1bf6d069791200dfa33b59a5364bed8e7af3119ad8d66ac2457d",
+          "size": 28558117
         }
       }
     }
