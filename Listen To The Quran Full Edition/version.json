@@ -4,60 +4,71 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "1.2.4",
-      "version_code": 22,
+      "version_name": "1.4.0",
+      "version_code": 25,
       "force_update": false,
       "min_supported_version": "1.1.2",
-        "release_notes": [
-    {
-      "locale": "en",
-      "title": "Security, Reliability & Code Quality Improvements",
-      "items": [
-        "Hardened Windows update installation against PowerShell command injection by using safe parameterized arguments and strict validation of version-related values.",
-        "Added mandatory SHA-256 integrity verification for downloaded reciter archives before extraction. Corrupted or modified archives are automatically rejected and removed.",
-        "Enabled strict Authenticode verification by default for Windows update installers, preventing installation of untrusted executables and providing clear verification errors.",
-        "Added dedicated integrity tests covering SHA-256 verification and corrupted download scenarios.",
-        "Strengthened static analysis by enabling flutter_lints and enforcing a clean analysis result with 0 errors, 0 warnings, and 0 lints.",
-        "Improved network reliability by accepting only valid HTTP 200 and 206 responses when checking remote files with HEAD requests.",
-        "Improved repository and build hygiene by removing local.properties from Git tracking and adding an explicit Gradle warning when a Debug signing key is used for a build.",
-        "Completed missing Arabic localization entries for reader information, language selection, and cancellation actions.",
-        "Removed redundant file-scanner re-export code and updated imports to use the primary FileScannerService directly.",
-        "Documented the purpose of audioplayers in the project configuration, clarifying its dedicated use for the Splash screen alongside the main just_audio playback engine.",
-        "Updated the application version to 1.2.4+20."
-      ]
-    },
-    {
-      "locale": "ar",
-      "title": "تحسينات الأمان والموثوقية وجودة الكود",
-      "items": [
-        "تعزيز أمان تثبيت تحديثات Windows ضد حقن أوامر PowerShell من خلال استخدام معاملات آمنة والتحقق الصارم من القيم المرتبطة بأرقام الإصدارات.",
-        "إضافة فحص إجباري لبصمة SHA-256 لأرشيفات القراء التي يتم تنزيلها قبل فك الضغط، مع رفض الملفات التالفة أو المعدلة وحذفها تلقائيًا.",
-        "تفعيل التحقق الصارم من توقيع Authenticode افتراضيًا لملفات تثبيت تحديثات Windows، ومنع تثبيت الملفات التنفيذية غير الموثوقة مع عرض تفاصيل واضحة عند فشل التحقق.",
-        "إضافة اختبارات مخصصة للتحقق من سلامة فحص SHA-256 والتعامل مع سيناريوهات الملفات التالفة أو المعدلة.",
-        "تعزيز التحليل الاستاتيكي للكود من خلال تفعيل flutter_lints وفرض نتيجة تحليل نظيفة بدون أي أخطاء أو تحذيرات أو مخالفات.",
-        "تحسين موثوقية فحص الملفات عبر الشبكة من خلال قبول استجابات HTTP 200 و206 الصحيحة فقط عند استخدام طلبات HEAD ورفض الاستجابات غير الصالحة.",
-        "تحسين نظافة المستودع وعمليات البناء من خلال إزالة local.properties من تتبع Git وإضافة تحذير واضح في Gradle عند استخدام مفتاح Debug لتوقيع عملية البناء.",
-        "استكمال مفاتيح الترجمة العربية المفقودة الخاصة بمعلومات القارئ واختيار اللغة وإجراءات الإلغاء.",
-        "إزالة كود إعادة التصدير المكرر الخاص بملف فحص الملفات وتحديث جميع الاستيرادات لاستخدام FileScannerService الأساسي مباشرة.",
-        "إضافة توثيق داخل إعدادات المشروع لتوضيح سبب استخدام audioplayers بشكل مخصص لشاشة Splash إلى جانب محرك التشغيل الأساسي just_audio.",
-        "تحديث رقم إصدار التطبيق رسميًا إلى 1.2.4+20."
-      ]
-    }
-  ],
+
+"release_notes": [
+  {
+    "locale": "en",
+    "title": "Security, Storage & Performance Improvements",
+    "items": [
+      "Added Android 13+ audio permission support with a dedicated permission service that requests the required permission after the first frame without blocking the initial user interface.",
+      "Added configurable archive storage limits with FIFO cleanup options of 1 GB, 3 GB, 5 GB, 10 GB, or Unlimited.",
+      "Improved storage management by automatically removing older compressed archives when the configured storage limit is reached, while preserving extracted Quran audio files.",
+      "Added automated storage management tests covering accurate size calculation and safe archive cleanup behavior.",
+      "Expanded the project's security documentation with detailed information about HTTPS, SHA-256 integrity verification, and ZIP extraction protections.",
+      "Refactored the main application entry point by reducing main.dart from approximately 1,484 lines to 818 lines, significantly improving readability and maintainability.",
+      "Extracted the SurahListView, QuranPlayerHeader, PlaybackCenterArea, and ReciterInfoDialog into dedicated reusable UI components.",
+      "Removed unused imports and duplicated time-formatting logic to reduce unnecessary code complexity.",
+      "Improved audio architecture with just_audio as the primary Quran playback engine and background media integration, while retaining audioplayers specifically for the Windows Splash sound to improve startup stability.",
+      "Improved Windows Splash reliability by enforcing a stable display duration and protecting navigation from being triggered more than once.",
+      "Improved Windows UI stability by scheduling navigation after the current frame to prevent accessibility-tree and rendering-related crashes.",
+      "Improved Windows Authenticode error handling with clearer Arabic guidance for common signature verification failures such as hash mismatch and unsigned installers.",
+      "Strengthened reciter archive integrity by requiring SHA-256 verification before extraction and automatically removing corrupted or modified archives.",
+      "Maintained secure download and archive handling with HTTP 200/206 resume validation and protected ZIP extraction paths.",
+      "Improved overall code quality with 0 lints, 0 errors, and 0 warnings in static analysis.",
+      "Expanded automated test coverage to 60/60 tests with a 100% success rate."
+    ]
+  },
+  {
+    "locale": "ar",
+    "title": "تحسينات الأمان والتخزين والأداء",
+    "items": [
+      "إضافة دعم صلاحيات الصوت لأجهزة Android 13 والإصدارات الأحدث من خلال خدمة مخصصة للأذونات، مع طلب الصلاحية بعد الإطار الأول دون تعطيل واجهة المستخدم عند بدء التطبيق.",
+      "إضافة نظام قابل للتخصيص لإدارة مساحة أرشيفات القراء، مع خيارات تحديد الحد الأقصى للمساحة: 1 جيجابايت، 3 جيجابايت، 5 جيجابايت، 10 جيجابايت، أو بدون حد.",
+      "تحسين إدارة مساحة التخزين من خلال حذف الأرشيفات المضغوطة الأقدم تلقائيًا عند الوصول إلى الحد المحدد، مع الحفاظ على ملفات سور القرآن المستخرجة.",
+      "إضافة اختبارات آلية مخصصة لإدارة التخزين للتحقق من دقة حساب المساحة وسلامة عمليات تنظيف الأرشيفات.",
+      "توسيع توثيق أمان المشروع ليشمل شرحًا تفصيليًا لاستخدام HTTPS والتحقق من سلامة الملفات عبر SHA-256 وتدابير الحماية أثناء فك ضغط ملفات ZIP.",
+      "إعادة هيكلة نقطة تشغيل التطبيق من خلال تقليص حجم main.dart من حوالي 1,484 سطرًا إلى 818 سطرًا، مما يحسن قابلية القراءة والصيانة بشكل ملحوظ.",
+      "استخراج مكونات SurahListView وQuranPlayerHeader وPlaybackCenterArea وReciterInfoDialog إلى وحدات مستقلة وقابلة لإعادة الاستخدام.",
+      "إزالة الواردات غير المستخدمة وأكواد تنسيق الوقت المكررة لتقليل التعقيد البرمجي غير الضروري.",
+      "تحسين معمارية الصوت باستخدام just_audio كمحرك أساسي لتشغيل سور القرآن والتكامل مع التشغيل في الخلفية، مع تخصيص audioplayers لتشغيل صوت شاشة Splash على Windows لتحسين استقرار بدء التشغيل.",
+      "تحسين استقرار شاشة Splash على Windows من خلال فرض مدة عرض مستقرة وحماية عملية الانتقال لمنع تنفيذها أكثر من مرة.",
+      "تحسين استقرار واجهة Windows من خلال جدولة عمليات التنقل بعد اكتمال الإطار الحالي لتجنب مشاكل شجرة الإتاحة وعمليات الرسم.",
+      "تحسين التعامل مع أخطاء Authenticode على Windows من خلال تقديم إرشادات عربية أوضح لأسباب فشل التحقق الشائعة مثل عدم تطابق البصمة أو عدم وجود توقيع.",
+      "تعزيز سلامة أرشيفات القراء من خلال فرض التحقق من SHA-256 قبل فك الضغط وحذف الأرشيفات التالفة أو المعدلة تلقائيًا.",
+      "الحفاظ على آليات التنزيل وفك الضغط الآمن من خلال التحقق من استجابات HTTP 200 و206 أثناء الاستئناف وحماية مسارات استخراج ملفات ZIP.",
+      "تحسين جودة الكود والوصول إلى نتيجة تحليل استاتيكي خالية تمامًا من المشاكل: 0 مخالفات، 0 أخطاء، و0 تحذيرات.",
+      "رفع تغطية الاختبارات الآلية إلى 60/60 اختبارًا بنسبة نجاح 100%."
+    ]
+  }
+],
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.2.4/Listen-To-Quran-Full-Edition-v1.2.4.exe",
-          "sha256": "befe9b3140f350b8387ddafd5d62f7e51220a8683599b6febccb484584818480",
-          "size": 12475167
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.4.0/Listen-To-Quran-Full-Edition-v1.4.0.exe",
+          "sha256": "187468f151efe0ace44ed8382baae99faa01c8d447f97ca4cf6b1c5b42993886",
+          "size": 12477530
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.2.4/Listen.To.Quran.Full.Edition-v1.2.4.apk",
-          "sha256": "3765a11cdeb3e7e94db661f2f3dd4e35f34872f7550b3c7469941dd7d7d38a8a",
-          "size": 64635649,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.4.0/Listen.To.Quran.Full.Edition-v1.4.0.apk",
+          "sha256": "",
+          "size": 64668525,
           "min_android_sdk": 24
         }
       }
