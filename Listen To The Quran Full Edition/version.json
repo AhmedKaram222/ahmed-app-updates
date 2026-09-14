@@ -4,36 +4,38 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "1.4.2",
-      "version_code": 27,
+      "version_name": "1.5.0",
+      "version_code": 29,
       "force_update": false,
       "min_supported_version": "1.1.2",
 
 "release_notes": {
   "en": {
-    "title": "Repository Security, Data Integrity & Cache Reliability",
+    "title": "CI/CD, Windows Security & Dynamic Integrity Verification",
     "items": [
-      "Enabled strict static analysis with flutter_lints and analysis_options.yaml, achieving 0 errors, 0 warnings, and 0 lints with flutter analyze.",
-      "Removed local.properties from Git tracking and strengthened .gitignore rules to prevent local environment data and temporary build files from being committed.",
-      "Added permanent SHA-256 fingerprints for all 11 reciter archives to assets/data/reciters.json for strict archive integrity verification.",
-      "Added explicit warning logging when a reciter archive is downloaded or extracted without a matching trusted SHA-256 fingerprint.",
-      "Added a dedicated data integrity test that validates the actual reciters.json file and ensures every reciter has a valid SHA-256 fingerprint.",
-      "Fixed a cache cleanup race condition by adding a 10-minute age threshold to cleanupUpdateCache, preventing active or currently downloading update files from being removed prematurely.",
-      "Improved automated data integrity and security coverage across the update and reciter management systems.",
-      "All automated tests pass successfully: 63/63 tests (100%)."
+      "Added a GitHub Actions CI/CD pipeline that automatically runs on every push and pull request, performing strict Flutter static analysis, automated tests, and code coverage generation.",
+      "Hardened Windows update installer process execution by using parameterized PowerShell commands with param($path), -LiteralPath, and separately passed arguments to prevent command injection and special-character parsing issues.",
+      "Added dedicated Windows installer process tests with a mocked ProcessRunner to validate command construction and argument safety before execution on the system.",
+      "Added dynamic remote SHA-256 checksum support, allowing trusted reciter archive fingerprints to be retrieved from the remote version.json metadata without requiring a new application release.",
+      "Added persistent local storage for remotely retrieved reciter checksums in remote_reciter_checksums.json, with automatic fallback to the embedded trusted checksums when remote metadata is unavailable or the application is offline.",
+      "Added an in-app changelog system using ChangelogService and WhatsNewDialog to present important new features and fixes in Arabic and English after upgrading the application.",
+      "The in-app changelog is automatically suppressed on first installation and displayed only when the application detects a version upgrade, with the displayed version state persisted in application settings.",
+      "Expanded automated unit test coverage for dynamic checksum verification and the in-app changelog system.",
+      "All automated tests pass successfully: 76/76 tests (100%)."
     ]
   },
   "ar": {
-    "title": "تحسينات أمان المستودع وسلامة البيانات وموثوقية الكاش",
+    "title": "تحسينات CI/CD وأمان ويندوز والتحقق الديناميكي من سلامة البيانات",
     "items": [
-      "تفعيل التحليل الساكن الصارم باستخدام flutter_lints وملف analysis_options.yaml، مع الوصول إلى 0 أخطاء و0 تحذيرات و0 مخالفات عبر flutter analyze.",
-      "إزالة ملف local.properties من تتبع Git وتعزيز قواعد .gitignore لمنع رفع بيانات بيئة التطوير المحلية وملفات البناء المؤقتة إلى المستودع.",
-      "إضافة بصمات SHA-256 موثوقة ودائمة لجميع أرشيفات القراء الـ11 داخل assets/data/reciters.json للتحقق الصارم من سلامة الأرشيفات.",
-      "إضافة تسجيل تحذير صريح وفوري عند تنزيل أو استخراج أرشيف قارئ لا يحمل بصمة SHA-256 مطابقة للبصمة الموثوقة.",
-      "إضافة اختبار مخصص لسلامة البيانات يتحقق من ملف reciters.json الفعلي ويتأكد من وجود بصمة SHA-256 صالحة لكل قارئ.",
-      "إصلاح مشكلة التزامن أثناء تنظيف كاش التحديثات من خلال إضافة مهلة زمنية قدرها 10 دقائق إلى cleanupUpdateCache، لمنع حذف ملفات التحديث النشطة أو قيد التنزيل بشكل مفاجئ.",
-      "تحسين تغطية اختبارات سلامة البيانات والأمان عبر أنظمة التحديث وإدارة أرشيفات القراء.",
-      "اجتياز جميع الاختبارات الآلية بنجاح كامل: 63/63 اختبارًا بنسبة 100%."
+      "إضافة خط أنابيب CI/CD باستخدام GitHub Actions يعمل تلقائيًا مع كل عملية Push أو Pull Request، لتنفيذ التحليل الساكن الصارم واختبارات التطبيق وإنشاء تقارير تغطية الكود.",
+      "تحصين عمليات تشغيل مثبت التحديثات على Windows من خلال استخدام أوامر PowerShell بمعطيات آمنة عبر param($path) و-LiteralPath وتمرير المسارات كوسائط منفصلة، لمنع حقن الأوامر ومشكلات تفسير الرموز الخاصة.",
+      "إضافة اختبارات مخصصة لعمليات مثبت Windows باستخدام ProcessRunner محاكي للتحقق من سلامة بناء الأوامر والوسائط قبل تنفيذها فعليًا على النظام.",
+      "إضافة دعم لجلب بصمات SHA-256 الموثوقة لأرشيفات القراء ديناميكيًا من ملف version.json البعيد، مما يسمح بتحديث بصمات الأرشيفات الموثوقة دون الحاجة إلى إصدار نسخة جديدة من التطبيق.",
+      "إضافة تخزين محلي دائم للبصمات التي يتم جلبها عن بُعد داخل remote_reciter_checksums.json، مع نظام رجوع تلقائي إلى البصمات الموثوقة المدمجة داخل التطبيق عند تعذر الوصول إلى البيانات البعيدة أو العمل دون اتصال بالإنترنت.",
+      "إضافة نظام سجل تغييرات داخل التطبيق باستخدام ChangelogService وWhatsNewDialog لعرض أهم الميزات والإصلاحات للمستخدم باللغتين العربية والإنجليزية بعد ترقية التطبيق.",
+      "يتم إخفاء سجل التغييرات تلقائيًا عند التثبيت لأول مرة، ولا يظهر إلا عند اكتشاف ترقية فعلية لنسخة التطبيق، مع حفظ حالة النسخة التي تم عرض سجل تغييراتها داخل إعدادات التطبيق.",
+      "توسيع اختبارات الوحدة لتغطية التحقق الديناميكي من البصمات ونظام سجل التغييرات داخل التطبيق.",
+      "اجتياز جميع الاختبارات الآلية بنجاح كامل: 76/76 اختبارًا بنسبة 100%."
     ]
   }
 },
@@ -41,16 +43,16 @@
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.4.2/Listen-To-Quran-Full-Edition-v1.4.2.exe",
-          "sha256": "cbd49c09f62dca2b82f9ea4caed9dcbe0a43cb9b85e462e0785a32db5bff6d73",
-          "size": 12478155
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.5.0/Listen-To-Quran-Full-Edition-v1.5.0.exe",
+          "sha256": "6890679a5955b07a615155fe8b9ea8c1c8099c584ac2c66da16d1d963d239da0",
+          "size": 12488255
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.4.2/Listen.To.Quran.Full.Edition-v1.4.2.apk",
-          "sha256": "e5e76e2517c5103ea022f317b2eb56c4a8c7ab1ba4e0b5d206e71578e3eea376",
-          "size": 64669117,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.5.0/Listen.To.Quran.Full.Edition-v1.5.0.apk",
+          "sha256": "",
+          "size": 64769419,
           "min_android_sdk": 24
         }
       }
