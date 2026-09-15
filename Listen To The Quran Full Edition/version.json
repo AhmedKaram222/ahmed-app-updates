@@ -11,31 +11,39 @@
 
 "release_notes": {
   "en": {
-    "title": "CI/CD, Windows Security & Dynamic Integrity Verification",
+    "title": "CI/CD, Code Quality, Test Coverage & Security Documentation",
     "items": [
-      "Added a GitHub Actions CI/CD pipeline that automatically runs on every push and pull request, performing strict Flutter static analysis, automated tests, and code coverage generation.",
-      "Hardened Windows update installer process execution by using parameterized PowerShell commands with param($path), -LiteralPath, and separately passed arguments to prevent command injection and special-character parsing issues.",
-      "Added dedicated Windows installer process tests with a mocked ProcessRunner to validate command construction and argument safety before execution on the system.",
-      "Added dynamic remote SHA-256 checksum support, allowing trusted reciter archive fingerprints to be retrieved from the remote version.json metadata without requiring a new application release.",
-      "Added persistent local storage for remotely retrieved reciter checksums in remote_reciter_checksums.json, with automatic fallback to the embedded trusted checksums when remote metadata is unavailable or the application is offline.",
-      "Added an in-app changelog system using ChangelogService and WhatsNewDialog to present important new features and fixes in Arabic and English after upgrading the application.",
-      "The in-app changelog is automatically suppressed on first installation and displayed only when the application detects a version upgrade, with the displayed version state persisted in application settings.",
-      "Expanded automated unit test coverage for dynamic checksum verification and the in-app changelog system.",
-      "All automated tests pass successfully: 76/76 tests (100%)."
+      "Hardened reciter checksum lookups by normalizing reciter identifiers and names with trim and lowercase operations, preventing verification failures caused by whitespace or casing differences.",
+      "Updated ChangelogService to retrieve the current application version dynamically through PackageInfo.fromPlatform() instead of relying on a hardcoded version string.",
+      "Improved changelog organization by ordering release entries chronologically and documenting the changelog structure in README.md.",
+      "Added a comprehensive operational reciter verification test covering all 11 reciters, including SHA-256 hexadecimal format validation, checksum uniqueness, and download URL integrity.",
+      "Strengthened repository hygiene by ensuring android/local.properties is excluded from Git tracking to protect local development environment data.",
+      "Added a GitHub Actions CI/CD workflow that automatically runs on every push and pull request, enforcing strict Flutter analysis with fatal infos and warnings and executing the complete automated test suite.",
+      "Added a live CI build-status badge to the main README.md for immediate visibility into the repository's automation status.",
+      "Completely removed the legacy Authenticode verification layer, including all related functions, enums, parameters, and PowerShell scripts, leaving no remaining Authenticode references in the repository.",
+      "Expanded the automated test suite to 108 successful tests and achieved the required 70%+ logical coverage threshold across critical components, including ChangelogService (72.00%), FileManager (73.11%), and UpdateService (71.25%).",
+      "Configured the CI pipeline to automatically generate coverage/lcov.info and publish the coverage report as a GitHub Actions artifact.",
+      "Expanded the README.md security documentation to clearly describe the application's trust model based on HTTPS transport security, SHA-256 integrity verification, and file-size validation before extraction and installation.",
+      "Documented archive security protections against Zip-Slip and Zip-Bomb attacks, along with the dynamic remote checksum update mechanism using remote_reciter_checksums.json.",
+      "Formally documented the retirement of all legacy cryptographic and executable-signing layers, including Ed25519 and Authenticode, to provide a clear and transparent security model for users and contributors."
     ]
   },
   "ar": {
-    "title": "تحسينات CI/CD وأمان ويندوز والتحقق الديناميكي من سلامة البيانات",
+    "title": "تحسينات CI/CD وجودة الكود والتغطية الاختبارية والتوثيق الأمني",
     "items": [
-      "إضافة خط أنابيب CI/CD باستخدام GitHub Actions يعمل تلقائيًا مع كل عملية Push أو Pull Request، لتنفيذ التحليل الساكن الصارم واختبارات التطبيق وإنشاء تقارير تغطية الكود.",
-      "تحصين عمليات تشغيل مثبت التحديثات على Windows من خلال استخدام أوامر PowerShell بمعطيات آمنة عبر param($path) و-LiteralPath وتمرير المسارات كوسائط منفصلة، لمنع حقن الأوامر ومشكلات تفسير الرموز الخاصة.",
-      "إضافة اختبارات مخصصة لعمليات مثبت Windows باستخدام ProcessRunner محاكي للتحقق من سلامة بناء الأوامر والوسائط قبل تنفيذها فعليًا على النظام.",
-      "إضافة دعم لجلب بصمات SHA-256 الموثوقة لأرشيفات القراء ديناميكيًا من ملف version.json البعيد، مما يسمح بتحديث بصمات الأرشيفات الموثوقة دون الحاجة إلى إصدار نسخة جديدة من التطبيق.",
-      "إضافة تخزين محلي دائم للبصمات التي يتم جلبها عن بُعد داخل remote_reciter_checksums.json، مع نظام رجوع تلقائي إلى البصمات الموثوقة المدمجة داخل التطبيق عند تعذر الوصول إلى البيانات البعيدة أو العمل دون اتصال بالإنترنت.",
-      "إضافة نظام سجل تغييرات داخل التطبيق باستخدام ChangelogService وWhatsNewDialog لعرض أهم الميزات والإصلاحات للمستخدم باللغتين العربية والإنجليزية بعد ترقية التطبيق.",
-      "يتم إخفاء سجل التغييرات تلقائيًا عند التثبيت لأول مرة، ولا يظهر إلا عند اكتشاف ترقية فعلية لنسخة التطبيق، مع حفظ حالة النسخة التي تم عرض سجل تغييراتها داخل إعدادات التطبيق.",
-      "توسيع اختبارات الوحدة لتغطية التحقق الديناميكي من البصمات ونظام سجل التغييرات داخل التطبيق.",
-      "اجتياز جميع الاختبارات الآلية بنجاح كامل: 76/76 اختبارًا بنسبة 100%."
+      "تحصين عمليات البحث عن بصمات القراء من خلال توحيد معرّفات وأسماء القراء باستخدام trim وlowercase، لمنع أخطاء التحقق الناتجة عن اختلاف المسافات أو حالة الأحرف.",
+      "تحديث ChangelogService لاستخراج رقم إصدار التطبيق الحالي ديناميكيًا باستخدام PackageInfo.fromPlatform() بدلًا من الاعتماد على رقم إصدار ثابت داخل الكود.",
+      "تحسين تنظيم سجل التغييرات من خلال ترتيب إصداراته زمنيًا وتوثيق هيكلية السجل داخل README.md.",
+      "إضافة اختبار تشغيلي شامل للتحقق من بيانات القراء الـ11، بما في ذلك التحقق من صحة تنسيق بصمات SHA-256 السداسي عشري، وفرادة البصمات، وسلامة روابط التنزيل.",
+      "تعزيز نظافة المستودع من خلال ضمان استبعاد android/local.properties من تتبع Git لحماية بيانات بيئة التطوير المحلية.",
+      "إضافة سير عمل CI/CD باستخدام GitHub Actions يعمل تلقائيًا مع كل عملية Push أو Pull Request، ويفرض التحليل الصارم لـ Flutter مع اعتبار المعلومات والتحذيرات أخطاءً، بالإضافة إلى تنفيذ جميع الاختبارات الآلية.",
+      "إضافة شارة مباشرة لحالة عملية CI إلى أعلى README.md لإتاحة معرفة حالة أنبوب الأتمتة بشكل فوري.",
+      "إزالة طبقة التحقق القديمة Authenticode بالكامل، بما يشمل جميع الدوال والـEnums والمعاملات وسكريبتات PowerShell المرتبطة بها، مع تصفير جميع المرجعيات الخاصة بها داخل المستودع.",
+      "توسيع حزمة الاختبارات الآلية إلى 108 اختبارات ناجحة، مع تجاوز حد التغطية المنطقية المطلوب البالغ 70% للمكونات الحرجة، حيث بلغت التغطية 72.00% لـ ChangelogService و73.11% لـ FileManager و71.25% لـ UpdateService.",
+      "تهيئة أنبوب CI لإنشاء ملف coverage/lcov.info تلقائيًا وتصدير تقرير التغطية كـ Artifact ضمن مخرجات GitHub Actions.",
+      "توسيع توثيق الأمان في README.md لشرح نموذج الثقة في التطبيق بوضوح، والقائم على أمان النقل عبر HTTPS والتحقق من سلامة الملفات باستخدام SHA-256 والتحقق من حجم الملفات قبل فكها وتثبيتها.",
+      "توثيق آليات حماية الأرشيفات من ثغرات Zip-Slip والقنابل المضغوطة Zip-Bomb، بالإضافة إلى آلية تحديث بصمات القراء ديناميكيًا عبر remote_reciter_checksums.json.",
+      "توثيق الإيقاف الرسمي لجميع طبقات التشفير والتوقيع التنفيذية القديمة، بما في ذلك Ed25519 وAuthenticode، لتوفير نموذج أمان واضح وشفاف للمستخدمين والمساهمين في المشروع."
     ]
   }
 },
@@ -43,16 +51,16 @@
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.5.0/Listen-To-Quran-Full-Edition-v1.5.0.exe",
-          "sha256": "6890679a5955b07a615155fe8b9ea8c1c8099c584ac2c66da16d1d963d239da0",
-          "size": 12488255
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.7.0/Listen-To-Quran-Full-Edition-v1.7.0.exe",
+          "sha256": "54708cec1f470a1e87e03120470d041c167823b39e54e38928f861f7d5e6ab9e",
+          "size": 12488609
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.5.0/Listen.To.Quran.Full.Edition-v1.5.0.apk",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.7.0/Listen.To.Quran.Full.Edition-v1.7.0.apk",
           "sha256": "",
-          "size": 64769419,
+          "size": 64770223,
           "min_android_sdk": 24
         }
       }
