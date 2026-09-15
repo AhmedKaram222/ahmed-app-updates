@@ -4,8 +4,8 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "1.5.0",
-      "version_code": 29,
+      "version_name": "1.7.0",
+      "version_code": 32,
       "force_update": false,
       "min_supported_version": "1.1.2",
 
@@ -59,7 +59,7 @@
           "enabled": true,
           "file_type": "apk",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.7.0/Listen.To.Quran.Full.Edition-v1.7.0.apk",
-          "sha256": "",
+          "sha256": "1eda2273e5d9500cbc7f1f0a5ab9e785874487bd1e15255ae871afb52efcb108",
           "size": 64770223,
           "min_android_sdk": 24
         }
