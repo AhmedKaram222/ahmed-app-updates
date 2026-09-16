@@ -4,46 +4,50 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "1.7.0",
-      "version_code": 32,
+      "version_name": "1.8.0",
+      "version_code": 38,
       "force_update": false,
       "min_supported_version": "1.1.2",
 
 "release_notes": {
   "en": {
-    "title": "CI/CD, Code Quality, Test Coverage & Security Documentation",
+    "title": "Security, Localization, Accessibility & Performance Improvements",
     "items": [
-      "Hardened reciter checksum lookups by normalizing reciter identifiers and names with trim and lowercase operations, preventing verification failures caused by whitespace or casing differences.",
-      "Updated ChangelogService to retrieve the current application version dynamically through PackageInfo.fromPlatform() instead of relying on a hardcoded version string.",
-      "Improved changelog organization by ordering release entries chronologically and documenting the changelog structure in README.md.",
-      "Added a comprehensive operational reciter verification test covering all 11 reciters, including SHA-256 hexadecimal format validation, checksum uniqueness, and download URL integrity.",
-      "Strengthened repository hygiene by ensuring android/local.properties is excluded from Git tracking to protect local development environment data.",
-      "Added a GitHub Actions CI/CD workflow that automatically runs on every push and pull request, enforcing strict Flutter analysis with fatal infos and warnings and executing the complete automated test suite.",
-      "Added a live CI build-status badge to the main README.md for immediate visibility into the repository's automation status.",
-      "Completely removed the legacy Authenticode verification layer, including all related functions, enums, parameters, and PowerShell scripts, leaving no remaining Authenticode references in the repository.",
-      "Expanded the automated test suite to 108 successful tests and achieved the required 70%+ logical coverage threshold across critical components, including ChangelogService (72.00%), FileManager (73.11%), and UpdateService (71.25%).",
-      "Configured the CI pipeline to automatically generate coverage/lcov.info and publish the coverage report as a GitHub Actions artifact.",
-      "Expanded the README.md security documentation to clearly describe the application's trust model based on HTTPS transport security, SHA-256 integrity verification, and file-size validation before extraction and installation.",
-      "Documented archive security protections against Zip-Slip and Zip-Bomb attacks, along with the dynamic remote checksum update mechanism using remote_reciter_checksums.json.",
-      "Formally documented the retirement of all legacy cryptographic and executable-signing layers, including Ed25519 and Authenticode, to provide a clear and transparent security model for users and contributors."
+      "Strengthened update and reciter archive integrity by enforcing HTTPS and direct SHA-256 verification, with the legacy Authenticode and Ed25519 mechanisms fully removed.",
+      "Fixed the reciter U1 ID shift to ensure all 11 reciters pass hash verification and retain complete identification metadata.",
+      "Localized 44 previously hardcoded strings through AppLocalizations with full Arabic and English support.",
+      "Added dynamic reciter name display based on the currently selected application language.",
+      "Improved Light Theme color contrast across the audio player, Surah lists, and maintenance dialog using the dynamic colorScheme.",
+      "Set the minimum Windows window size to 500x640 and improved layout behavior across different display DPI scaling settings.",
+      "Increased Android touch targets to a minimum of 48x48 dp across playback controls and menu actions for improved usability.",
+      "Added Semantics accessibility labels to help screen readers identify playback controls and Quran recitation progress.",
+      "Applied dynamic RTL/LTR layout handling with EdgeInsetsDirectional to maintain consistent interfaces across supported languages.",
+      "Improved audio progress bar responsiveness by limiting seek operations to slider release through onChangeEnd instead of performing repeated seeks while dragging.",
+      "Preserved the hybrid audio architecture, using audioplayers for the startup screen and just_audio for Quran recitation playback.",
+      "Configured GitHub Actions automation through .github/workflows/ci.yml to run desktop quality checks and automated tests during pull and merge workflows.",
+      "Cleaned and organized the Git repository, strengthened .gitignore rules, and removed personal development paths and temporary files from tracked project content.",
+      "Synchronized the application version to 1.8.0+38 across pubspec.yaml and changelog.json.",
+      "Added operational benchmark tests covering file scanning performance, storage management, and SHA-256 checksum matching speed."
     ]
   },
   "ar": {
-    "title": "تحسينات CI/CD وجودة الكود والتغطية الاختبارية والتوثيق الأمني",
+    "title": "تحسينات الأمان والتوطين وإتاحة الاستخدام والأداء",
     "items": [
-      "تحصين عمليات البحث عن بصمات القراء من خلال توحيد معرّفات وأسماء القراء باستخدام trim وlowercase، لمنع أخطاء التحقق الناتجة عن اختلاف المسافات أو حالة الأحرف.",
-      "تحديث ChangelogService لاستخراج رقم إصدار التطبيق الحالي ديناميكيًا باستخدام PackageInfo.fromPlatform() بدلًا من الاعتماد على رقم إصدار ثابت داخل الكود.",
-      "تحسين تنظيم سجل التغييرات من خلال ترتيب إصداراته زمنيًا وتوثيق هيكلية السجل داخل README.md.",
-      "إضافة اختبار تشغيلي شامل للتحقق من بيانات القراء الـ11، بما في ذلك التحقق من صحة تنسيق بصمات SHA-256 السداسي عشري، وفرادة البصمات، وسلامة روابط التنزيل.",
-      "تعزيز نظافة المستودع من خلال ضمان استبعاد android/local.properties من تتبع Git لحماية بيانات بيئة التطوير المحلية.",
-      "إضافة سير عمل CI/CD باستخدام GitHub Actions يعمل تلقائيًا مع كل عملية Push أو Pull Request، ويفرض التحليل الصارم لـ Flutter مع اعتبار المعلومات والتحذيرات أخطاءً، بالإضافة إلى تنفيذ جميع الاختبارات الآلية.",
-      "إضافة شارة مباشرة لحالة عملية CI إلى أعلى README.md لإتاحة معرفة حالة أنبوب الأتمتة بشكل فوري.",
-      "إزالة طبقة التحقق القديمة Authenticode بالكامل، بما يشمل جميع الدوال والـEnums والمعاملات وسكريبتات PowerShell المرتبطة بها، مع تصفير جميع المرجعيات الخاصة بها داخل المستودع.",
-      "توسيع حزمة الاختبارات الآلية إلى 108 اختبارات ناجحة، مع تجاوز حد التغطية المنطقية المطلوب البالغ 70% للمكونات الحرجة، حيث بلغت التغطية 72.00% لـ ChangelogService و73.11% لـ FileManager و71.25% لـ UpdateService.",
-      "تهيئة أنبوب CI لإنشاء ملف coverage/lcov.info تلقائيًا وتصدير تقرير التغطية كـ Artifact ضمن مخرجات GitHub Actions.",
-      "توسيع توثيق الأمان في README.md لشرح نموذج الثقة في التطبيق بوضوح، والقائم على أمان النقل عبر HTTPS والتحقق من سلامة الملفات باستخدام SHA-256 والتحقق من حجم الملفات قبل فكها وتثبيتها.",
-      "توثيق آليات حماية الأرشيفات من ثغرات Zip-Slip والقنابل المضغوطة Zip-Bomb، بالإضافة إلى آلية تحديث بصمات القراء ديناميكيًا عبر remote_reciter_checksums.json.",
-      "توثيق الإيقاف الرسمي لجميع طبقات التشفير والتوقيع التنفيذية القديمة، بما في ذلك Ed25519 وAuthenticode، لتوفير نموذج أمان واضح وشفاف للمستخدمين والمساهمين في المشروع."
+      "تعزيز سلامة التحديثات وأرشيفات القراء من خلال فرض استخدام HTTPS والتحقق المباشر من بصمات SHA-256، مع إزالة آليات Authenticode وEd25519 القديمة بالكامل.",
+      "إصلاح انزياح معرّف القارئ U1 لضمان اجتياز القراء الـ11 جميعًا لفحص الهاش والحفاظ على اكتمال بياناتهم التعريفية.",
+      "توطين 44 نصًا ثابتًا كانت موجودة داخل الكود ونقلها إلى نظام AppLocalizations مع دعم كامل للغتين العربية والإنجليزية.",
+      "إضافة عرض ديناميكي لأسماء القراء وفقًا للغة الواجهة المختارة حاليًا.",
+      "تحسين تباين الألوان في الوضع الفاتح عبر المشغل الصوتي وقوائم السور وحوار الصيانة باستخدام colorScheme الديناميكي.",
+      "تحديد الحد الأدنى لأبعاد نافذة Windows عند 500x640 مع تحسين تكيف الواجهة مع إعدادات مقياس العرض المختلفة (DPI Scaling).",
+      "زيادة أهداف اللمس في Android إلى حد أدنى قدره 48x48 dp عبر أزرار التحكم في التشغيل وإجراءات القوائم لتحسين سهولة الاستخدام.",
+      "إضافة تسميات Semantics لإتاحة الاستخدام لمساعدة برامج قراءة الشاشة على التعرف على أزرار المشغل ونسبة تقدم التلاوة.",
+      "تطبيق توجيه ديناميكي للواجهات RTL/LTR باستخدام EdgeInsetsDirectional لضمان اتساق التخطيط مع اللغتين المدعومتين.",
+      "تحسين استجابة شريط التقدم الصوتي من خلال تنفيذ عمليات البحث الصوتي عند إفلات شريط التمرير فقط باستخدام onChangeEnd، بدلًا من تنفيذ عمليات بحث متكررة أثناء السحب.",
+      "الحفاظ على المعمارية الصوتية الهجينة، باستخدام audioplayers للشاشة الافتتاحية وjust_audio لتشغيل تلاوة القرآن.",
+      "تهيئة أتمتة GitHub Actions من خلال .github/workflows/ci.yml لتشغيل فحوصات جودة نسخة سطح المكتب والاختبارات الآلية ضمن عمليات Pull وMerge.",
+      "تنظيف وتنظيم مستودع Git وتعزيز قواعد .gitignore وإزالة مسارات التطوير الشخصية والملفات المؤقتة من محتوى المشروع المتتبع.",
+      "توحيد رقم إصدار التطبيق ومزامنته ليصبح 1.8.0+38 في كل من pubspec.yaml وchangelog.json.",
+      "إضافة اختبارات قياس أداء تشغيلية للتحقق من أداء مسح الملفات وإدارة المساحة التخزينية وسرعة مطابقة بصمات SHA-256."
     ]
   }
 },
@@ -51,16 +55,16 @@
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.7.0/Listen-To-Quran-Full-Edition-v1.7.0.exe",
-          "sha256": "54708cec1f470a1e87e03120470d041c167823b39e54e38928f861f7d5e6ab9e",
-          "size": 12488609
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.8.0/Listen-To-Quran-Full-Edition-v1.8.0.exe",
+          "sha256": "aceb0175d8dab0bb103f36f66de42131ec564e715f64d89be92a1c2010e3ecff",
+          "size": 12494950
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.7.0/Listen.To.Quran.Full.Edition-v1.7.0.apk",
-          "sha256": "1eda2273e5d9500cbc7f1f0a5ab9e785874487bd1e15255ae871afb52efcb108",
-          "size": 64770223,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.8.0/Listen.To.Quran.Full.Edition-v1.8.0.apk",
+          "sha256": "7844e8fda558c94b3c1517961019278f1c762d87f78a5fd3af6f9dc3bba2c566",
+          "size": 64853819,
           "min_android_sdk": 24
         }
       }
