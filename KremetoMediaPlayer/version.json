@@ -4,32 +4,35 @@
       "app_name": "KremetoMediaPlayer",
       "app_id": "kmp",
 
-      "version_name": "1.5.1",
-      "version_code": 10,
+      "version_name": "1.5.3",
+      "version_code": 12,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
 
-      "release_notes": [
-      "Improved core engine stability and application lifecycle management",
-      "Fixed event listener leaks and improved global media key lifecycle handling",
-      "Enabled real hardware acceleration through the playback engine",
-      "Added active playback session persistence and automatic restoration",
-      "Improved repeat-single playback to restart tracks from the beginning",
-      "Hardened settings initialization and provider lifecycle handling",
-      "Improved playback continuity, memory management, and runtime reliability",
-      "Improved overall performance and stability"
-      ],
+     "release_notes": [
+  "Improved playback stability with real hardware acceleration support",
+  "Added automatic playback session and active media restoration",
+  "Improved repeat-single behavior and global media key controls",
+  "Added native Windows JumpList integration",
+  "Improved playlist reliability with automatic missing-file detection",
+  "Added live playback progress synchronization for Recent Media",
+  "Optimized SQLite usage and reduced unnecessary database writes",
+  "Improved file size formatting for small files",
+  "Expanded KeepAwake support across Windows, macOS, and Linux",
+  "Optimized range selection for lower memory usage",
+  "Expanded automated test coverage with 100% passing tests (73/73)"
+],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.5.1/KremetoMediaPlayer-v1.5.1.apk",
-          "sha256": "64a9b4a03624c5633cb783765d0b85e58d851b75b0b185b688dee7fa7002d9f5",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.5.3/KremetoMediaPlayer-v1.5.3.apk",
+          "sha256": "13e3f7b55d3e4bdff00d385742f38d3a571d653b575947d22014fc9ae26c7fac",
           "size": 103239621
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.5.1/KremetoMediaPlayer-v1.5.1.exe",
-          "sha256": "bcdfc65b1cb025c6cd8f9dd85d3a2170b5a6fa5719d724c404d8dab5f7ea7e84",
-          "size": 26694699
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.5.3/KremetoMediaPlayer-v1.5.3.exe",
+          "sha256": "654daae7c5fdaddaf60210922617cbfb9e6713cf288ffd62396b6fdc0f137b10",
+          "size": 26695518
         }
       }
     }
