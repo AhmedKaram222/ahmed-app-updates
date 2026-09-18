@@ -4,35 +4,34 @@
       "app_name": "KremetoMediaPlayer",
       "app_id": "kmp",
 
-      "version_name": "1.6.1",
-      "version_code": 20,
+      "version_name": "1.7.0",
+      "version_code": 27,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
 
       "release_notes": [
-        "Introduced hierarchical folder navigation with expandable tree support",
-        "Added advanced multi-item rubber-band selection",
-        "Optimized large playlist processing, scrolling, and memory usage",
-        "Improved playback stability with real hardware acceleration support",
-        "Enhanced playlist and SQLite synchronization for reliable data persistence",
-        "Improved playback position tracking and Recent Media performance",
-        "Added dynamic light and dark theme support with complete RTL localization",
-        "Improved mobile controls, gestures, responsive navigation, and notch handling",
-        "Added Windows window state persistence and high-DPI display support",
-        "Improved native window sizing, layout behavior, and Android resize support",
-        "Expanded cross-platform stability and runtime performance"
+        "Improved light and dark theme consistency across the application",
+        "Completed Arabic and English localization for playlist management",
+        "Integrated saved playlist management with reliable database persistence",
+        "Improved mobile navigation with swipe actions and quick file access",
+        "Optimized database queries, media caching, and UI resource usage",
+        "Improved metadata processing with concurrent background execution",
+        "Enhanced window sizing, High-DPI scaling, and 4K display layouts",
+        "Improved scrolling stability and responsive workspace behavior",
+        "Enhanced overall performance, stability, and cross-platform reliability",
+        "Verified production readiness with 74/74 automated tests passing and zero analysis issues"
       ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.6.1/KremetoMediaPlayer-v1.6.1.apk",
-          "sha256": "7902964d3b7761bdc0aabae7320d5098d06df18b6adad3a047698b4f93103222",
-          "size": 103256173
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.7.0/KremetoMediaPlayer-v1.7.0.apk",
+          "sha256": "6583540aa2cb5a257e2d06795b5d748ad38014e7b412be20620128aebbe2569c",
+          "size": 103715285
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.6.1/KremetoMediaPlayer-v1.6.1.exe",
-          "sha256": "1d498b23d9b1da17caf9b0d1850945497c2a459f4981f84eb15d2c53d74eab74",
-          "size": 26708014
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.7.0/KremetoMediaPlayer-v1.7.0.exe",
+          "sha256": "718903e607d6ff39a3a5c81ff0b610ccadd0633147a5a00765f6d858ee7c288d",
+          "size": 26732222
         }
       }
     }
