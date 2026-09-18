@@ -4,36 +4,37 @@
       "app_name": "KremetoMediaPlayer",
       "app_id": "kmp",
 
-      "version_name": "1.8.0",
-      "version_code": 32,
+      "version_name": "1.9.0",
+      "version_code": 39,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
 
     "release_notes": [
-    "Introduced a dedicated mobile iذnterface with responsive navigation", 
-    "Added touch-friendly playback controls and advanced gesture interactions", 
-    "Added quick mobile playlist access with swipe-to-remove support", 
-    "Integrated Android media controls with notifications and lock-screen playback", 
-    "Improved fullscreen playback, orientation handling, and screen wake behavior", 
-    "Optimized playlist duration tracking and folder state persistence", 
-    "Improved media data handling and application stability", 
-    "Enhanced light and dark theme consistency across the interface", 
-    "Improved High-DPI display scaling and visual consistency", 
-    "Added clear feedback when checking for available updates", 
-    "Improved overall performance, usability, and cross-platform reliability", 
-    "Verified release stability with 74/74 automated tests passing and zero analysis issues" 
+    "Introduced a dedicated Android full-screen player with advanced touch gestures",
+    "Added responsive mobile navigation and categorized media browsing",
+    "Added asynchronous media thumbnails and smooth video transitions",
+    "Improved accessibility with full system text scaling support",
+    "Fixed missing translations and improved Arabic and English localization",
+    "Improved light theme contrast and dynamic visual consistency",
+    "Optimized playlist selection, scrolling, and media event processing",
+    "Improved memory management, resource cleanup, and application stability",
+    "Enhanced playlist synchronization across M3U, XSPF, and local storage",
+    "Improved update security, installation reliability, and network diagnostics",
+    "Improved error logging and removed silent exception handling",
+    "Improved overall performance, reliability, and cross-platform compatibility",
+    "Verified production stability with 74/74 automated tests passing and zero analysis issues"
     ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.8.0/KremetoMediaPlayer-v1.8.0.apk",
-          "sha256": "514089b00376af67cf90830f4854abf2bebb758a4982d43ac22f5897365decc6",
-          "size": 104061217
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.9.0/KremetoMediaPlayer-v1.9.0.apk",
+          "sha256": "2e9010e5a226e92ac76b01ecb555a907b7b58249419eb6ff73c697b3dec3a2db",
+          "size": 104061225
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.8.0/KremetoMediaPlayer-v1.8.0.exe",
-          "sha256": "ffa8b61e317a624966fe3e322c8b6b70950b5de30b444254de6a48a8c9842686",
-          "size": 26733058
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.9.0/KremetoMediaPlayer-v1.9.0.exe",
+          "sha256": "23d7d8a59a1bd8f7ef06c52c46d1b9a7c22825e74341fd78b947dfadabcfa6d2",
+          "size": 26740324
         }
       }
     }
