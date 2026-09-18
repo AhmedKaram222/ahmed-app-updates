@@ -4,34 +4,36 @@
       "app_name": "KremetoMediaPlayer",
       "app_id": "kmp",
 
-      "version_name": "1.7.0",
-      "version_code": 27,
+      "version_name": "1.8.0",
+      "version_code": 32,
 
       "force_update": false,
       "min_supported_version": "1.0.1",
 
-      "release_notes": [
-        "Improved light and dark theme consistency across the application",
-        "Completed Arabic and English localization for playlist management",
-        "Integrated saved playlist management with reliable database persistence",
-        "Improved mobile navigation with swipe actions and quick file access",
-        "Optimized database queries, media caching, and UI resource usage",
-        "Improved metadata processing with concurrent background execution",
-        "Enhanced window sizing, High-DPI scaling, and 4K display layouts",
-        "Improved scrolling stability and responsive workspace behavior",
-        "Enhanced overall performance, stability, and cross-platform reliability",
-        "Verified production readiness with 74/74 automated tests passing and zero analysis issues"
-      ],
+    "release_notes": [
+    "Introduced a dedicated mobile iذnterface with responsive navigation", 
+    "Added touch-friendly playback controls and advanced gesture interactions", 
+    "Added quick mobile playlist access with swipe-to-remove support", 
+    "Integrated Android media controls with notifications and lock-screen playback", 
+    "Improved fullscreen playback, orientation handling, and screen wake behavior", 
+    "Optimized playlist duration tracking and folder state persistence", 
+    "Improved media data handling and application stability", 
+    "Enhanced light and dark theme consistency across the interface", 
+    "Improved High-DPI display scaling and visual consistency", 
+    "Added clear feedback when checking for available updates", 
+    "Improved overall performance, usability, and cross-platform reliability", 
+    "Verified release stability with 74/74 automated tests passing and zero analysis issues" 
+    ],
       "platforms": {
         "android": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.7.0/KremetoMediaPlayer-v1.7.0.apk",
-          "sha256": "6583540aa2cb5a257e2d06795b5d748ad38014e7b412be20620128aebbe2569c",
-          "size": 103715285
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.8.0/KremetoMediaPlayer-v1.8.0.apk",
+          "sha256": "514089b00376af67cf90830f4854abf2bebb758a4982d43ac22f5897365decc6",
+          "size": 104061217
         },
         "windows": {
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.7.0/KremetoMediaPlayer-v1.7.0.exe",
-          "sha256": "718903e607d6ff39a3a5c81ff0b610ccadd0633147a5a00765f6d858ee7c288d",
-          "size": 26732222
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/KMP-v1.8.0/KremetoMediaPlayer-v1.8.0.exe",
+          "sha256": "ffa8b61e317a624966fe3e322c8b6b70950b5de30b444254de6a48a8c9842686",
+          "size": 26733058
         }
       }
     }
