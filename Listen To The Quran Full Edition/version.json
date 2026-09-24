@@ -4,74 +4,66 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "1.9.0",
+      "version_name": "2.0.0",
       "version_code": 42,
       "force_update": false,
       "min_supported_version": "1.1.2",
 
 "release_notes": {
-  "en": {
-    "title": "Golden Release — Complete Localization, Accessibility & Platform Polish",
-    "items": [
-      "Completed the application-wide localization pass by removing remaining hardcoded Arabic strings from the user interface and moving them into the official app_ar.arb and app_en.arb translation resources.",
-      "Localized path-related alerts, the \"Fix Now\" action, reset confirmation dialogs, and integrity audit error messages with support for dynamic parameters.",
-      "Added fully dynamic reciter name localization, displaying each reciter's name according to the currently selected application language.",
-      "Expanded accessibility coverage across the main Surah list and the Surah list bottom sheet by adding Semantics to all Surah list items for improved screen reader support.",
-      "Improved audio player accessibility with standardized 48x48 dp minimum touch targets, progress announcements, and an accessible seek-bar thumb.",
-      "Enhanced the reciter information dialog with dynamically localized country names, including Egypt, Saudi Arabia, Kuwait, and Lebanon.",
-      "Localized recitation styles and narration descriptions, including styles such as Mujawwad, Murattal, Khashi, Smooth, and Expressive, according to the selected interface language.",
-      "Established GitHub Actions CI automation to run strict Flutter analysis and the complete automated test suite on every push and pull request.",
-      "Added workflow_dispatch support, allowing CI quality checks and automated tests to be triggered manually whenever required.",
-      "Added an automated i18n compliance test that scans the project for hardcoded interface strings and helps prevent future localization regressions.",
-      "Added a dedicated version synchronization tool and automated test to verify an exact version match between pubspec.yaml and changelog.json.",
-      "Audited and corrected historical changelog entries to accurately reflect the actual engineering state and evolution of the repository.",
-      "Removed temporary coverage artifacts from the repository and strengthened .gitignore rules to prevent local development files such as local.properties from being tracked or exported.",
-      "Verified and standardized application branding across Android and Windows, including the Android launcher icon and Windows app_icon.ico.",
-      "Maintained the Windows minimum window size at 500x640 with automatic adaptation to different display DPI scaling configurations.",
-      "Maintained the production security model based on HTTPS transport and SHA-256 integrity verification, with the legacy Ed25519 and Authenticode mechanisms fully retired.",
-      "Preserved the stable hybrid audio architecture, using audioplayers for the startup experience and just_audio for Quran recitation playback."
-    ]
-  },
-  "ar": {
-    "title": "الإصدار الذهبي — اكتمال التوطين وإتاحة الاستخدام وتحسينات المنصات",
-    "items": [
-      "استكمال التوطين الشامل للتطبيق من خلال إزالة النصوص العربية الثابتة المتبقية من واجهات المستخدم ونقلها إلى ملفات الترجمة الرسمية app_ar.arb وapp_en.arb.",
-      "توطين تنبيهات مشكلات المسارات وزر «إصلاح الآن» وحوارات تأكيد إعادة التهيئة ورسائل أخطاء تدقيق التكامل، مع دعم المعلمات الديناميكية.",
-      "إضافة توطين ديناميكي كامل لأسماء القراء بحيث يتم عرض اسم كل قارئ وفقًا للغة الواجهة المختارة حاليًا.",
-      "توسيع دعم إتاحة الاستخدام في قائمة السور الرئيسية والنافذة السفلية لقائمة السور من خلال إضافة Semantics إلى جميع عناصر القائمة لتحسين دعم قارئات الشاشة.",
-      "تحسين إتاحة استخدام المشغل الصوتي من خلال توفير أهداف لمس قياسية بحد أدنى 48x48 dp، وإعلانات لنسبة التقدم، ودعم مقبض شريط البحث الصوتي لقارئات الشاشة.",
-      "تحسين نافذة معلومات القارئ من خلال عرض أسماء الدول بصورة ديناميكية وفقًا للغة الواجهة، بما في ذلك مصر والسعودية والكويت ولبنان.",
-      "توطين أساليب التلاوة وأوصاف الرواية، بما في ذلك أساليب مثل مجود وترتيل وخاشع وسلس ومعبر، وفقًا للغة الواجهة المختارة.",
-      "تفعيل أتمتة GitHub Actions لتشغيل فحص Flutter الصارم ومجموعة الاختبارات الآلية الكاملة تلقائيًا مع كل عملية Push أو Pull Request.",
-      "إضافة دعم workflow_dispatch للسماح بتشغيل فحوصات الجودة والاختبارات الآلية يدويًا عند الحاجة.",
-      "إضافة اختبار آلي للتوافق مع نظام التوطين يقوم بفحص المشروع بحثًا عن النصوص الثابتة داخل الواجهات ويساعد على منع عودة مشكلات التوطين مستقبلًا.",
-      "إضافة أداة واختبار آلي لمزامنة الإصدار للتحقق من التطابق الكامل لرقم الإصدار بين pubspec.yaml وchangelog.json.",
-      "مراجعة وتصحيح إدخالات سجل التغييرات التاريخية لضمان توافقها بدقة مع الحالة الهندسية الفعلية وتطور المستودع.",
-      "إزالة ملفات التغطية المؤقتة من المستودع وتعزيز قواعد .gitignore لمنع تتبع أو تصدير ملفات بيئة التطوير المحلية مثل local.properties.",
-      "التحقق من هوية التطبيق وتوحيدها عبر Android وWindows، بما في ذلك أيقونة تشغيل Android وملف app_icon.ico الخاص بـWindows.",
-      "الحفاظ على الحد الأدنى لأبعاد نافذة Windows عند 500x640 مع التكيف التلقائي مع إعدادات كثافة العرض المختلفة (DPI Scaling).",
-      "الحفاظ على نموذج الأمان الإنتاجي القائم على HTTPS والتحقق من سلامة الملفات باستخدام SHA-256، مع الإيقاف الكامل لآليات Ed25519 وAuthenticode القديمة.",
-      "الحفاظ على المعمارية الصوتية الهجينة المستقرة، باستخدام audioplayers لتجربة الشاشة الافتتاحية وjust_audio لتشغيل تلاوة القرآن."
-    ]
+    "en": {
+      "title": "Golden Release — Deep Localization, Accessibility & Engineering Quality",
+      "items": [
+        "Completed deep internationalization across the application, including the first-launch welcome dialog with full English and Arabic localization.",
+        "Removed the remaining hardcoded UI strings from the Download Manager, About screen, and File Manager, moving them to the official AppLocalizations system.",
+        "Improved recitation-style localization by supporting the \"Traditional\" style keyword and correcting the \"Smooth\" style matching for reciters such as Mishary Alafasy and similar recitations.",
+        "Unified the What's New dialog with the standard localization system, eliminating direct language-condition checks.",
+        "Expanded accessibility coverage with comprehensive Semantics for the audio progress handle and bottom player controls, including progress announcements for screen readers.",
+        "Added localized tooltips to all transparent icon buttons in the audio player area for clearer and more accessible interaction.",
+        "Replaced silent exception handling in ChangelogService with explicit and contextual error logging for improved diagnostics and maintainability.",
+        "Expanded the automated i18n compliance test to cover the first-launch welcome dialog, Download Manager, and About screen, helping prevent future hardcoded UI strings.",
+        "Strengthened repository hygiene by ensuring local configuration files such as local.properties and personal signing keys remain excluded from version control.",
+        "Verified the GitHub Actions CI/CD pipeline to run strict static analysis and the complete automated test suite on every code push and pull request.",
+        "Updated the official README with CI status, Golden Release, and Flutter SDK badges.",
+        "Synchronized the application version to 2.0.0+46 across pubspec.yaml and changelog.json, with successful verification by verify_version_sync.dart.",
+        "Finalized the stable Golden Release by creating and publishing the official Git tag v2.0.0."
+      ]
+    },
+    "ar": {
+      "title": "الإصدار الذهبي — اكتمال التوطين وإتاحة الاستخدام وجودة الشفرة",
+      "items": [
+        "اكتمل التوطين العميق للتطبيق، بما في ذلك حوار الترحيب عند التشغيل الأول مع دعم كامل للغتين العربية والإنجليزية.",
+        "إزالة جميع النصوص الصلبة المتبقية من شاشة إدارة التنزيلات وشاشة عن التطبيق وإدارة الملفات، ونقلها إلى نظام AppLocalizations الرسمي.",
+        "تحسين تعريب أساليب التلاوة من خلال دعم أسلوب \"تقليدية\" وتصحيح مطابقة أسلوب \"ناعم\" للقراء مثل مشاري العفاسي والقراءات المشابهة.",
+        "توحيد حوار \"ما الجديد\" مع نظام التوطين القياسي وإلغاء الاعتماد على شروط تحديد اللغة المباشرة.",
+        "توسيع دعم تسهيلات الاستخدام من خلال إضافة وسوم Semantics شاملة لمقبض شريط تقدم الصوت وأزرار الشريط السفلي للمشغل، بما في ذلك الإعلان عن نسبة التقدم لقارئات الشاشة.",
+        "إضافة تلميحات Tooltip مترجمة إلى جميع الأزرار الأيقونية الشفافة في منطقة المشغل الصوتي لتحسين وضوح الاستخدام وإتاحة الوصول.",
+        "استبدال معالجة الاستثناءات الصامتة في ChangelogService بتسجيل صريح ومحدد للأخطاء لتحسين التشخيص وسهولة صيانة الشفرة.",
+        "توسيع اختبار الامتثال اللغوي الآلي ليشمل حوار الترحيب عند التشغيل الأول وشاشة إدارة التنزيلات وشاشة عن التطبيق، لمنع عودة النصوص الصلبة مستقبلًا.",
+        "تعزيز نظافة المستودع البرمجي من خلال التأكد من استبعاد ملفات الإعدادات المحلية مثل local.properties ومفاتيح التوقيع الشخصية من نظام التحكم بالإصدارات.",
+        "التحقق من جاهزية خط أنابيب GitHub Actions CI/CD لتشغيل الفحص الصارم للشفرة ومجموعة الاختبارات الآلية الكاملة مع كل عملية Push أو Pull Request.",
+        "تحديث ملف README الرسمي بإضافة شارة حالة CI وشارة الإصدار الذهبي وشارة إصدار Flutter SDK.",
+        "مزامنة إصدار التطبيق إلى 2.0.0+46 في كل من pubspec.yaml وchangelog.json، مع نجاح التحقق بواسطة verify_version_sync.dart.",
+        "إتمام الإصدار الذهبي المستقر من خلال إنشاء ونشر وسم Git الرسمي v2.0.0."
+      ]
+    }
   }
 },
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.9.0/Listen-To-Quran-Full-Edition-v1.9.0.exe",
-          "sha256": "f389c50563641ebeb70e211a6ee3b194d39472ce1aa7291ceb087d1c64f7f78c",
-          "size": 12497043
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
+          "sha256": "8d952b6fa9572a6b94d06916d400b4947bf9509b003c5f354fa81b7645cc0e4d",
+          "size": 12498113
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v1.9.0/Listen.To.Quran.Full.Edition-v1.9.0.apk",
-          "sha256": "0aac35fbc8b82e74801ab6f7d25b989701bbe90b31868fc9592d8d8ae8ff43ef",
-          "size": 64871127,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
+          "sha256": "04d05a51c4183313352b96ba1fec513056ece2419be56e5add66480aa1088083",
+          "size": 64871931 ,
           "min_android_sdk": 24
         }
       }
     }
   }
-}
