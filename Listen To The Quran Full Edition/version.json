@@ -3,7 +3,7 @@
   "apps": {
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
-      "app_id": "listen_to_quran_full",
+      "app_id": "com.listen.to.the.quran.full.edition",
       "version_name": "2.0.0",
       "version_code": 46,
       "force_update": false,
