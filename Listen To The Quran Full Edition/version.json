@@ -52,15 +52,15 @@
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/isten-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
           "sha256": "8d952b6fa9572a6b94d06916d400b4947bf9509b003c5f354fa81b7645cc0e4d",
           "size": 12498113
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/isten-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
-          "sha256": "0aac35fbc8b82e74801ab6f7d25b989701bbe90b31868fc9592d8d8ae8ff43ef",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
+          "sha256": "04d05a51c4183313352b96ba1fec513056ece2419be56e5add66480aa1088083",
           "size": 64871931,
           "min_android_sdk": 24
         }
