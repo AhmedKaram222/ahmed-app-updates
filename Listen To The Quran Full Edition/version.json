@@ -8,51 +8,50 @@
       "version_code": 46,
       "force_update": false,
       "min_supported_version": "1.1.2",
-
-"release_notes": {
-    "en": {
-      "title": "Golden Release — Deep Localization, Accessibility & Engineering Quality",
-      "items": [
-        "Completed deep internationalization across the application, including the first-launch welcome dialog with full English and Arabic localization.",
-        "Removed the remaining hardcoded UI strings from the Download Manager, About screen, and File Manager, moving them to the official AppLocalizations system.",
-        "Improved recitation-style localization by supporting the \"Traditional\" style keyword and correcting the \"Smooth\" style matching for reciters such as Mishary Alafasy and similar recitations.",
-        "Unified the What's New dialog with the standard localization system, eliminating direct language-condition checks.",
-        "Expanded accessibility coverage with comprehensive Semantics for the audio progress handle and bottom player controls, including progress announcements for screen readers.",
-        "Added localized tooltips to all transparent icon buttons in the audio player area for clearer and more accessible interaction.",
-        "Replaced silent exception handling in ChangelogService with explicit and contextual error logging for improved diagnostics and maintainability.",
-        "Expanded the automated i18n compliance test to cover the first-launch welcome dialog, Download Manager, and About screen, helping prevent future hardcoded UI strings.",
-        "Strengthened repository hygiene by ensuring local configuration files such as local.properties and personal signing keys remain excluded from version control.",
-        "Verified the GitHub Actions CI/CD pipeline to run strict static analysis and the complete automated test suite on every code push and pull request.",
-        "Updated the official README with CI status, Golden Release, and Flutter SDK badges.",
-        "Synchronized the application version to 2.0.0+46 across pubspec.yaml and changelog.json, with successful verification by verify_version_sync.dart.",
-        "Finalized the stable Golden Release by creating and publishing the official Git tag v2.0.0."
-      ]
-    },
-    "ar": {
-      "title": "الإصدار الذهبي — اكتمال التوطين وإتاحة الاستخدام وجودة الشفرة",
-      "items": [
-        "اكتمل التوطين العميق للتطبيق، بما في ذلك حوار الترحيب عند التشغيل الأول مع دعم كامل للغتين العربية والإنجليزية.",
-        "إزالة جميع النصوص الصلبة المتبقية من شاشة إدارة التنزيلات وشاشة عن التطبيق وإدارة الملفات، ونقلها إلى نظام AppLocalizations الرسمي.",
-        "تحسين تعريب أساليب التلاوة من خلال دعم أسلوب \"تقليدية\" وتصحيح مطابقة أسلوب \"ناعم\" للقراء مثل مشاري العفاسي والقراءات المشابهة.",
-        "توحيد حوار \"ما الجديد\" مع نظام التوطين القياسي وإلغاء الاعتماد على شروط تحديد اللغة المباشرة.",
-        "توسيع دعم تسهيلات الاستخدام من خلال إضافة وسوم Semantics شاملة لمقبض شريط تقدم الصوت وأزرار الشريط السفلي للمشغل، بما في ذلك الإعلان عن نسبة التقدم لقارئات الشاشة.",
-        "إضافة تلميحات Tooltip مترجمة إلى جميع الأزرار الأيقونية الشفافة في منطقة المشغل الصوتي لتحسين وضوح الاستخدام وإتاحة الوصول.",
-        "استبدال معالجة الاستثناءات الصامتة في ChangelogService بتسجيل صريح ومحدد للأخطاء لتحسين التشخيص وسهولة صيانة الشفرة.",
-        "توسيع اختبار الامتثال اللغوي الآلي ليشمل حوار الترحيب عند التشغيل الأول وشاشة إدارة التنزيلات وشاشة عن التطبيق، لمنع عودة النصوص الصلبة مستقبلًا.",
-        "تعزيز نظافة المستودع البرمجي من خلال التأكد من استبعاد ملفات الإعدادات المحلية مثل local.properties ومفاتيح التوقيع الشخصية من نظام التحكم بالإصدارات.",
-        "التحقق من جاهزية خط أنابيب GitHub Actions CI/CD لتشغيل الفحص الصارم للشفرة ومجموعة الاختبارات الآلية الكاملة مع كل عملية Push أو Pull Request.",
-        "تحديث ملف README الرسمي بإضافة شارة حالة CI وشارة الإصدار الذهبي وشارة إصدار Flutter SDK.",
-        "مزامنة إصدار التطبيق إلى 2.0.0+46 في كل من pubspec.yaml وchangelog.json، مع نجاح التحقق بواسطة verify_version_sync.dart.",
-        "إتمام الإصدار الذهبي المستقر من خلال إنشاء ونشر وسم Git الرسمي v2.0.0."
-      ]
-    }
-  }
-},
+      "release_notes": {
+        "en": {
+          "title": "Golden Release — Deep Localization, Accessibility & Engineering Quality",
+          "items": [
+            "Completed deep internationalization across the application, including the first-launch welcome dialog with full English and Arabic localization.",
+            "Removed the remaining hardcoded UI strings from the Download Manager, About screen, and File Manager, moving them to the official AppLocalizations system.",
+            "Improved recitation-style localization by supporting the \"Traditional\" style keyword and correcting the \"Smooth\" style matching for reciters such as Mishary Alafasy and similar recitations.",
+            "Unified the What's New dialog with the standard localization system, eliminating direct language-condition checks.",
+            "Expanded accessibility coverage with comprehensive Semantics for the audio progress handle and bottom player controls, including progress announcements for screen readers.",
+            "Added localized tooltips to all transparent icon buttons in the audio player area for clearer and more accessible interaction.",
+            "Replaced silent exception handling in ChangelogService with explicit and contextual error logging for improved diagnostics and maintainability.",
+            "Expanded the automated i18n compliance test to cover the first-launch welcome dialog, Download Manager, and About screen, helping prevent future hardcoded UI strings.",
+            "Strengthened repository hygiene by ensuring local configuration files such as local.properties and personal signing keys remain excluded from version control.",
+            "Verified the GitHub Actions CI/CD pipeline to run strict static analysis and the complete automated test suite on every code push and pull request.",
+            "Updated the official README with CI status, Golden Release, and Flutter SDK badges.",
+            "Synchronized the application version to 2.0.0+46 across pubspec.yaml and changelog.json, with successful verification by verify_version_sync.dart.",
+            "Finalized the stable Golden Release by creating and publishing the official Git tag v2.0.0."
+          ]
+        },
+        "ar": {
+          "title": "الإصدار الذهبي — اكتمال التوطين وإتاحة الاستخدام وجودة الشفرة",
+          "items": [
+            "اكتمل التوطين العميق للتطبيق، بما في ذلك حوار الترحيب عند التشغيل الأول مع دعم كامل للغتين العربية والإنجليزية.",
+            "إزالة جميع النصوص الصلبة المتبقية من شاشة إدارة التنزيلات وشاشة عن التطبيق وإدارة الملفات، ونقلها إلى نظام AppLocalizations الرسمي.",
+            "تحسين تعريب أساليب التلاوة من خلال دعم أسلوب \"تقليدية\" وتصحيح مطابقة أسلوب \"ناعم\" للقراء مثل مشاري العفاسي والقراءات المشابهة.",
+            "توحيد حوار \"ما الجديد\" مع نظام التوطين القياسي وإلغاء الاعتماد على شروط تحديد اللغة المباشرة.",
+            "توسيع دعم تسهيلات الاستخدام من خلال إضافة وسوم Semantics شاملة لمقبض شريط تقدم الصوت وأزرار الشريط السفلي للمشغل، بما في ذلك الإعلان عن نسبة التقدم لقارئات الشاشة.",
+            "إضافة تلميحات Tooltip مترجمة إلى جميع الأزرار الأيقونية الشفافة في منطقة المشغل الصوتي لتحسين وضوح الاستخدام وإتاحة الوصول.",
+            "استبدال معالجة الاستثناءات الصامتة في ChangelogService بتسجيل صريح ومحدد للأخطاء لتحسين التشخيص وسهولة صيانة الشفرة.",
+            "توسيع اختبار الامتثال اللغوي الآلي ليشمل حوار الترحيب عند التشغيل الأول وشاشة إدارة التنزيلات وشاشة عن التطبيق، لمنع عودة النصوص الصلبة مستقبلًا.",
+            "تعزيز نظافة المستودع البرمجي من خلال التأكد من استبعاد ملفات الإعدادات المحلية مثل local.properties ومفاتيح التوقيع الشخصية من نظام التحكم بالإصدارات.",
+            "التحقق من جاهزية خط أنابيب GitHub Actions CI/CD لتشغيل الفحص الصارم للشفرة ومجموعة الاختبارات الآلية الكاملة مع كل عملية Push أو Pull Request.",
+            "تحديث ملف README الرسمي بإضافة شارة حالة CI وشارة الإصدار الذهبي وشارة إصدار Flutter SDK.",
+            "مزامنة إصدار التطبيق إلى 2.0.0+46 في كل من pubspec.yaml وchangelog.json، مع نجاح التحقق بواسطة verify_version_sync.dart.",
+            "إتمام الإصدار الذهبي المستقر من خلال إنشاء ونشر وسم Git الرسمي v2.0.0."
+          ]
+        }
+      },
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
           "sha256": "8d952b6fa9572a6b94d06916d400b4947bf9509b003c5f354fa81b7645cc0e4d",
           "size": 12498113
         },
@@ -60,6 +59,72 @@
           "enabled": true,
           "file_type": "apk",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
+          "sha256": "04d05a51c4183313352b96ba1fec513056ece2419be56e5add66480aa1088083",
+          "size": 64871931,
+          "min_android_sdk": 24
+        }
+      }
+    },
+    "com.listen.to.the.quran.full.edition": {
+      "app_name": "Listen to the Quran Full Edition",
+      "app_id": "com.listen.to.the.quran.full.edition",
+      "version_name": "2.0.0",
+      "version_code": 46,
+      "force_update": false,
+      "min_supported_version": "1.1.2",
+      "release_notes": {
+        "en": {
+          "title": "Golden Release — Deep Localization, Accessibility & Engineering Quality",
+          "items": [
+            "Completed deep internationalization across the application, including the first-launch welcome dialog with full English and Arabic localization.",
+            "Removed the remaining hardcoded UI strings from the Download Manager, About screen, and File Manager, moving them to the official AppLocalizations system.",
+            "Improved recitation-style localization by supporting the \"Traditional\" style keyword and correcting the \"Smooth\" style matching for reciters such as Mishary Alafasy and similar recitations.",
+            "Unified the What's New dialog with the standard localization system, eliminating direct language-condition checks.",
+            "Expanded accessibility coverage with comprehensive Semantics for the audio progress handle and bottom player controls, including progress announcements for screen readers.",
+            "Added localized tooltips to all transparent icon buttons in the audio player area for clearer and more accessible interaction.",
+            "Replaced silent exception handling in ChangelogService with explicit and contextual error logging for improved diagnostics and maintainability.",
+            "Expanded the automated i18n compliance test to cover the first-launch welcome dialog, Download Manager, and About screen, helping prevent future hardcoded UI strings.",
+            "Strengthened repository hygiene by ensuring local configuration files such as local.properties and personal signing keys remain excluded from version control.",
+            "Verified the GitHub Actions CI/CD pipeline to run strict static analysis and the complete automated test suite on every code push and pull request.",
+            "Updated the official README with CI status, Golden Release, and Flutter SDK badges.",
+            "Synchronized the application version to 2.0.0+46 across pubspec.yaml and changelog.json, with successful verification by verify_version_sync.dart.",
+            "Finalized the stable Golden Release by creating and publishing the official Git tag v2.0.0."
+          ]
+        },
+        "ar": {
+          "title": "الإصدار الذهبي — اكتمال التوطين وإتاحة الاستخدام وجودة الشفرة",
+          "items": [
+            "اكتمل التوطين العميق للتطبيق، بما في ذلك حوار الترحيب عند التشغيل الأول مع دعم كامل للغتين العربية والإنجليزية.",
+            "إزالة جميع النصوص الصلبة المتبقية من شاشة إدارة التنزيلات وشاشة عن التطبيق وإدارة الملفات، ونقلها إلى نظام AppLocalizations الرسمي.",
+            "تحسين تعريب أساليب التلاوة من خلال دعم أسلوب \"تقليدية\" وتصحيح مطابقة أسلوب \"ناعم\" للقراء مثل مشاري العفاسي والقراءات المشابهة.",
+            "توحيد حوار \"ما الجديد\" مع نظام التوطين القياسي وإلغاء الاعتماد على شروط تحديد اللغة المباشرة.",
+            "توسيع دعم تسهيلات الاستخدام من خلال إضافة وسوم Semantics شاملة لمقبض شريط تقدم الصوت وأزرار الشريط السفلي للمشغل، بما في ذلك الإعلان عن نسبة التقدم لقارئات الشاشة.",
+            "إضافة تلميحات Tooltip مترجمة إلى جميع الأزرار الأيقونية الشفافة في منطقة المشغل الصوتي لتحسين وضوح الاستخدام وإتاحة الوصول.",
+            "استبدال معالجة الاستثناءات الصامتة في ChangelogService بتسجيل صريح ومحدد للأخطاء لتحسين التشخيص وسهولة صيانة الشفرة.",
+            "توسيع اختبار الامتثال اللغوي الآلي ليشمل حوار الترحيب عند التشغيل الأول وشاشة إدارة التنزيلات وشاشة عن التطبيق، لمنع عودة النصوص الصلبة مستقبلًا.",
+            "تعزيز نظافة المستودع البرمجي من خلال التأكد من استبعاد ملفات الإعدادات المحلية مثل local.properties ومفاتيح التوقيع الشخصية من نظام التحكم بالإصدارات.",
+            "التحقق من جاهزية خط أنابيب GitHub Actions CI/CD لتشغيل الفحص الصارم للشفرة ومجموعة الاختبارات الآلية الكاملة مع كل عملية Push أو Pull Request.",
+            "تحديث ملف README الرسمي بإضافة شارة حالة CI وشارة الإصدار الذهبي وشارة إصدار Flutter SDK.",
+            "مزامنة إصدار التطبيق إلى 2.0.0+46 في كل من pubspec.yaml وchangelog.json، مع نجاح التحقق بواسطة verify_version_sync.dart.",
+            "إتمام الإصدار الذهبي المستقر من خلال إنشاء ونشر وسم Git الرسمي v2.0.0."
+          ]
+        }
+      },
+      "platforms": {
+        "windows": {
+          "enabled": true,
+          "file_type": "exe",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
+          "sha256": "8d952b6fa9572a6b94d06916d400b4947bf9509b003c5f354fa81b7645cc0e4d",
+          "size": 12498113
+        },
+        "android": {
+          "enabled": true,
+          "file_type": "apk",
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
           "sha256": "04d05a51c4183313352b96ba1fec513056ece2419be56e5add66480aa1088083",
           "size": 64871931,
           "min_android_sdk": 24
@@ -67,3 +132,4 @@
       }
     }
   }
+}
