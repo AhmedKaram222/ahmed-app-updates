@@ -4,64 +4,73 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "2.0.0",
-      "version_code": 46,
+      "version_name": "2.4.0",
+      "version_code": 50,
       "force_update": false,
       "min_supported_version": "1.1.2",
       "release_notes": {
         "en": {
-          "title": "Golden Release — Deep Localization, Accessibility & Engineering Quality",
+          "title": "Comprehensive Release — Localization, UI Quality, Accessibility & Reliability",
           "items": [
-            "Completed deep internationalization across the application, including the first-launch welcome dialog with full English and Arabic localization.",
-            "Removed the remaining hardcoded UI strings from the Download Manager, About screen, and File Manager, moving them to the official AppLocalizations system.",
-            "Improved recitation-style localization by supporting the \"Traditional\" style keyword and correcting the \"Smooth\" style matching for reciters such as Mishary Alafasy and similar recitations.",
-            "Unified the What's New dialog with the standard localization system, eliminating direct language-condition checks.",
-            "Expanded accessibility coverage with comprehensive Semantics for the audio progress handle and bottom player controls, including progress announcements for screen readers.",
-            "Added localized tooltips to all transparent icon buttons in the audio player area for clearer and more accessible interaction.",
-            "Replaced silent exception handling in ChangelogService with explicit and contextual error logging for improved diagnostics and maintainability.",
-            "Expanded the automated i18n compliance test to cover the first-launch welcome dialog, Download Manager, and About screen, helping prevent future hardcoded UI strings.",
-            "Strengthened repository hygiene by ensuring local configuration files such as local.properties and personal signing keys remain excluded from version control.",
-            "Verified the GitHub Actions CI/CD pipeline to run strict static analysis and the complete automated test suite on every code push and pull request.",
-            "Updated the official README with CI status, Golden Release, and Flutter SDK badges.",
-            "Synchronized the application version to 2.0.0+46 across pubspec.yaml and changelog.json, with successful verification by verify_version_sync.dart.",
-            "Finalized the stable Golden Release by creating and publishing the official Git tag v2.0.0."
-          ]
+        "Completed Android application localization by adding the official Arabic application name \"استمع للقرآن الكريم\" to the Android launcher through native string resources.",
+        "Completed the remaining Download Manager localization by replacing the hardcoded paused status with the localized \"pausedStatus\" translation key.",
+        "Corrected and synchronized the open-source software license text in the About screen for both Arabic and English.",
+        "Improved Light Theme contrast across 10 UI locations, enhancing the readability and visibility of text, icons, controls, and status elements.",
+        "Improved contrast for the Surah list bottom sheet and audio control sliders in the main player.",
+        "Improved secondary text and status icon visibility across automatic update dialogs.",
+        "Removed remaining hardcoded color values from affected UI components and aligned them with Flutter's dynamic ColorScheme for consistent theme behavior.",
+        "Expanded accessibility support with Semantics for audio playback interactions and live announcements of recitation progress for screen readers.",
+        "Added localized tooltips to the audio player's interactive controls to improve discoverability and accessibility.",
+        "Added a direct Report a Problem action that opens the project's GitHub Issues page through url_launcher.",
+        "Enabled the Share App action using the operating system's native share interface through share_plus.",
+        "Updated the Windows application identity by synchronizing publisher and copyright metadata in Runner.rc and setting the main window title to \"Listen To The Quran Full Edition\".",
+        "Updated the application's network User-Agent to include the official application name, current version, and repository information.",
+        "Updated the README documentation, including build-status badges and the Download Manager description to accurately identify it as a fully resumable download manager.",
+        "Added automated theme compliance testing through theme_compliance_test.dart to detect hardcoded UI colors and help prevent future theme regressions.",
+        "Expanded automated i18n compliance verification through i18n_compliance_test.dart to detect untranslated hardcoded strings across application screens and dialogs.",
+        "Synchronized application version 2.4.0+50 across the project and changelog.json.",
+        "Completed the full verification cycle with 0 static-analysis issues and all 119 automated tests passing successfully."
+        ]
         },
         "ar": {
-          "title": "الإصدار الذهبي — اكتمال التوطين وإتاحة الاستخدام وجودة الشفرة",
-          "items": [
-            "اكتمل التوطين العميق للتطبيق، بما في ذلك حوار الترحيب عند التشغيل الأول مع دعم كامل للغتين العربية والإنجليزية.",
-            "إزالة جميع النصوص الصلبة المتبقية من شاشة إدارة التنزيلات وشاشة عن التطبيق وإدارة الملفات، ونقلها إلى نظام AppLocalizations الرسمي.",
-            "تحسين تعريب أساليب التلاوة من خلال دعم أسلوب \"تقليدية\" وتصحيح مطابقة أسلوب \"ناعم\" للقراء مثل مشاري العفاسي والقراءات المشابهة.",
-            "توحيد حوار \"ما الجديد\" مع نظام التوطين القياسي وإلغاء الاعتماد على شروط تحديد اللغة المباشرة.",
-            "توسيع دعم تسهيلات الاستخدام من خلال إضافة وسوم Semantics شاملة لمقبض شريط تقدم الصوت وأزرار الشريط السفلي للمشغل، بما في ذلك الإعلان عن نسبة التقدم لقارئات الشاشة.",
-            "إضافة تلميحات Tooltip مترجمة إلى جميع الأزرار الأيقونية الشفافة في منطقة المشغل الصوتي لتحسين وضوح الاستخدام وإتاحة الوصول.",
-            "استبدال معالجة الاستثناءات الصامتة في ChangelogService بتسجيل صريح ومحدد للأخطاء لتحسين التشخيص وسهولة صيانة الشفرة.",
-            "توسيع اختبار الامتثال اللغوي الآلي ليشمل حوار الترحيب عند التشغيل الأول وشاشة إدارة التنزيلات وشاشة عن التطبيق، لمنع عودة النصوص الصلبة مستقبلًا.",
-            "تعزيز نظافة المستودع البرمجي من خلال التأكد من استبعاد ملفات الإعدادات المحلية مثل local.properties ومفاتيح التوقيع الشخصية من نظام التحكم بالإصدارات.",
-            "التحقق من جاهزية خط أنابيب GitHub Actions CI/CD لتشغيل الفحص الصارم للشفرة ومجموعة الاختبارات الآلية الكاملة مع كل عملية Push أو Pull Request.",
-            "تحديث ملف README الرسمي بإضافة شارة حالة CI وشارة الإصدار الذهبي وشارة إصدار Flutter SDK.",
-            "مزامنة إصدار التطبيق إلى 2.0.0+46 في كل من pubspec.yaml وchangelog.json، مع نجاح التحقق بواسطة verify_version_sync.dart.",
-            "إتمام الإصدار الذهبي المستقر من خلال إنشاء ونشر وسم Git الرسمي v2.0.0."
-          ]
+          "title": "الإصدار الشامل — التوطين وجودة الواجهة وتسهيلات الاستخدام والموثوقية",
+          "items": [        "اكتمل تعريب تطبيق أندرويد من خلال إضافة الاسم العربي الرسمي للتطبيق \"استمع للقرآن الكريم\" إلى اسم التطبيق الظاهر على الشاشة الرئيسية باستخدام ملفات المصادر الأصلية لنظام أندرويد.",
+        "اكتمل توطين النصوص المتبقية في مدير التنزيلات من خلال استبدال حالة الإيقاف المؤقت الثابتة بمفتاح الترجمة الديناميكي \"pausedStatus\".",
+        "تصحيح ومزامنة نص رخصة البرمجيات والمصدر المفتوح في شاشة \"عن التطبيق\" باللغتين العربية والإنجليزية.",
+        "تحسين التباين في الوضع الفاتح عبر 10 مواضع مختلفة في الواجهة لرفع وضوح النصوص والرموز وعناصر التحكم وحالات النظام.",
+        "تحسين وضوح ألوان القائمة السفلية للسور ومنزلقات التحكم بالصوت في شاشة المشغل الرئيسية.",
+        "تحسين وضوح النصوص الثانوية وأيقونات الحالات داخل حوارات التحديث التلقائي.",
+        "إزالة الألوان الصلبة المتبقية من مكونات الواجهة المتأثرة وربطها بنظام ColorScheme الديناميكي لضمان اتساق المظهر مع الثيم.",
+        "توسيع دعم تسهيلات الاستخدام من خلال إضافة Semantics لتفاعلات تشغيل الصوت والإعلانات المباشرة عن نسبة تقدم التلاوة لقارئات الشاشة.",
+        "إضافة تلميحات Tooltip مترجمة إلى عناصر التحكم التفاعلية في المشغل الصوتي لتحسين سهولة اكتشاف الوظائف وإتاحة الوصول إليها.",
+        "إضافة إجراء مباشر \"الإبلاغ عن مشكلة\" يفتح صفحة GitHub Issues الخاصة بالمشروع باستخدام حزمة url_launcher.",
+        "تفعيل وظيفة \"مشاركة التطبيق\" باستخدام لوحة المشاركة الأصلية لنظام التشغيل من خلال حزمة share_plus.",
+        "تحديث هوية تطبيق ويندوز من خلال مزامنة بيانات الناشر وحقوق الملكية في Runner.rc وتحديث عنوان النافذة الرئيسي إلى \"Listen To The Quran Full Edition\".",
+        "تحديث User-Agent الخاص بطلبات الشبكة ليعكس اسم التطبيق الرسمي والإصدار الحالي ومعلومات مستودع المشروع.",
+        "تحديث ملف README، بما في ذلك شارات حالة البناء وتصحيح وصف مدير التنزيلات ليعكس كونه مدير تنزيلات يدعم الاستئناف الكامل.",
+        "إضافة اختبار آلي لامتثال الثيم من خلال theme_compliance_test.dart لاكتشاف الألوان الصلبة في الواجهات والمساعدة على منع تكرار مشكلات الثيم مستقبلًا.",
+        "توسيع اختبار الامتثال اللغوي الآلي من خلال i18n_compliance_test.dart لاكتشاف النصوص الحرفية غير المترجمة في شاشات التطبيق وحواراته.",
+        "مزامنة إصدار التطبيق 2.4.0+50 عبر ملفات المشروع وسجل التغييرات changelog.json.",
+        "إتمام دورة التحقق الشاملة بنجاح مع 0 مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
+        ]
         }
       },
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
-          "sha256": "8d952b6fa9572a6b94d06916d400b4947bf9509b003c5f354fa81b7645cc0e4d",
-          "size": 12498113
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
+          "sha256": "ee5669dc58c07d344ea376eefb2e2ba5e2f62b53cd7afdeabdcabd19c6019b32",
+          "size": 12541118
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
-          "sha256": "04d05a51c4183313352b96ba1fec513056ece2419be56e5add66480aa1088083",
-          "size": 64871931,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
+          "sha256": "10c4dfa1ff007d977bb73811eb4a31f409fbd059752b23a4f1659c374b160be5",
+          "size": 65143136,
           "min_android_sdk": 24
         }
       }
@@ -69,64 +78,73 @@
     "com.listen.to.the.quran.full.edition": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "com.listen.to.the.quran.full.edition",
-      "version_name": "2.0.0",
-      "version_code": 46,
+      "version_name": "2.4.0",
+      "version_code": 50,
       "force_update": false,
       "min_supported_version": "1.1.2",
       "release_notes": {
         "en": {
-          "title": "Golden Release — Deep Localization, Accessibility & Engineering Quality",
+          "title": "Comprehensive Release — Localization, UI Quality, Accessibility & Reliability",
           "items": [
-            "Completed deep internationalization across the application, including the first-launch welcome dialog with full English and Arabic localization.",
-            "Removed the remaining hardcoded UI strings from the Download Manager, About screen, and File Manager, moving them to the official AppLocalizations system.",
-            "Improved recitation-style localization by supporting the \"Traditional\" style keyword and correcting the \"Smooth\" style matching for reciters such as Mishary Alafasy and similar recitations.",
-            "Unified the What's New dialog with the standard localization system, eliminating direct language-condition checks.",
-            "Expanded accessibility coverage with comprehensive Semantics for the audio progress handle and bottom player controls, including progress announcements for screen readers.",
-            "Added localized tooltips to all transparent icon buttons in the audio player area for clearer and more accessible interaction.",
-            "Replaced silent exception handling in ChangelogService with explicit and contextual error logging for improved diagnostics and maintainability.",
-            "Expanded the automated i18n compliance test to cover the first-launch welcome dialog, Download Manager, and About screen, helping prevent future hardcoded UI strings.",
-            "Strengthened repository hygiene by ensuring local configuration files such as local.properties and personal signing keys remain excluded from version control.",
-            "Verified the GitHub Actions CI/CD pipeline to run strict static analysis and the complete automated test suite on every code push and pull request.",
-            "Updated the official README with CI status, Golden Release, and Flutter SDK badges.",
-            "Synchronized the application version to 2.0.0+46 across pubspec.yaml and changelog.json, with successful verification by verify_version_sync.dart.",
-            "Finalized the stable Golden Release by creating and publishing the official Git tag v2.0.0."
-          ]
+        "Completed Android application localization by adding the official Arabic application name \"استمع للقرآن الكريم\" to the Android launcher through native string resources.",
+        "Completed the remaining Download Manager localization by replacing the hardcoded paused status with the localized \"pausedStatus\" translation key.",
+        "Corrected and synchronized the open-source software license text in the About screen for both Arabic and English.",
+        "Improved Light Theme contrast across 10 UI locations, enhancing the readability and visibility of text, icons, controls, and status elements.",
+        "Improved contrast for the Surah list bottom sheet and audio control sliders in the main player.",
+        "Improved secondary text and status icon visibility across automatic update dialogs.",
+        "Removed remaining hardcoded color values from affected UI components and aligned them with Flutter's dynamic ColorScheme for consistent theme behavior.",
+        "Expanded accessibility support with Semantics for audio playback interactions and live announcements of recitation progress for screen readers.",
+        "Added localized tooltips to the audio player's interactive controls to improve discoverability and accessibility.",
+        "Added a direct Report a Problem action that opens the project's GitHub Issues page through url_launcher.",
+        "Enabled the Share App action using the operating system's native share interface through share_plus.",
+        "Updated the Windows application identity by synchronizing publisher and copyright metadata in Runner.rc and setting the main window title to \"Listen To The Quran Full Edition\".",
+        "Updated the application's network User-Agent to include the official application name, current version, and repository information.",
+        "Updated the README documentation, including build-status badges and the Download Manager description to accurately identify it as a fully resumable download manager.",
+        "Added automated theme compliance testing through theme_compliance_test.dart to detect hardcoded UI colors and help prevent future theme regressions.",
+        "Expanded automated i18n compliance verification through i18n_compliance_test.dart to detect untranslated hardcoded strings across application screens and dialogs.",
+        "Synchronized application version 2.4.0+50 across the project and changelog.json.",
+        "Completed the full verification cycle with 0 static-analysis issues and all 119 automated tests passing successfully."
+        ]
         },
         "ar": {
-          "title": "الإصدار الذهبي — اكتمال التوطين وإتاحة الاستخدام وجودة الشفرة",
-          "items": [
-            "اكتمل التوطين العميق للتطبيق، بما في ذلك حوار الترحيب عند التشغيل الأول مع دعم كامل للغتين العربية والإنجليزية.",
-            "إزالة جميع النصوص الصلبة المتبقية من شاشة إدارة التنزيلات وشاشة عن التطبيق وإدارة الملفات، ونقلها إلى نظام AppLocalizations الرسمي.",
-            "تحسين تعريب أساليب التلاوة من خلال دعم أسلوب \"تقليدية\" وتصحيح مطابقة أسلوب \"ناعم\" للقراء مثل مشاري العفاسي والقراءات المشابهة.",
-            "توحيد حوار \"ما الجديد\" مع نظام التوطين القياسي وإلغاء الاعتماد على شروط تحديد اللغة المباشرة.",
-            "توسيع دعم تسهيلات الاستخدام من خلال إضافة وسوم Semantics شاملة لمقبض شريط تقدم الصوت وأزرار الشريط السفلي للمشغل، بما في ذلك الإعلان عن نسبة التقدم لقارئات الشاشة.",
-            "إضافة تلميحات Tooltip مترجمة إلى جميع الأزرار الأيقونية الشفافة في منطقة المشغل الصوتي لتحسين وضوح الاستخدام وإتاحة الوصول.",
-            "استبدال معالجة الاستثناءات الصامتة في ChangelogService بتسجيل صريح ومحدد للأخطاء لتحسين التشخيص وسهولة صيانة الشفرة.",
-            "توسيع اختبار الامتثال اللغوي الآلي ليشمل حوار الترحيب عند التشغيل الأول وشاشة إدارة التنزيلات وشاشة عن التطبيق، لمنع عودة النصوص الصلبة مستقبلًا.",
-            "تعزيز نظافة المستودع البرمجي من خلال التأكد من استبعاد ملفات الإعدادات المحلية مثل local.properties ومفاتيح التوقيع الشخصية من نظام التحكم بالإصدارات.",
-            "التحقق من جاهزية خط أنابيب GitHub Actions CI/CD لتشغيل الفحص الصارم للشفرة ومجموعة الاختبارات الآلية الكاملة مع كل عملية Push أو Pull Request.",
-            "تحديث ملف README الرسمي بإضافة شارة حالة CI وشارة الإصدار الذهبي وشارة إصدار Flutter SDK.",
-            "مزامنة إصدار التطبيق إلى 2.0.0+46 في كل من pubspec.yaml وchangelog.json، مع نجاح التحقق بواسطة verify_version_sync.dart.",
-            "إتمام الإصدار الذهبي المستقر من خلال إنشاء ونشر وسم Git الرسمي v2.0.0."
-          ]
+          "title": "الإصدار الشامل — التوطين وجودة الواجهة وتسهيلات الاستخدام والموثوقية",
+          "items": [        "اكتمل تعريب تطبيق أندرويد من خلال إضافة الاسم العربي الرسمي للتطبيق \"استمع للقرآن الكريم\" إلى اسم التطبيق الظاهر على الشاشة الرئيسية باستخدام ملفات المصادر الأصلية لنظام أندرويد.",
+        "اكتمل توطين النصوص المتبقية في مدير التنزيلات من خلال استبدال حالة الإيقاف المؤقت الثابتة بمفتاح الترجمة الديناميكي \"pausedStatus\".",
+        "تصحيح ومزامنة نص رخصة البرمجيات والمصدر المفتوح في شاشة \"عن التطبيق\" باللغتين العربية والإنجليزية.",
+        "تحسين التباين في الوضع الفاتح عبر 10 مواضع مختلفة في الواجهة لرفع وضوح النصوص والرموز وعناصر التحكم وحالات النظام.",
+        "تحسين وضوح ألوان القائمة السفلية للسور ومنزلقات التحكم بالصوت في شاشة المشغل الرئيسية.",
+        "تحسين وضوح النصوص الثانوية وأيقونات الحالات داخل حوارات التحديث التلقائي.",
+        "إزالة الألوان الصلبة المتبقية من مكونات الواجهة المتأثرة وربطها بنظام ColorScheme الديناميكي لضمان اتساق المظهر مع الثيم.",
+        "توسيع دعم تسهيلات الاستخدام من خلال إضافة Semantics لتفاعلات تشغيل الصوت والإعلانات المباشرة عن نسبة تقدم التلاوة لقارئات الشاشة.",
+        "إضافة تلميحات Tooltip مترجمة إلى عناصر التحكم التفاعلية في المشغل الصوتي لتحسين سهولة اكتشاف الوظائف وإتاحة الوصول إليها.",
+        "إضافة إجراء مباشر \"الإبلاغ عن مشكلة\" يفتح صفحة GitHub Issues الخاصة بالمشروع باستخدام حزمة url_launcher.",
+        "تفعيل وظيفة \"مشاركة التطبيق\" باستخدام لوحة المشاركة الأصلية لنظام التشغيل من خلال حزمة share_plus.",
+        "تحديث هوية تطبيق ويندوز من خلال مزامنة بيانات الناشر وحقوق الملكية في Runner.rc وتحديث عنوان النافذة الرئيسي إلى \"Listen To The Quran Full Edition\".",
+        "تحديث User-Agent الخاص بطلبات الشبكة ليعكس اسم التطبيق الرسمي والإصدار الحالي ومعلومات مستودع المشروع.",
+        "تحديث ملف README، بما في ذلك شارات حالة البناء وتصحيح وصف مدير التنزيلات ليعكس كونه مدير تنزيلات يدعم الاستئناف الكامل.",
+        "إضافة اختبار آلي لامتثال الثيم من خلال theme_compliance_test.dart لاكتشاف الألوان الصلبة في الواجهات والمساعدة على منع تكرار مشكلات الثيم مستقبلًا.",
+        "توسيع اختبار الامتثال اللغوي الآلي من خلال i18n_compliance_test.dart لاكتشاف النصوص الحرفية غير المترجمة في شاشات التطبيق وحواراته.",
+        "مزامنة إصدار التطبيق 2.4.0+50 عبر ملفات المشروع وسجل التغييرات changelog.json.",
+        "إتمام دورة التحقق الشاملة بنجاح مع 0 مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
+        ]
         }
       },
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen-To-Quran-Full-Edition-v2.0.0.exe",
-          "sha256": "8d952b6fa9572a6b94d06916d400b4947bf9509b003c5f354fa81b7645cc0e4d",
-          "size": 12498113
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
+          "sha256": "ee5669dc58c07d344ea376eefb2e2ba5e2f62b53cd7afdeabdcabd19c6019b32",
+          "size": 12541118
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.0.0/Listen.To.Quran.Full.Edition-v2.0.0.apk",
-          "sha256": "04d05a51c4183313352b96ba1fec513056ece2419be56e5add66480aa1088083",
-          "size": 64871931,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
+          "sha256": "10c4dfa1ff007d977bb73811eb4a31f409fbd059752b23a4f1659c374b160be5",
+          "size": 65143136,
           "min_android_sdk": 24
         }
       }
