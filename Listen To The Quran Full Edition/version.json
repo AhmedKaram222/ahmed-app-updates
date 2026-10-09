@@ -4,73 +4,72 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "2.4.0",
-      "version_code": 50,
+      "version_name": "2.6.1",
+      "version_code": 55,
       "force_update": false,
       "min_supported_version": "1.1.2",
       "release_notes": {
         "en": {
-          "title": "Comprehensive Release — Localization, UI Quality, Accessibility & Reliability",
-          "items": [
-        "Completed Android application localization by adding the official Arabic application name \"استمع للقرآن الكريم\" to the Android launcher through native string resources.",
-        "Completed the remaining Download Manager localization by replacing the hardcoded paused status with the localized \"pausedStatus\" translation key.",
-        "Corrected and synchronized the open-source software license text in the About screen for both Arabic and English.",
-        "Improved Light Theme contrast across 10 UI locations, enhancing the readability and visibility of text, icons, controls, and status elements.",
-        "Improved contrast for the Surah list bottom sheet and audio control sliders in the main player.",
-        "Improved secondary text and status icon visibility across automatic update dialogs.",
-        "Removed remaining hardcoded color values from affected UI components and aligned them with Flutter's dynamic ColorScheme for consistent theme behavior.",
-        "Expanded accessibility support with Semantics for audio playback interactions and live announcements of recitation progress for screen readers.",
-        "Added localized tooltips to the audio player's interactive controls to improve discoverability and accessibility.",
-        "Added a direct Report a Problem action that opens the project's GitHub Issues page through url_launcher.",
-        "Enabled the Share App action using the operating system's native share interface through share_plus.",
-        "Updated the Windows application identity by synchronizing publisher and copyright metadata in Runner.rc and setting the main window title to \"Listen To The Quran Full Edition\".",
-        "Updated the application's network User-Agent to include the official application name, current version, and repository information.",
-        "Updated the README documentation, including build-status badges and the Download Manager description to accurately identify it as a fully resumable download manager.",
-        "Added automated theme compliance testing through theme_compliance_test.dart to detect hardcoded UI colors and help prevent future theme regressions.",
-        "Expanded automated i18n compliance verification through i18n_compliance_test.dart to detect untranslated hardcoded strings across application screens and dialogs.",
-        "Synchronized application version 2.4.0+50 across the project and changelog.json.",
-        "Completed the full verification cycle with 0 static-analysis issues and all 119 automated tests passing successfully."
-        ]
-        },
+      "title": "Unified Release — Data Integrity, Reliable Downloads & Performance",
+      "items": [
+        "Introduced a priority-based, multi-stage reciter detection algorithm that matches existing folders using persistent mappings, Arabic names, English names, archive names, and reciter IDs.",
+        "Added persistent reciter-to-folder attribution mappings in settings.json, with startup validation to prevent unnecessary download prompts when reciter files are already available.",
+        "Strengthened ZIP archive validation with classified extraction errors and automatic filtering of macOS metadata files, including __MACOSX and ._* entries.",
+        "Added diagnostic tools to the About screen, displaying detected reciters and unattributed folders, with an option to copy diagnostic cache information to the clipboard.",
+        "Migrated Windows reciter storage to %LOCALAPPDATA%\\ListenToQuranFull\\Reciters to prevent downloaded audio from being lost when the application is updated.",
+        "Implemented safe background migration of existing reciter files to the new storage location without deleting the original files during migration.",
+        "Removed the temporary _lastExtractedPath field and standardized reciter-folder tracking around persistent mappings in settings.json.",
+        "Improved download resilience with partial-download resumption using HTTP Range headers and automatic retries with exponential backoff of 1, 2, and 4 seconds.",
+        "Added automatic SHA-256 integrity verification of downloaded archives before extraction.",
+        "Implemented automatic cleanup of abandoned temporary download and extraction files, including .part and .extracting files older than 24 hours.",
+        "Updated splash-screen behavior so it can no longer be skipped by tapping; startup proceeds automatically when the sound finishes or the timeout expires.",
+        "Updated the Report a Problem action to open the official Facebook support page and adjusted Android query configuration accordingly.",
+        "Added an interactive storage management section in Settings, showing per-reciter storage usage in megabytes and allowing individual reciter files to be deleted.",
+        "Moved large audio archive extraction to background Isolate.run() execution to reduce UI freezing and maintain responsiveness during downloads and extraction.",
+        "Hardened Android release builds by configuring Gradle to fail explicitly when key.properties is missing, preventing release builds from silently using an unintended signing configuration.",
+        "Synchronized application version 2.6.1+55 across pubspec.yaml, changelog.json, and README.md.",
+        "Completed the release verification cycle with zero static-analysis issues and all 119 automated tests passing."
+      ]
+    },
         "ar": {
-          "title": "الإصدار الشامل — التوطين وجودة الواجهة وتسهيلات الاستخدام والموثوقية",
-          "items": [        "اكتمل تعريب تطبيق أندرويد من خلال إضافة الاسم العربي الرسمي للتطبيق \"استمع للقرآن الكريم\" إلى اسم التطبيق الظاهر على الشاشة الرئيسية باستخدام ملفات المصادر الأصلية لنظام أندرويد.",
-        "اكتمل توطين النصوص المتبقية في مدير التنزيلات من خلال استبدال حالة الإيقاف المؤقت الثابتة بمفتاح الترجمة الديناميكي \"pausedStatus\".",
-        "تصحيح ومزامنة نص رخصة البرمجيات والمصدر المفتوح في شاشة \"عن التطبيق\" باللغتين العربية والإنجليزية.",
-        "تحسين التباين في الوضع الفاتح عبر 10 مواضع مختلفة في الواجهة لرفع وضوح النصوص والرموز وعناصر التحكم وحالات النظام.",
-        "تحسين وضوح ألوان القائمة السفلية للسور ومنزلقات التحكم بالصوت في شاشة المشغل الرئيسية.",
-        "تحسين وضوح النصوص الثانوية وأيقونات الحالات داخل حوارات التحديث التلقائي.",
-        "إزالة الألوان الصلبة المتبقية من مكونات الواجهة المتأثرة وربطها بنظام ColorScheme الديناميكي لضمان اتساق المظهر مع الثيم.",
-        "توسيع دعم تسهيلات الاستخدام من خلال إضافة Semantics لتفاعلات تشغيل الصوت والإعلانات المباشرة عن نسبة تقدم التلاوة لقارئات الشاشة.",
-        "إضافة تلميحات Tooltip مترجمة إلى عناصر التحكم التفاعلية في المشغل الصوتي لتحسين سهولة اكتشاف الوظائف وإتاحة الوصول إليها.",
-        "إضافة إجراء مباشر \"الإبلاغ عن مشكلة\" يفتح صفحة GitHub Issues الخاصة بالمشروع باستخدام حزمة url_launcher.",
-        "تفعيل وظيفة \"مشاركة التطبيق\" باستخدام لوحة المشاركة الأصلية لنظام التشغيل من خلال حزمة share_plus.",
-        "تحديث هوية تطبيق ويندوز من خلال مزامنة بيانات الناشر وحقوق الملكية في Runner.rc وتحديث عنوان النافذة الرئيسي إلى \"Listen To The Quran Full Edition\".",
-        "تحديث User-Agent الخاص بطلبات الشبكة ليعكس اسم التطبيق الرسمي والإصدار الحالي ومعلومات مستودع المشروع.",
-        "تحديث ملف README، بما في ذلك شارات حالة البناء وتصحيح وصف مدير التنزيلات ليعكس كونه مدير تنزيلات يدعم الاستئناف الكامل.",
-        "إضافة اختبار آلي لامتثال الثيم من خلال theme_compliance_test.dart لاكتشاف الألوان الصلبة في الواجهات والمساعدة على منع تكرار مشكلات الثيم مستقبلًا.",
-        "توسيع اختبار الامتثال اللغوي الآلي من خلال i18n_compliance_test.dart لاكتشاف النصوص الحرفية غير المترجمة في شاشات التطبيق وحواراته.",
-        "مزامنة إصدار التطبيق 2.4.0+50 عبر ملفات المشروع وسجل التغييرات changelog.json.",
-        "إتمام دورة التحقق الشاملة بنجاح مع 0 مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
-        ]
-        }
-      },
+      "title": "الإصدار الموحد — سلامة البيانات وموثوقية التنزيل وتحسين الأداء",
+      "items": [
+        "تطوير خوارزمية متعددة المراحل ومرتبة حسب الأولوية لاكتشاف مجلدات القراء، بالاعتماد على سجلات الإسناد الدائمة والأسماء العربية والإنجليزية وأسماء الأرشيفات ومعرّفات القراء.",
+        "إضافة سجل دائم لإسناد كل قارئ إلى مجلده داخل settings.json، مع التحقق من الملفات عند بدء التشغيل لمنع طلب تنزيلها مجددًا عند توفرها بالفعل.",
+        "تعزيز التحقق من بنية أرشيفات ZIP، مع تصنيف أخطاء فك الضغط واستبعاد ملفات بيانات نظام macOS المخفية تلقائيًا، بما فيها __MACOSX والملفات التي تبدأ بـ ._*.",
+        "إضافة أدوات تشخيص إلى شاشة \"عن التطبيق\" تعرض عدد القراء المكتشفين والمجلدات غير المسندة، مع إمكانية نسخ بيانات التشخيص الخاصة بالذاكرة المؤقتة إلى الحافظة.",
+        "نقل تخزين ملفات القراء على ويندوز إلى المسار %LOCALAPPDATA%\\ListenToQuranFull\\Reciters لمنع فقدان الملفات الصوتية عند تحديث التطبيق.",
+        "تنفيذ ترحيل آمن في الخلفية لملفات القراء الموجودة مسبقًا إلى مسار التخزين الجديد، دون حذف الملفات الأصلية أثناء عملية الترحيل.",
+        "إزالة الحقل المؤقت _lastExtractedPath وتوحيد آلية تتبع مجلدات القراء بالاعتماد على سجلات الإسناد الدائمة في settings.json.",
+        "تحسين موثوقية التنزيل من خلال استئناف الملفات الجزئية باستخدام ترويسات HTTP Range وإعادة المحاولة تلقائيًا بتراجع أُسّي بعد 1 و2 و4 ثوانٍ.",
+        "إضافة التحقق التلقائي من سلامة الأرشيفات المنزّلة باستخدام SHA-256 قبل بدء فك الضغط.",
+        "تنفيذ تنظيف تلقائي لملفات التنزيل وفك الضغط المؤقتة والمهجورة، بما فيها ملفات .part و.extracting التي يتجاوز عمرها 24 ساعة.",
+        "تعديل سلوك شاشة البداية لمنع تخطيها بالنقر أو اللمس، بحيث ينتقل التطبيق تلقائيًا عند انتهاء نغمة البداية أو انقضاء المهلة الزمنية.",
+        "تحديث إجراء \"الإبلاغ عن مشكلة\" ليفتح صفحة الدعم الرسمية على فيسبوك، مع تعديل إعدادات الاستعلامات في أندرويد بما يتوافق مع ذلك.",
+        "إضافة قسم تفاعلي لإدارة التخزين في الإعدادات، يعرض المساحة المستهلكة لكل قارئ بالميجابايت ويتيح حذف ملفات كل قارئ بشكل منفصل.",
+        "نقل عمليات فك ضغط الأرشيفات الصوتية الكبيرة إلى Isolate.run() في الخلفية لتقليل تجمد الواجهة والحفاظ على استجابتها أثناء التنزيل وفك الضغط.",
+        "تعزيز أمان بناء إصدارات أندرويد النهائية من خلال ضبط Gradle لإيقاف البناء صراحة عند غياب key.properties، ومنع استخدام إعدادات توقيع غير مقصودة بصمت.",
+        "مزامنة رقم الإصدار 2.6.1+55 عبر ملفات pubspec.yaml وchangelog.json وREADME.md.",
+        "إتمام التحقق من الإصدار بنجاح، مع صفر مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
+      ]
+    }
+  },
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
-          "sha256": "ee5669dc58c07d344ea376eefb2e2ba5e2f62b53cd7afdeabdcabd19c6019b32",
-          "size": 12541118
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
+          "sha256": "3cfa38108a6134b1fe113ed3f770c8783bd0f94a3e42933baf0f7d7fc7a43d75",
+          "size": 12569634
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
-          "sha256": "10c4dfa1ff007d977bb73811eb4a31f409fbd059752b23a4f1659c374b160be5",
-          "size": 65143136,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
+          "sha256": "2f3b17a49df599269bfdc377fc6efd092ed98a9fdd16afcf45bbfdb0680cd21d",
+          "size": 65377880,
           "min_android_sdk": 24
         }
       }
@@ -78,73 +77,72 @@
     "com.listen.to.the.quran.full.edition": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "com.listen.to.the.quran.full.edition",
-      "version_name": "2.4.0",
-      "version_code": 50,
+      "version_name": "2.6.1",
+      "version_code": 55,
       "force_update": false,
       "min_supported_version": "1.1.2",
       "release_notes": {
         "en": {
-          "title": "Comprehensive Release — Localization, UI Quality, Accessibility & Reliability",
-          "items": [
-        "Completed Android application localization by adding the official Arabic application name \"استمع للقرآن الكريم\" to the Android launcher through native string resources.",
-        "Completed the remaining Download Manager localization by replacing the hardcoded paused status with the localized \"pausedStatus\" translation key.",
-        "Corrected and synchronized the open-source software license text in the About screen for both Arabic and English.",
-        "Improved Light Theme contrast across 10 UI locations, enhancing the readability and visibility of text, icons, controls, and status elements.",
-        "Improved contrast for the Surah list bottom sheet and audio control sliders in the main player.",
-        "Improved secondary text and status icon visibility across automatic update dialogs.",
-        "Removed remaining hardcoded color values from affected UI components and aligned them with Flutter's dynamic ColorScheme for consistent theme behavior.",
-        "Expanded accessibility support with Semantics for audio playback interactions and live announcements of recitation progress for screen readers.",
-        "Added localized tooltips to the audio player's interactive controls to improve discoverability and accessibility.",
-        "Added a direct Report a Problem action that opens the project's GitHub Issues page through url_launcher.",
-        "Enabled the Share App action using the operating system's native share interface through share_plus.",
-        "Updated the Windows application identity by synchronizing publisher and copyright metadata in Runner.rc and setting the main window title to \"Listen To The Quran Full Edition\".",
-        "Updated the application's network User-Agent to include the official application name, current version, and repository information.",
-        "Updated the README documentation, including build-status badges and the Download Manager description to accurately identify it as a fully resumable download manager.",
-        "Added automated theme compliance testing through theme_compliance_test.dart to detect hardcoded UI colors and help prevent future theme regressions.",
-        "Expanded automated i18n compliance verification through i18n_compliance_test.dart to detect untranslated hardcoded strings across application screens and dialogs.",
-        "Synchronized application version 2.4.0+50 across the project and changelog.json.",
-        "Completed the full verification cycle with 0 static-analysis issues and all 119 automated tests passing successfully."
-        ]
-        },
+      "title": "Unified Release — Data Integrity, Reliable Downloads & Performance",
+      "items": [
+        "Introduced a priority-based, multi-stage reciter detection algorithm that matches existing folders using persistent mappings, Arabic names, English names, archive names, and reciter IDs.",
+        "Added persistent reciter-to-folder attribution mappings in settings.json, with startup validation to prevent unnecessary download prompts when reciter files are already available.",
+        "Strengthened ZIP archive validation with classified extraction errors and automatic filtering of macOS metadata files, including __MACOSX and ._* entries.",
+        "Added diagnostic tools to the About screen, displaying detected reciters and unattributed folders, with an option to copy diagnostic cache information to the clipboard.",
+        "Migrated Windows reciter storage to %LOCALAPPDATA%\\ListenToQuranFull\\Reciters to prevent downloaded audio from being lost when the application is updated.",
+        "Implemented safe background migration of existing reciter files to the new storage location without deleting the original files during migration.",
+        "Removed the temporary _lastExtractedPath field and standardized reciter-folder tracking around persistent mappings in settings.json.",
+        "Improved download resilience with partial-download resumption using HTTP Range headers and automatic retries with exponential backoff of 1, 2, and 4 seconds.",
+        "Added automatic SHA-256 integrity verification of downloaded archives before extraction.",
+        "Implemented automatic cleanup of abandoned temporary download and extraction files, including .part and .extracting files older than 24 hours.",
+        "Updated splash-screen behavior so it can no longer be skipped by tapping; startup proceeds automatically when the sound finishes or the timeout expires.",
+        "Updated the Report a Problem action to open the official Facebook support page and adjusted Android query configuration accordingly.",
+        "Added an interactive storage management section in Settings, showing per-reciter storage usage in megabytes and allowing individual reciter files to be deleted.",
+        "Moved large audio archive extraction to background Isolate.run() execution to reduce UI freezing and maintain responsiveness during downloads and extraction.",
+        "Hardened Android release builds by configuring Gradle to fail explicitly when key.properties is missing, preventing release builds from silently using an unintended signing configuration.",
+        "Synchronized application version 2.6.1+55 across pubspec.yaml, changelog.json, and README.md.",
+        "Completed the release verification cycle with zero static-analysis issues and all 119 automated tests passing."
+      ]
+    },
         "ar": {
-          "title": "الإصدار الشامل — التوطين وجودة الواجهة وتسهيلات الاستخدام والموثوقية",
-          "items": [        "اكتمل تعريب تطبيق أندرويد من خلال إضافة الاسم العربي الرسمي للتطبيق \"استمع للقرآن الكريم\" إلى اسم التطبيق الظاهر على الشاشة الرئيسية باستخدام ملفات المصادر الأصلية لنظام أندرويد.",
-        "اكتمل توطين النصوص المتبقية في مدير التنزيلات من خلال استبدال حالة الإيقاف المؤقت الثابتة بمفتاح الترجمة الديناميكي \"pausedStatus\".",
-        "تصحيح ومزامنة نص رخصة البرمجيات والمصدر المفتوح في شاشة \"عن التطبيق\" باللغتين العربية والإنجليزية.",
-        "تحسين التباين في الوضع الفاتح عبر 10 مواضع مختلفة في الواجهة لرفع وضوح النصوص والرموز وعناصر التحكم وحالات النظام.",
-        "تحسين وضوح ألوان القائمة السفلية للسور ومنزلقات التحكم بالصوت في شاشة المشغل الرئيسية.",
-        "تحسين وضوح النصوص الثانوية وأيقونات الحالات داخل حوارات التحديث التلقائي.",
-        "إزالة الألوان الصلبة المتبقية من مكونات الواجهة المتأثرة وربطها بنظام ColorScheme الديناميكي لضمان اتساق المظهر مع الثيم.",
-        "توسيع دعم تسهيلات الاستخدام من خلال إضافة Semantics لتفاعلات تشغيل الصوت والإعلانات المباشرة عن نسبة تقدم التلاوة لقارئات الشاشة.",
-        "إضافة تلميحات Tooltip مترجمة إلى عناصر التحكم التفاعلية في المشغل الصوتي لتحسين سهولة اكتشاف الوظائف وإتاحة الوصول إليها.",
-        "إضافة إجراء مباشر \"الإبلاغ عن مشكلة\" يفتح صفحة GitHub Issues الخاصة بالمشروع باستخدام حزمة url_launcher.",
-        "تفعيل وظيفة \"مشاركة التطبيق\" باستخدام لوحة المشاركة الأصلية لنظام التشغيل من خلال حزمة share_plus.",
-        "تحديث هوية تطبيق ويندوز من خلال مزامنة بيانات الناشر وحقوق الملكية في Runner.rc وتحديث عنوان النافذة الرئيسي إلى \"Listen To The Quran Full Edition\".",
-        "تحديث User-Agent الخاص بطلبات الشبكة ليعكس اسم التطبيق الرسمي والإصدار الحالي ومعلومات مستودع المشروع.",
-        "تحديث ملف README، بما في ذلك شارات حالة البناء وتصحيح وصف مدير التنزيلات ليعكس كونه مدير تنزيلات يدعم الاستئناف الكامل.",
-        "إضافة اختبار آلي لامتثال الثيم من خلال theme_compliance_test.dart لاكتشاف الألوان الصلبة في الواجهات والمساعدة على منع تكرار مشكلات الثيم مستقبلًا.",
-        "توسيع اختبار الامتثال اللغوي الآلي من خلال i18n_compliance_test.dart لاكتشاف النصوص الحرفية غير المترجمة في شاشات التطبيق وحواراته.",
-        "مزامنة إصدار التطبيق 2.4.0+50 عبر ملفات المشروع وسجل التغييرات changelog.json.",
-        "إتمام دورة التحقق الشاملة بنجاح مع 0 مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
-        ]
-        }
-      },
+      "title": "الإصدار الموحد — سلامة البيانات وموثوقية التنزيل وتحسين الأداء",
+      "items": [
+        "تطوير خوارزمية متعددة المراحل ومرتبة حسب الأولوية لاكتشاف مجلدات القراء، بالاعتماد على سجلات الإسناد الدائمة والأسماء العربية والإنجليزية وأسماء الأرشيفات ومعرّفات القراء.",
+        "إضافة سجل دائم لإسناد كل قارئ إلى مجلده داخل settings.json، مع التحقق من الملفات عند بدء التشغيل لمنع طلب تنزيلها مجددًا عند توفرها بالفعل.",
+        "تعزيز التحقق من بنية أرشيفات ZIP، مع تصنيف أخطاء فك الضغط واستبعاد ملفات بيانات نظام macOS المخفية تلقائيًا، بما فيها __MACOSX والملفات التي تبدأ بـ ._*.",
+        "إضافة أدوات تشخيص إلى شاشة \"عن التطبيق\" تعرض عدد القراء المكتشفين والمجلدات غير المسندة، مع إمكانية نسخ بيانات التشخيص الخاصة بالذاكرة المؤقتة إلى الحافظة.",
+        "نقل تخزين ملفات القراء على ويندوز إلى المسار %LOCALAPPDATA%\\ListenToQuranFull\\Reciters لمنع فقدان الملفات الصوتية عند تحديث التطبيق.",
+        "تنفيذ ترحيل آمن في الخلفية لملفات القراء الموجودة مسبقًا إلى مسار التخزين الجديد، دون حذف الملفات الأصلية أثناء عملية الترحيل.",
+        "إزالة الحقل المؤقت _lastExtractedPath وتوحيد آلية تتبع مجلدات القراء بالاعتماد على سجلات الإسناد الدائمة في settings.json.",
+        "تحسين موثوقية التنزيل من خلال استئناف الملفات الجزئية باستخدام ترويسات HTTP Range وإعادة المحاولة تلقائيًا بتراجع أُسّي بعد 1 و2 و4 ثوانٍ.",
+        "إضافة التحقق التلقائي من سلامة الأرشيفات المنزّلة باستخدام SHA-256 قبل بدء فك الضغط.",
+        "تنفيذ تنظيف تلقائي لملفات التنزيل وفك الضغط المؤقتة والمهجورة، بما فيها ملفات .part و.extracting التي يتجاوز عمرها 24 ساعة.",
+        "تعديل سلوك شاشة البداية لمنع تخطيها بالنقر أو اللمس، بحيث ينتقل التطبيق تلقائيًا عند انتهاء نغمة البداية أو انقضاء المهلة الزمنية.",
+        "تحديث إجراء \"الإبلاغ عن مشكلة\" ليفتح صفحة الدعم الرسمية على فيسبوك، مع تعديل إعدادات الاستعلامات في أندرويد بما يتوافق مع ذلك.",
+        "إضافة قسم تفاعلي لإدارة التخزين في الإعدادات، يعرض المساحة المستهلكة لكل قارئ بالميجابايت ويتيح حذف ملفات كل قارئ بشكل منفصل.",
+        "نقل عمليات فك ضغط الأرشيفات الصوتية الكبيرة إلى Isolate.run() في الخلفية لتقليل تجمد الواجهة والحفاظ على استجابتها أثناء التنزيل وفك الضغط.",
+        "تعزيز أمان بناء إصدارات أندرويد النهائية من خلال ضبط Gradle لإيقاف البناء صراحة عند غياب key.properties، ومنع استخدام إعدادات توقيع غير مقصودة بصمت.",
+        "مزامنة رقم الإصدار 2.6.1+55 عبر ملفات pubspec.yaml وchangelog.json وREADME.md.",
+        "إتمام التحقق من الإصدار بنجاح، مع صفر مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
+      ]
+    }
+  },
       "platforms": {
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen-To-Quran-Full-Edition-v2.4.0.exe",
-          "sha256": "ee5669dc58c07d344ea376eefb2e2ba5e2f62b53cd7afdeabdcabd19c6019b32",
-          "size": 12541118
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
+          "sha256": "3cfa38108a6134b1fe113ed3f770c8783bd0f94a3e42933baf0f7d7fc7a43d75",
+          "size": 12569634
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.4.0/Listen.To.Quran.Full.Edition-v2.4.0.apk",
-          "sha256": "10c4dfa1ff007d977bb73811eb4a31f409fbd059752b23a4f1659c374b160be5",
-          "size": 65143136,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
+          "sha256": "2f3b17a49df599269bfdc377fc6efd092ed98a9fdd16afcf45bbfdb0680cd21d",
+          "size": 65377880,
           "min_android_sdk": 24
         }
       }
