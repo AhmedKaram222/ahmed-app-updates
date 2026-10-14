@@ -4,53 +4,53 @@
     "listen_to_quran_full": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "listen_to_quran_full",
-      "version_name": "2.6.1",
-      "version_code": 55,
+      "version_name": "2.9.0",
+      "version_code": 60,
       "force_update": false,
       "min_supported_version": "1.1.2",
       "release_notes": {
-        "en": {
-      "title": "Unified Release — Data Integrity, Reliable Downloads & Performance",
+    "en": {
+      "title": "Comprehensive Release — Stability, Security & Performance",
       "items": [
-        "Introduced a priority-based, multi-stage reciter detection algorithm that matches existing folders using persistent mappings, Arabic names, English names, archive names, and reciter IDs.",
-        "Added persistent reciter-to-folder attribution mappings in settings.json, with startup validation to prevent unnecessary download prompts when reciter files are already available.",
-        "Strengthened ZIP archive validation with classified extraction errors and automatic filtering of macOS metadata files, including __MACOSX and ._* entries.",
-        "Added diagnostic tools to the About screen, displaying detected reciters and unattributed folders, with an option to copy diagnostic cache information to the clipboard.",
-        "Migrated Windows reciter storage to %LOCALAPPDATA%\\ListenToQuranFull\\Reciters to prevent downloaded audio from being lost when the application is updated.",
-        "Implemented safe background migration of existing reciter files to the new storage location without deleting the original files during migration.",
-        "Removed the temporary _lastExtractedPath field and standardized reciter-folder tracking around persistent mappings in settings.json.",
-        "Improved download resilience with partial-download resumption using HTTP Range headers and automatic retries with exponential backoff of 1, 2, and 4 seconds.",
-        "Added automatic SHA-256 integrity verification of downloaded archives before extraction.",
-        "Implemented automatic cleanup of abandoned temporary download and extraction files, including .part and .extracting files older than 24 hours.",
-        "Updated splash-screen behavior so it can no longer be skipped by tapping; startup proceeds automatically when the sound finishes or the timeout expires.",
-        "Updated the Report a Problem action to open the official Facebook support page and adjusted Android query configuration accordingly.",
-        "Added an interactive storage management section in Settings, showing per-reciter storage usage in megabytes and allowing individual reciter files to be deleted.",
-        "Moved large audio archive extraction to background Isolate.run() execution to reduce UI freezing and maintain responsiveness during downloads and extraction.",
-        "Hardened Android release builds by configuring Gradle to fail explicitly when key.properties is missing, preventing release builds from silently using an unintended signing configuration.",
-        "Synchronized application version 2.6.1+55 across pubspec.yaml, changelog.json, and README.md.",
-        "Completed the release verification cycle with zero static-analysis issues and all 119 automated tests passing."
+        "Implemented atomic audio archive extraction by extracting into an isolated temporary directory, validating the presence of MP3 files, and safely switching to the final destination only after successful validation. This prevents incorrect reciter-folder attribution and repeated download loops.",
+        "Connected extraction dialog states to the actual extraction status stream, improving UI responsiveness and providing clear feedback when extraction is cancelled or fails.",
+        "Added a legacyMigrationCompleted flag to prevent repeated Windows file migrations on every application startup.",
+        "Implemented atomic settings writes with rollback handling to improve configuration integrity and recovery from write failures.",
+        "Initialized mediaItem with valid default values in the audio playback service to prevent race conditions involving background playback controls.",
+        "Strengthened update validation by requiring HTTPS, enforcing an allowlist of permitted update file extensions, and rejecting zero-filled or incomplete SHA-256 fingerprints.",
+        "Improved semantic version comparison with more accurate numeric and lexical segment handling.",
+        "Replaced direct process-exit calls in the Windows installer with safer navigation and shutdown handling.",
+        "Moved SHA-256 calculations for large files to background Isolate.run() execution to prevent UI freezing during integrity verification.",
+        "Throttled download progress events using appropriate time intervals and measured thresholds to reduce unnecessary UI updates and CPU usage.",
+        "Added an interactive scrollbar to the Surah list for smoother navigation through long lists.",
+        "Improved dialog dismissal reliability to ensure exit callbacks and dialog closure are handled even when users click outside dialog boundaries.",
+        "Localized reciter names in the storage management panel according to the user's selected language through localizedName.",
+        "Removed unused services and dead code, including archive_state_manager.dart and the disconnected checkAllPermissions() function.",
+        "Removed unused Roboto font assets and updated pubspec.yaml to keep application resources leaner.",
+        "Updated the network User-Agent to reflect the current application version.",
+        "Synchronized application version 2.9.0+60 across pubspec.yaml and changelog.json, and updated the repository badge and release documentation in README.md."
       ]
     },
-        "ar": {
-      "title": "الإصدار الموحد — سلامة البيانات وموثوقية التنزيل وتحسين الأداء",
+      "ar": {
+      "title": "الإصدار الشامل — الاستقرار والأمان والأداء",
       "items": [
-        "تطوير خوارزمية متعددة المراحل ومرتبة حسب الأولوية لاكتشاف مجلدات القراء، بالاعتماد على سجلات الإسناد الدائمة والأسماء العربية والإنجليزية وأسماء الأرشيفات ومعرّفات القراء.",
-        "إضافة سجل دائم لإسناد كل قارئ إلى مجلده داخل settings.json، مع التحقق من الملفات عند بدء التشغيل لمنع طلب تنزيلها مجددًا عند توفرها بالفعل.",
-        "تعزيز التحقق من بنية أرشيفات ZIP، مع تصنيف أخطاء فك الضغط واستبعاد ملفات بيانات نظام macOS المخفية تلقائيًا، بما فيها __MACOSX والملفات التي تبدأ بـ ._*.",
-        "إضافة أدوات تشخيص إلى شاشة \"عن التطبيق\" تعرض عدد القراء المكتشفين والمجلدات غير المسندة، مع إمكانية نسخ بيانات التشخيص الخاصة بالذاكرة المؤقتة إلى الحافظة.",
-        "نقل تخزين ملفات القراء على ويندوز إلى المسار %LOCALAPPDATA%\\ListenToQuranFull\\Reciters لمنع فقدان الملفات الصوتية عند تحديث التطبيق.",
-        "تنفيذ ترحيل آمن في الخلفية لملفات القراء الموجودة مسبقًا إلى مسار التخزين الجديد، دون حذف الملفات الأصلية أثناء عملية الترحيل.",
-        "إزالة الحقل المؤقت _lastExtractedPath وتوحيد آلية تتبع مجلدات القراء بالاعتماد على سجلات الإسناد الدائمة في settings.json.",
-        "تحسين موثوقية التنزيل من خلال استئناف الملفات الجزئية باستخدام ترويسات HTTP Range وإعادة المحاولة تلقائيًا بتراجع أُسّي بعد 1 و2 و4 ثوانٍ.",
-        "إضافة التحقق التلقائي من سلامة الأرشيفات المنزّلة باستخدام SHA-256 قبل بدء فك الضغط.",
-        "تنفيذ تنظيف تلقائي لملفات التنزيل وفك الضغط المؤقتة والمهجورة، بما فيها ملفات .part و.extracting التي يتجاوز عمرها 24 ساعة.",
-        "تعديل سلوك شاشة البداية لمنع تخطيها بالنقر أو اللمس، بحيث ينتقل التطبيق تلقائيًا عند انتهاء نغمة البداية أو انقضاء المهلة الزمنية.",
-        "تحديث إجراء \"الإبلاغ عن مشكلة\" ليفتح صفحة الدعم الرسمية على فيسبوك، مع تعديل إعدادات الاستعلامات في أندرويد بما يتوافق مع ذلك.",
-        "إضافة قسم تفاعلي لإدارة التخزين في الإعدادات، يعرض المساحة المستهلكة لكل قارئ بالميجابايت ويتيح حذف ملفات كل قارئ بشكل منفصل.",
-        "نقل عمليات فك ضغط الأرشيفات الصوتية الكبيرة إلى Isolate.run() في الخلفية لتقليل تجمد الواجهة والحفاظ على استجابتها أثناء التنزيل وفك الضغط.",
-        "تعزيز أمان بناء إصدارات أندرويد النهائية من خلال ضبط Gradle لإيقاف البناء صراحة عند غياب key.properties، ومنع استخدام إعدادات توقيع غير مقصودة بصمت.",
-        "مزامنة رقم الإصدار 2.6.1+55 عبر ملفات pubspec.yaml وchangelog.json وREADME.md.",
-        "إتمام التحقق من الإصدار بنجاح، مع صفر مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
+        "تنفيذ استخراج ذري وآمن لأرشيفات التلاوات، من خلال فك الضغط داخل مجلد مؤقت معزول، والتحقق من وجود ملفات MP3، ثم التبديل الآمن إلى المسار النهائي بعد نجاح التحقق. يمنع ذلك إسناد الملفات إلى مجلد قارئ خاطئ وتكرار حلقات التنزيل.",
+        "ربط حالات حوار فك الضغط بدفق الحالة الفعلي لعملية الاستخراج، مما يحسن استجابة الواجهة ويوفر رسائل واضحة عند الإلغاء أو حدوث أخطاء.",
+        "إضافة العلم legacyMigrationCompleted لمنع تكرار ترحيل ملفات ويندوز القديمة عند كل تشغيل للتطبيق.",
+        "تطبيق الكتابة الذرية للإعدادات مع آليات للتراجع عند الفشل، لتعزيز سلامة بيانات الإعدادات وتحسين التعامل مع أخطاء الكتابة.",
+        "تهيئة mediaItem بقيم افتراضية صحيحة داخل خدمة تشغيل الصوت لمنع حالات السباق البرمجي المرتبطة بعناصر التحكم في التشغيل بالخلفية.",
+        "تعزيز التحقق من التحديثات باشتراط استخدام HTTPS، وفرض قائمة بيضاء لامتدادات ملفات التحديث المسموح بها، ورفض بصمات SHA-256 الصفرية أو غير المكتملة.",
+        "تحسين مقارنة الإصدارات وفق معيار SemVer من خلال معالجة أكثر دقة للمقاطع الرقمية والنصية.",
+        "استبدال نداءات الخروج المباشر من العملية في مثبت ويندوز بآليات أكثر أمانًا للتنقل وإغلاق التطبيق.",
+        "نقل حساب بصمات SHA-256 للملفات الكبيرة إلى Isolate.run() في الخلفية لمنع تجمد الواجهة أثناء التحقق من سلامة الملفات.",
+        "تطبيق خنق دفق أحداث تقدم التنزيل باستخدام فواصل زمنية وعتبات مدروسة، لتقليل تحديثات الواجهة غير الضرورية واستهلاك المعالج.",
+        "إضافة شريط تمرير تفاعلي Scrollbar إلى قائمة السور لتسهيل التنقل في القوائم الطويلة.",
+        "تحسين موثوقية إغلاق الحوارات لضمان تنفيذ إجراءات الخروج وإغلاق الحوار حتى عند النقر خارج حدوده.",
+        "توطين أسماء القراء في لوحة إدارة التخزين وفق اللغة التي اختارها المستخدم، باستخدام الدالة localizedName.",
+        "إزالة الخدمات غير المستخدمة والأكواد الميتة، بما في ذلك archive_state_manager.dart والدالة غير الموصولة checkAllPermissions().",
+        "إزالة ملفات خطوط Roboto غير المستخدمة وتحديث pubspec.yaml لتقليل الأصول غير الضرورية في المشروع.",
+        "تحديث User-Agent الخاص بطلبات الشبكة ليعكس إصدار التطبيق الحالي.",
+        "مزامنة رقم الإصدار 2.9.0+60 بين pubspec.yaml وchangelog.json، وتحديث شارة المستودع وتوثيق تفاصيل الإصدار في README.md."
       ]
     }
   },
@@ -58,18 +58,18 @@
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
-          "sha256": "3cfa38108a6134b1fe113ed3f770c8783bd0f94a3e42933baf0f7d7fc7a43d75",
-          "size": 12569634
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
+          "sha256": "",
+          "size": 12445531
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
-          "sha256": "2f3b17a49df599269bfdc377fc6efd092ed98a9fdd16afcf45bbfdb0680cd21d",
-          "size": 65377880,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
+          "sha256": "",
+          "size": 65190634,
           "min_android_sdk": 24
         }
       }
@@ -77,53 +77,53 @@
     "com.listen.to.the.quran.full.edition": {
       "app_name": "Listen to the Quran Full Edition",
       "app_id": "com.listen.to.the.quran.full.edition",
-      "version_name": "2.6.1",
-      "version_code": 55,
+      "version_name": "2.9.0",
+      "version_code": 60,
       "force_update": false,
       "min_supported_version": "1.1.2",
       "release_notes": {
-        "en": {
-      "title": "Unified Release — Data Integrity, Reliable Downloads & Performance",
+    "en": {
+      "title": "Comprehensive Release — Stability, Security & Performance",
       "items": [
-        "Introduced a priority-based, multi-stage reciter detection algorithm that matches existing folders using persistent mappings, Arabic names, English names, archive names, and reciter IDs.",
-        "Added persistent reciter-to-folder attribution mappings in settings.json, with startup validation to prevent unnecessary download prompts when reciter files are already available.",
-        "Strengthened ZIP archive validation with classified extraction errors and automatic filtering of macOS metadata files, including __MACOSX and ._* entries.",
-        "Added diagnostic tools to the About screen, displaying detected reciters and unattributed folders, with an option to copy diagnostic cache information to the clipboard.",
-        "Migrated Windows reciter storage to %LOCALAPPDATA%\\ListenToQuranFull\\Reciters to prevent downloaded audio from being lost when the application is updated.",
-        "Implemented safe background migration of existing reciter files to the new storage location without deleting the original files during migration.",
-        "Removed the temporary _lastExtractedPath field and standardized reciter-folder tracking around persistent mappings in settings.json.",
-        "Improved download resilience with partial-download resumption using HTTP Range headers and automatic retries with exponential backoff of 1, 2, and 4 seconds.",
-        "Added automatic SHA-256 integrity verification of downloaded archives before extraction.",
-        "Implemented automatic cleanup of abandoned temporary download and extraction files, including .part and .extracting files older than 24 hours.",
-        "Updated splash-screen behavior so it can no longer be skipped by tapping; startup proceeds automatically when the sound finishes or the timeout expires.",
-        "Updated the Report a Problem action to open the official Facebook support page and adjusted Android query configuration accordingly.",
-        "Added an interactive storage management section in Settings, showing per-reciter storage usage in megabytes and allowing individual reciter files to be deleted.",
-        "Moved large audio archive extraction to background Isolate.run() execution to reduce UI freezing and maintain responsiveness during downloads and extraction.",
-        "Hardened Android release builds by configuring Gradle to fail explicitly when key.properties is missing, preventing release builds from silently using an unintended signing configuration.",
-        "Synchronized application version 2.6.1+55 across pubspec.yaml, changelog.json, and README.md.",
-        "Completed the release verification cycle with zero static-analysis issues and all 119 automated tests passing."
+        "Implemented atomic audio archive extraction by extracting into an isolated temporary directory, validating the presence of MP3 files, and safely switching to the final destination only after successful validation. This prevents incorrect reciter-folder attribution and repeated download loops.",
+        "Connected extraction dialog states to the actual extraction status stream, improving UI responsiveness and providing clear feedback when extraction is cancelled or fails.",
+        "Added a legacyMigrationCompleted flag to prevent repeated Windows file migrations on every application startup.",
+        "Implemented atomic settings writes with rollback handling to improve configuration integrity and recovery from write failures.",
+        "Initialized mediaItem with valid default values in the audio playback service to prevent race conditions involving background playback controls.",
+        "Strengthened update validation by requiring HTTPS, enforcing an allowlist of permitted update file extensions, and rejecting zero-filled or incomplete SHA-256 fingerprints.",
+        "Improved semantic version comparison with more accurate numeric and lexical segment handling.",
+        "Replaced direct process-exit calls in the Windows installer with safer navigation and shutdown handling.",
+        "Moved SHA-256 calculations for large files to background Isolate.run() execution to prevent UI freezing during integrity verification.",
+        "Throttled download progress events using appropriate time intervals and measured thresholds to reduce unnecessary UI updates and CPU usage.",
+        "Added an interactive scrollbar to the Surah list for smoother navigation through long lists.",
+        "Improved dialog dismissal reliability to ensure exit callbacks and dialog closure are handled even when users click outside dialog boundaries.",
+        "Localized reciter names in the storage management panel according to the user's selected language through localizedName.",
+        "Removed unused services and dead code, including archive_state_manager.dart and the disconnected checkAllPermissions() function.",
+        "Removed unused Roboto font assets and updated pubspec.yaml to keep application resources leaner.",
+        "Updated the network User-Agent to reflect the current application version.",
+        "Synchronized application version 2.9.0+60 across pubspec.yaml and changelog.json, and updated the repository badge and release documentation in README.md."
       ]
     },
-        "ar": {
-      "title": "الإصدار الموحد — سلامة البيانات وموثوقية التنزيل وتحسين الأداء",
+      "ar": {
+      "title": "الإصدار الشامل — الاستقرار والأمان والأداء",
       "items": [
-        "تطوير خوارزمية متعددة المراحل ومرتبة حسب الأولوية لاكتشاف مجلدات القراء، بالاعتماد على سجلات الإسناد الدائمة والأسماء العربية والإنجليزية وأسماء الأرشيفات ومعرّفات القراء.",
-        "إضافة سجل دائم لإسناد كل قارئ إلى مجلده داخل settings.json، مع التحقق من الملفات عند بدء التشغيل لمنع طلب تنزيلها مجددًا عند توفرها بالفعل.",
-        "تعزيز التحقق من بنية أرشيفات ZIP، مع تصنيف أخطاء فك الضغط واستبعاد ملفات بيانات نظام macOS المخفية تلقائيًا، بما فيها __MACOSX والملفات التي تبدأ بـ ._*.",
-        "إضافة أدوات تشخيص إلى شاشة \"عن التطبيق\" تعرض عدد القراء المكتشفين والمجلدات غير المسندة، مع إمكانية نسخ بيانات التشخيص الخاصة بالذاكرة المؤقتة إلى الحافظة.",
-        "نقل تخزين ملفات القراء على ويندوز إلى المسار %LOCALAPPDATA%\\ListenToQuranFull\\Reciters لمنع فقدان الملفات الصوتية عند تحديث التطبيق.",
-        "تنفيذ ترحيل آمن في الخلفية لملفات القراء الموجودة مسبقًا إلى مسار التخزين الجديد، دون حذف الملفات الأصلية أثناء عملية الترحيل.",
-        "إزالة الحقل المؤقت _lastExtractedPath وتوحيد آلية تتبع مجلدات القراء بالاعتماد على سجلات الإسناد الدائمة في settings.json.",
-        "تحسين موثوقية التنزيل من خلال استئناف الملفات الجزئية باستخدام ترويسات HTTP Range وإعادة المحاولة تلقائيًا بتراجع أُسّي بعد 1 و2 و4 ثوانٍ.",
-        "إضافة التحقق التلقائي من سلامة الأرشيفات المنزّلة باستخدام SHA-256 قبل بدء فك الضغط.",
-        "تنفيذ تنظيف تلقائي لملفات التنزيل وفك الضغط المؤقتة والمهجورة، بما فيها ملفات .part و.extracting التي يتجاوز عمرها 24 ساعة.",
-        "تعديل سلوك شاشة البداية لمنع تخطيها بالنقر أو اللمس، بحيث ينتقل التطبيق تلقائيًا عند انتهاء نغمة البداية أو انقضاء المهلة الزمنية.",
-        "تحديث إجراء \"الإبلاغ عن مشكلة\" ليفتح صفحة الدعم الرسمية على فيسبوك، مع تعديل إعدادات الاستعلامات في أندرويد بما يتوافق مع ذلك.",
-        "إضافة قسم تفاعلي لإدارة التخزين في الإعدادات، يعرض المساحة المستهلكة لكل قارئ بالميجابايت ويتيح حذف ملفات كل قارئ بشكل منفصل.",
-        "نقل عمليات فك ضغط الأرشيفات الصوتية الكبيرة إلى Isolate.run() في الخلفية لتقليل تجمد الواجهة والحفاظ على استجابتها أثناء التنزيل وفك الضغط.",
-        "تعزيز أمان بناء إصدارات أندرويد النهائية من خلال ضبط Gradle لإيقاف البناء صراحة عند غياب key.properties، ومنع استخدام إعدادات توقيع غير مقصودة بصمت.",
-        "مزامنة رقم الإصدار 2.6.1+55 عبر ملفات pubspec.yaml وchangelog.json وREADME.md.",
-        "إتمام التحقق من الإصدار بنجاح، مع صفر مشكلة في التحليل الساكن ونجاح جميع الاختبارات الآلية المعتمدة، بإجمالي 119 من 119 اختبارًا."
+        "تنفيذ استخراج ذري وآمن لأرشيفات التلاوات، من خلال فك الضغط داخل مجلد مؤقت معزول، والتحقق من وجود ملفات MP3، ثم التبديل الآمن إلى المسار النهائي بعد نجاح التحقق. يمنع ذلك إسناد الملفات إلى مجلد قارئ خاطئ وتكرار حلقات التنزيل.",
+        "ربط حالات حوار فك الضغط بدفق الحالة الفعلي لعملية الاستخراج، مما يحسن استجابة الواجهة ويوفر رسائل واضحة عند الإلغاء أو حدوث أخطاء.",
+        "إضافة العلم legacyMigrationCompleted لمنع تكرار ترحيل ملفات ويندوز القديمة عند كل تشغيل للتطبيق.",
+        "تطبيق الكتابة الذرية للإعدادات مع آليات للتراجع عند الفشل، لتعزيز سلامة بيانات الإعدادات وتحسين التعامل مع أخطاء الكتابة.",
+        "تهيئة mediaItem بقيم افتراضية صحيحة داخل خدمة تشغيل الصوت لمنع حالات السباق البرمجي المرتبطة بعناصر التحكم في التشغيل بالخلفية.",
+        "تعزيز التحقق من التحديثات باشتراط استخدام HTTPS، وفرض قائمة بيضاء لامتدادات ملفات التحديث المسموح بها، ورفض بصمات SHA-256 الصفرية أو غير المكتملة.",
+        "تحسين مقارنة الإصدارات وفق معيار SemVer من خلال معالجة أكثر دقة للمقاطع الرقمية والنصية.",
+        "استبدال نداءات الخروج المباشر من العملية في مثبت ويندوز بآليات أكثر أمانًا للتنقل وإغلاق التطبيق.",
+        "نقل حساب بصمات SHA-256 للملفات الكبيرة إلى Isolate.run() في الخلفية لمنع تجمد الواجهة أثناء التحقق من سلامة الملفات.",
+        "تطبيق خنق دفق أحداث تقدم التنزيل باستخدام فواصل زمنية وعتبات مدروسة، لتقليل تحديثات الواجهة غير الضرورية واستهلاك المعالج.",
+        "إضافة شريط تمرير تفاعلي Scrollbar إلى قائمة السور لتسهيل التنقل في القوائم الطويلة.",
+        "تحسين موثوقية إغلاق الحوارات لضمان تنفيذ إجراءات الخروج وإغلاق الحوار حتى عند النقر خارج حدوده.",
+        "توطين أسماء القراء في لوحة إدارة التخزين وفق اللغة التي اختارها المستخدم، باستخدام الدالة localizedName.",
+        "إزالة الخدمات غير المستخدمة والأكواد الميتة، بما في ذلك archive_state_manager.dart والدالة غير الموصولة checkAllPermissions().",
+        "إزالة ملفات خطوط Roboto غير المستخدمة وتحديث pubspec.yaml لتقليل الأصول غير الضرورية في المشروع.",
+        "تحديث User-Agent الخاص بطلبات الشبكة ليعكس إصدار التطبيق الحالي.",
+        "مزامنة رقم الإصدار 2.9.0+60 بين pubspec.yaml وchangelog.json، وتحديث شارة المستودع وتوثيق تفاصيل الإصدار في README.md."
       ]
     }
   },
@@ -131,18 +131,18 @@
         "windows": {
           "enabled": true,
           "file_type": "exe",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen-To-Quran-Full-Edition-v2.6.1.exe",
-          "sha256": "3cfa38108a6134b1fe113ed3f770c8783bd0f94a3e42933baf0f7d7fc7a43d75",
-          "size": 12569634
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
+          "sha256": "",
+          "size": 12445531
         },
         "android": {
           "enabled": true,
           "file_type": "apk",
-          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
-          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.6.1/Listen.To.Quran.Full.Edition-v2.6.1.apk",
-          "sha256": "2f3b17a49df599269bfdc377fc6efd092ed98a9fdd16afcf45bbfdb0680cd21d",
-          "size": 65377880,
+          "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
+          "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
+          "sha256": "",
+          "size": 65190634,
           "min_android_sdk": 24
         }
       }
