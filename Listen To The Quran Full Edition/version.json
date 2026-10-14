@@ -60,7 +60,7 @@
           "file_type": "exe",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
           "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
-          "sha256": "",
+          "sha256": "66ae6c3fddad72adfdd85f318cfe7369c5b14fef91735896df82f1b483d26a82",
           "size": 12445531
         },
         "android": {
@@ -68,7 +68,7 @@
           "file_type": "apk",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
           "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
-          "sha256": "",
+          "sha256": "4982443b8758b66e3b02e9309dd30f2bf9f1b5912a13e2e81410a3f980519bfc",
           "size": 65190634,
           "min_android_sdk": 24
         }
@@ -133,7 +133,7 @@
           "file_type": "exe",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
           "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen-To-Quran-Full-Edition-v2.9.0.exe",
-          "sha256": "",
+          "sha256": "66ae6c3fddad72adfdd85f318cfe7369c5b14fef91735896df82f1b483d26a82",
           "size": 12445531
         },
         "android": {
@@ -141,7 +141,7 @@
           "file_type": "apk",
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
           "download_url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/listen-to-quran-full-edition-v2.9.0/Listen.To.Quran.Full.Edition-v2.9.0.apk",
-          "sha256": "",
+          "sha256": "4982443b8758b66e3b02e9309dd30f2bf9f1b5912a13e2e81410a3f980519bfc",
           "size": 65190634,
           "min_android_sdk": 24
         }
