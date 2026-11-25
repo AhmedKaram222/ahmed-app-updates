@@ -30,7 +30,7 @@
           "Improved application version management by making pubspec.yaml the single authoritative source for application version and build number.",
           "Improved release build consistency across Android and Windows.",
           "Improved overall application stability, reliability, and cross-platform prayer experience."
-],
+                          ],
       "platforms": {
         "android": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.5.0/Adhan.Prayer-v1.5.0.apk",
