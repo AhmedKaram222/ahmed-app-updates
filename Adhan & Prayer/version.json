@@ -5,36 +5,42 @@
       "version_code": 6,
       "force_update": false,
       "release_notes": [
-        "Added Qibla direction support on Android using the device's current location.",
-        "Added a dedicated Qibla Compass screen with live Qibla direction and bearing information.",
-        "Added precise device location handling for accurate Qibla calculation.",
-        "Added Android location permission handling with localized guidance and recovery options.",
-        "Added support for opening Android Location Settings and App Settings when location services or permissions are unavailable.",
-        "Added offline Qibla calculation fallback using accurate spherical bearing mathematics when the online Qibla service is unavailable.",
-        "Added online Qibla direction retrieval with automatic fallback to local calculation when network access fails.",
-        "Added live compass support with heading normalization and smoothing for a more stable Qibla direction experience.",
-        "Added robust handling for location permission denial, permanent denial, location services being disabled, and permission recovery.",
-        "Improved Qibla location handling to keep device GPS completely independent from the city selected for prayer-time calculations.",
-        "Improved prayer-time stability by ensuring Qibla location data never modifies the selected prayer city, calculation method, or prayer schedule.",
-        "Added Arabic and English localization for the Qibla feature and location permission guidance.",
-        "Improved Qibla calculation accuracy across different geographic regions and coordinate edge cases.",
-        "Improved Android background and foreground location handling without requesting background location permission.",
-        "Fixed Windows Task Scheduler synchronization and improved regression protection for scheduled Adhan playback.",
-        "Improved Adhan notification and playback reliability across Android and Windows.",
-        "Improved application version management by making pubspec.yaml the single authoritative source for application version and build number.",
-        "Improved release build consistency across Android and Windows.",
-        "Improved overall application stability, reliability, and cross-platform prayer experience."
-      ],
+          "Added Qibla direction support on Android using the device's current location.",
+          "Added a dedicated Qibla Compass screen with live Qibla direction and bearing information.",
+          "Added precise device location handling for accurate Qibla calculation.",
+          "Added Android location permission handling with localized guidance and recovery options.",
+          "Added support for opening Android Location Settings and App Settings when location services or permissions are unavailable.",
+          "Added offline Qibla calculation fallback using accurate spherical bearing mathematics when the online Qibla service is unavailable.",
+          "Added online Qibla direction retrieval with automatic fallback to local calculation when network access fails.",
+          "Added live compass support with heading normalization and smoothing for a more stable Qibla direction experience.",
+          "Added robust handling for location permission denial, permanent denial, location services being disabled, and permission recovery.",
+          "Improved Qibla location handling to keep device GPS completely independent from the city selected for prayer-time calculations.",
+          "Improved prayer-time stability by ensuring Qibla location data never modifies the selected prayer city, calculation method, or prayer schedule.",
+          "Added Arabic and English localization for the Qibla feature and location permission guidance.",
+          "Improved Qibla calculation accuracy across different geographic regions and coordinate edge cases.",
+          "Improved Android background and foreground location handling without requesting background location permission.",
+          "Fixed Windows notification activation handling to preserve Adhan notification payloads across application launches and existing-instance activation.",
+          "Fixed Windows startup presentation sequencing to prevent the application window from appearing blank before Flutter is ready.",
+          "Improved Windows Adhan activation reliability with pending event retention, acknowledgement, and duplicate-event prevention.",
+          "Improved Android background Adhan playback by introducing a dedicated media playback Foreground Service.",
+          "Moved Android Adhan audio playback ownership from the BroadcastReceiver to the dedicated Foreground Service for more reliable background execution.",
+          "Improved Android Adhan playback lifecycle management with foreground notification handling, WakeLock management, duplicate-start protection, and proper resource cleanup.",
+          "Fixed Windows Task Scheduler synchronization and improved regression protection for scheduled Adhan playback.",
+          "Improved Adhan notification and playback reliability across Android and Windows.",
+          "Improved application version management by making pubspec.yaml the single authoritative source for application version and build number.",
+          "Improved release build consistency across Android and Windows.",
+          "Improved overall application stability, reliability, and cross-platform prayer experience."
+],
       "platforms": {
         "android": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.5.0/Adhan.Prayer-v1.5.0.apk",
-          "sha256": "83cf103830147685bee0351b0abce88b20aeca8f262cf84e6452db099ef6180d",
-          "size": 74276881
+          "sha256": "4382f51c8171079b19c3ffbac3a69bc8eb300e58f984b5e81f03ebeb44e4aef4",
+          "size": 74293301
         },
         "windows": {
           "url": "https://github.com/AhmedKaram222/ahmed-app-updates/releases/download/adhan_and_prayer-v1.5.0/Adhan-And-Prayer-v1.5.0.exe",
-          "sha256": "a86bf43bba9d1bf6d069791200dfa33b59a5364bed8e7af3119ad8d66ac2457d",
-          "size": 28558117
+          "sha256": "735c280b519ada4f4aeb991ede09dace1a8e748f419978f9437d98bb4cfabfd9",
+          "size": 28564390
         }
       }
     }
